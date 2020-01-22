@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1579712839 source:/home/sadegh/Desktop/Finall project/clash of basu/main.cpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	"../include/MenuControl.h"
+
+1578339731 source:/home/sadegh/Desktop/Finall project/clash of basu/src/Hero.cpp
+
+1578339731 source:/home/sadegh/Desktop/Finall project/clash of basu/src/Mrs.Ghost.cpp
+
+1579711203 source:/home/sadegh/Desktop/Finall project/clash of basu/src/UI_Menu.cpp
+	"../include/UI_Menu.h"
+
+1579725183 /home/sadegh/Desktop/Finall project/clash of basu/include/UI_Menu.h
+	"SFML/Graphics.hpp"
+
+1579526475 source:/home/sadegh/Desktop/Finall project/clash of basu/src/MainMenu.cpp
+	"MainMenu.h"
+
+1579525589 /home/sadegh/Desktop/Finall project/clash of basu/include/MainMenu.h
+
+1579526509 source:/home/sadegh/Desktop/Finall project/clash of basu/src/Start Menu.cpp
+
+1579725214 /home/sadegh/Desktop/Finall project/clash of basu/include/StartMenu.h
+	"UI_Menu.h"
+
+1579722900 source:/home/sadegh/Desktop/Finall project/clash of basu/src/StartMenu.cpp
+	"../include/StartMenu.h"
+	<iostream>
+
+1579725372 /home/sadegh/Desktop/Finall project/clash of basu/include/MenuControl.h
+	"UI_Menu.h"
+	"StartMenu.h"
+	<vector>
+
+1579725360 source:/home/sadegh/Desktop/Finall project/clash of basu/src/MenuControl.cpp
+	"../include/MenuControl.h"
+
