@@ -39,7 +39,7 @@ void StartMenu::OptionText1()
     optionText1.setString("Start");
     //optionText1.setFont(font);
     optionText1.setCharacterSize(60);
-    optionText1.setColor(sf::Color::White);
+    optionText1.setColor(sf::Color(  253, 254, 254 ));
 }
 
 void StartMenu::OptionText2()

@@ -1,6 +1,7 @@
 #ifndef MAINMENU_H
 #define MAINMENU_H
 #include "UI_Menu.h"
+#include "../include/Field.h"
 
 class MainMenu : public UI_Menu
 {
@@ -13,8 +14,12 @@ public:
     virtual void textButton2()override;
     virtual void textButton3()override;
     void OptionText1();
+    //void Field();
 private:
-    sf::Text MMtext;
+    //sf::Texture MMtex;
+    //sf::Sprite MMspr;
+
+    Field fieldObj;
 };
 
 #endif // MAINMENU_H

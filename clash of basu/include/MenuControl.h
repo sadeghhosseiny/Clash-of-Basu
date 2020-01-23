@@ -4,6 +4,7 @@
 #include "UI_Menu.h"
 #include "StartMenu.h"
 #include "MainMenu.h"
+#include "Field.h"
 #include <vector>
 
 
@@ -18,6 +19,7 @@ private:
     std::vector <UI_Menu*> menuVec;
     StartMenu SMenu1;
     MainMenu Mmenu;
+    //sf::RenderWindow* w;
 
 };
 
