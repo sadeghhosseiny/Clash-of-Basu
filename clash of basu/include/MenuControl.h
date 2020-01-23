@@ -3,20 +3,21 @@
 
 #include "UI_Menu.h"
 #include "StartMenu.h"
+#include "MainMenu.h"
 #include <vector>
 
 
-class MenuControl : public UI_Menu
+class MenuControl
 {
 public:
     MenuControl();
     void display(sf::RenderWindow* window);
-    virtual void MouseClicked1()override;
-    virtual void MouseClicked2()override;
 private:
     menus CurrentMenu = menus::SM;
+    //CurrentMenu = menus::MM;
     std::vector <UI_Menu*> menuVec;
     StartMenu SMenu1;
+    MainMenu Mmenu;
 
 };
 

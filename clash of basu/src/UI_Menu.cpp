@@ -8,10 +8,14 @@
 }
 */
 
-/*UI_Menu::UI_Menu()
+UI_Menu::UI_Menu()
 {
+    font.loadFromFile("nightmare.TTF");
+    optionText1.setFont(font);
+    optionText2.setFont(font);
+    optionText3.setFont(font);
 }
-*/
+
 
 
 menus UI_Menu::getName()
