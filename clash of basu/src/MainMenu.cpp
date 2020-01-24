@@ -35,16 +35,21 @@ void MainMenu::display(sf::RenderWindow* window, menus &CurrentMenu)
     MouseClicked2(CurrentMenu);
     textButton1();
     fieldObj.DrawField(window);
+    AMCobj.DrawCard(window);
+    GCobj.DrawCard(window);
+    CCobj.DrawCard(window);
+    DRMCobj.DrawCard(window);
+    KCobj.DrawCard(window);
    //fieldObj.DrawField();
     //Field();
 }
 
 void MainMenu::OptionText1()
 {
-    optionText1.setPosition(sf::Vector2f(100, 40));
+    optionText1.setPosition(sf::Vector2f(1700, 980));
     optionText1.setString("Back");
     optionText1.setCharacterSize(60);
-    optionText1.setColor(sf::Color::Black);
+    optionText1.setColor(sf::Color::White);
 }
 
 void MainMenu::textButton1()
@@ -55,7 +60,7 @@ void MainMenu::textButton1()
     }
     else
     {
-        optionText1.setColor(sf::Color::Black);
+        optionText1.setColor(sf::Color::White);
     }
 }
 

@@ -34,6 +34,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/AlphaManCard.h" />
+		<Unit filename="include/Field.h" />
 		<Unit filename="include/Hero.h" />
 		<Unit filename="include/MainMenu.h" />
 		<Unit filename="include/MenuControl.h" />
@@ -41,6 +43,8 @@
 		<Unit filename="include/StartMenu.h" />
 		<Unit filename="include/UI_Menu.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/AlphaManCard.cpp" />
+		<Unit filename="src/Field.cpp" />
 		<Unit filename="src/Hero.cpp" />
 		<Unit filename="src/MainMenu.cpp" />
 		<Unit filename="src/MenuControl.cpp" />

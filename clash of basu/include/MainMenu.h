@@ -1,7 +1,13 @@
 #ifndef MAINMENU_H
 #define MAINMENU_H
+
 #include "UI_Menu.h"
-#include "../include/Field.h"
+#include "Field.h"
+#include "AlphaManCard.h"
+#include "GiantCrad.h"
+#include "CommanderCard.h"
+#include "DrMarryCard.h"
+#include "KratosCard.h"
 
 class MainMenu : public UI_Menu
 {
@@ -18,8 +24,12 @@ public:
 private:
     //sf::Texture MMtex;
     //sf::Sprite MMspr;
-
+    AlphaManCard AMCobj;
     Field fieldObj;
+    GiantCrad GCobj;
+    CommanderCard CCobj;
+    DrMarryCard DRMCobj;
+    KratosCard KCobj;
 };
 
 #endif // MAINMENU_H
