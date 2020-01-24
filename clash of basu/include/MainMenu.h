@@ -8,6 +8,11 @@
 #include "CommanderCard.h"
 #include "DrMarryCard.h"
 #include "KratosCard.h"
+#include "LeonCard.h"
+#include "MrsGhostCard.h"
+#include "ProfessorCard.h"
+#include "RobiCard.h"
+#include "SniperCard.h"
 
 class MainMenu : public UI_Menu
 {
@@ -30,6 +35,11 @@ private:
     CommanderCard CCobj;
     DrMarryCard DRMCobj;
     KratosCard KCobj;
+    LeonCard LCobj;
+    MrsGhostCard MRSGCobj;
+    ProfessorCard PCobj;
+    RobiCard RCobj;
+    SniperCard SCobj;
 };
 
 #endif // MAINMENU_H

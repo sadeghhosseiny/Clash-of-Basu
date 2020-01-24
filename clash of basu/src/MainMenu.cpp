@@ -40,6 +40,11 @@ void MainMenu::display(sf::RenderWindow* window, menus &CurrentMenu)
     CCobj.DrawCard(window);
     DRMCobj.DrawCard(window);
     KCobj.DrawCard(window);
+    LCobj.DrawCard(window);
+    MRSGCobj.DrawCard(window);
+    PCobj.DrawCard(window);
+    RCobj.DrawCard(window);
+    SCobj.DrawCard(window);
    //fieldObj.DrawField();
     //Field();
 }
