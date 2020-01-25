@@ -5,14 +5,14 @@
 
 class CommanderCard : public HeroCards
 {
-    public:
-        CommanderCard();
-        virtual ~CommanderCard();
-        virtual void DrawCard(sf::RenderWindow*);
+public:
+    CommanderCard();
+    virtual ~CommanderCard();
+    virtual void DrawCard(sf::RenderWindow*);
 
-    protected:
+protected:
 
-    private:
+private:
 };
 
 #endif // COMMANDERCARD_H

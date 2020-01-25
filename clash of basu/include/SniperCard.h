@@ -5,14 +5,14 @@
 
 class SniperCard : public HeroCards
 {
-    public:
-        SniperCard();
-        virtual ~SniperCard();
-        virtual void DrawCard(sf::RenderWindow*);
+public:
+    SniperCard();
+    virtual ~SniperCard();
+    virtual void DrawCard(sf::RenderWindow*);
 
-    protected:
+protected:
 
-    private:
+private:
 };
 
 #endif // SNIPERCARD_H

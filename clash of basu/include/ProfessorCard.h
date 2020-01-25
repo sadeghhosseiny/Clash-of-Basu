@@ -5,14 +5,14 @@
 
 class ProfessorCard : public HeroCards
 {
-    public:
-        ProfessorCard();
-        virtual ~ProfessorCard();
-        virtual void DrawCard(sf::RenderWindow*);
+public:
+    ProfessorCard();
+    virtual ~ProfessorCard();
+    virtual void DrawCard(sf::RenderWindow*);
 
-    protected:
+protected:
 
-    private:
+private:
 };
 
 #endif // PROFESSORCARD_H

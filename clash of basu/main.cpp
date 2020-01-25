@@ -12,6 +12,7 @@ int main()
     sf::Texture tex;
 
     MenuControl Obj;
+    //Field obj;
 
     sf::Sprite spr(tex);
     while (window.isOpen())

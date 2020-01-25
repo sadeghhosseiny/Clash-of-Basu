@@ -5,14 +5,14 @@
 
 class DrMarryCard : public HeroCards
 {
-    public:
-        DrMarryCard();
-        virtual ~DrMarryCard();
-        virtual void DrawCard(sf::RenderWindow*);
+public:
+    DrMarryCard();
+    virtual ~DrMarryCard();
+    virtual void DrawCard(sf::RenderWindow*);
 
-    protected:
+protected:
 
-    private:
+private:
 };
 
 #endif // DRMARRYCARD_H

@@ -1,4 +1,5 @@
 #include "../include/AlphaManCard.h"
+#include <iostream>
 
 AlphaManCard::AlphaManCard()
 {
@@ -14,7 +15,7 @@ void AlphaManCard::DrawCard(sf::RenderWindow *window)
     spr.setScale(sf::Vector2f(0.85, 0.85));
     if (spr.getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())))
     {
-       // spr.setColor(sf::Color(215, 189, 226 ));
+       spr.setColor(sf::Color(215, 189, 226 ));
     }
     /*else
     {

@@ -5,14 +5,14 @@
 
 class MrsGhostCard : public HeroCards
 {
-    public:
-        MrsGhostCard();
-        virtual ~MrsGhostCard();
-        virtual void DrawCard(sf::RenderWindow*);
+public:
+    MrsGhostCard();
+    virtual ~MrsGhostCard();
+    virtual void DrawCard(sf::RenderWindow*);
 
-    protected:
+protected:
 
-    private:
+private:
 };
 
 #endif // MRSGHOSTCARD_H

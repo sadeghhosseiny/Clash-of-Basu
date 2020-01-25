@@ -5,14 +5,14 @@
 
 class RobiCard : public HeroCards
 {
-    public:
-        RobiCard();
-        virtual ~RobiCard();
-        virtual void DrawCard(sf::RenderWindow*);
+public:
+    RobiCard();
+    virtual ~RobiCard();
+    virtual void DrawCard(sf::RenderWindow*);
 
-    protected:
+protected:
 
-    private:
+private:
 };
 
 #endif // ROBICARD_H

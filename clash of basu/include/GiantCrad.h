@@ -5,11 +5,11 @@
 
 class GiantCrad : public HeroCards
 {
-    public:
-        GiantCrad();
-        virtual void DrawCard(sf::RenderWindow*);
-        virtual ~GiantCrad();
-    private:
+public:
+    GiantCrad();
+    virtual void DrawCard(sf::RenderWindow*);
+    virtual ~GiantCrad();
+private:
 };
 
 #endif // GIANTCRAD_H

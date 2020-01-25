@@ -2,7 +2,8 @@
 #define MAINMENU_H
 
 #include "UI_Menu.h"
-#include "Field.h"
+#include "GeneralDefines.h"
+/*#include "Field.h"
 #include "AlphaManCard.h"
 #include "GiantCrad.h"
 #include "CommanderCard.h"
@@ -13,7 +14,7 @@
 #include "ProfessorCard.h"
 #include "RobiCard.h"
 #include "SniperCard.h"
-
+*/
 class MainMenu : public UI_Menu
 {
 public:
@@ -25,10 +26,12 @@ public:
     virtual void textButton2()override;
     virtual void textButton3()override;
     void OptionText1();
+    //void MMDisplay(sf::RenderWindow*);
     //void Field();
 private:
     //sf::Texture MMtex;
     //sf::Sprite MMspr;
+    //sf::RenderWindow* wind;
     AlphaManCard AMCobj;
     Field fieldObj;
     GiantCrad GCobj;

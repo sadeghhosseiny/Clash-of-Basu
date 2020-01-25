@@ -2,8 +2,9 @@
 #define UI_MENU_H
 #include "SFML/Graphics.hpp"
 
+#include "GeneralDefines.h"
 
-enum class menus{SM = 0, MM};
+//enum class menus{SM = 0, MM};
 
 class UI_Menu
 {

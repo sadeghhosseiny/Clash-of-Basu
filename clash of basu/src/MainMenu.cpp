@@ -1,4 +1,6 @@
 #include "../include/MainMenu.h"
+#include "SFML/Graphics.hpp"
+#include <iostream>
 
 MainMenu::MainMenu() : UI_Menu()
 {
@@ -7,6 +9,8 @@ MainMenu::MainMenu() : UI_Menu()
     spr.setTexture(tex);
     OptionText1();
     textButton1();
+    //fieldObj.DrawField(window);
+    //MMDisplay(sf::RenderWindow* wind);
     //Field obj();
     //obj().DrawField();
 }
@@ -29,6 +33,7 @@ void MainMenu::MouseClicked2(menus& CurrentMenus)
 
 void MainMenu::display(sf::RenderWindow* window, menus &CurrentMenu)
 {
+    //wind = window;
     window->draw(spr);
     window->draw(optionText1);
    // window->draw(MMspr);
@@ -45,9 +50,13 @@ void MainMenu::display(sf::RenderWindow* window, menus &CurrentMenu)
     PCobj.DrawCard(window);
     RCobj.DrawCard(window);
     SCobj.DrawCard(window);
-   //fieldObj.DrawField();
-    //Field();
+    fieldObj.SelectedSquare(window);
 }
+
+/*void MainMenu::MMDisplay(sf::RenderWindow* wind)
+{
+    fieldObj.DrawField(wind);
+}*/
 
 void MainMenu::OptionText1()
 {
@@ -55,6 +64,10 @@ void MainMenu::OptionText1()
     optionText1.setString("Back");
     optionText1.setCharacterSize(60);
     optionText1.setColor(sf::Color::White);
+    if (optionText1.getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())))
+    {
+        std::cout << "fu" << std::endl;
+    }
 }
 
 void MainMenu::textButton1()

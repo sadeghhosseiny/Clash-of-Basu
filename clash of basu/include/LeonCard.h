@@ -5,14 +5,14 @@
 
 class LeonCard : public HeroCards
 {
-    public:
-        LeonCard();
-        virtual ~LeonCard();
-        virtual void DrawCard(sf::RenderWindow*);
+public:
+    LeonCard();
+    virtual ~LeonCard();
+    virtual void DrawCard(sf::RenderWindow*);
 
-    protected:
+protected:
 
-    private:
+private:
 };
 
 #endif // LEONCARD_H
