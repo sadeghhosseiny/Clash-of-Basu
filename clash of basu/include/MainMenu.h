@@ -3,7 +3,7 @@
 
 #include "UI_Menu.h"
 #include "GeneralDefines.h"
-/*#include "Field.h"
+#include "Field.h"
 #include "AlphaManCard.h"
 #include "GiantCrad.h"
 #include "CommanderCard.h"
@@ -14,7 +14,7 @@
 #include "ProfessorCard.h"
 #include "RobiCard.h"
 #include "SniperCard.h"
-*/
+
 class MainMenu : public UI_Menu
 {
 public:
@@ -26,7 +26,7 @@ public:
     virtual void textButton2()override;
     virtual void textButton3()override;
     void OptionText1();
-    void DrawCardsOnField();
+    void ChooseCards();
     //void MMDisplay(sf::RenderWindow*);
     //void Field();
 private:

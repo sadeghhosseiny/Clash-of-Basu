@@ -97,6 +97,41 @@ void Field::DrawField(sf::RenderWindow* window)
     }
 }*/
 
+unsigned short int& Field::getrow()
+{
+    return row;
+}
+
+unsigned short int& Field::getcol()
+{
+    return col;
+}
+
+/*sf::RectangleShape& Field::getsquare()
+{
+    return square[i][j];
+}*/
+
+/*sf::Mouse& Field::getpos()
+{
+    float pos = static_cast<sf::Vector2f>(sf::Mouse::getPosition());
+    return pos;
+}*/
+
+void Field::Draw_Icons(sf::Vector2f, heroC& hc)
+{
+switch (hc)
+    {
+       case A:
+            {
+                tex.loadFromFile("alpha_man icon.png");
+                spr.setTexture(tex);
+            }
+    }
+}
+
+
+
 Field::~Field()
 {
     for (int i = 0; i < row; i++)

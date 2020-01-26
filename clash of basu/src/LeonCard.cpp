@@ -19,7 +19,7 @@ void LeonCard::DrawCard(sf::RenderWindow* window)
     window->draw(spr);
 }
 
-sf::Sprite& LeonCard::getspr(sf::Sprite spr)
+sf::Sprite& LeonCard::getspr()
 {
     return spr;
 }

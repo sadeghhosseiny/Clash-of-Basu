@@ -24,7 +24,7 @@ void KratosCard::DrawCard(sf::RenderWindow* window)
     window->draw(spr);
 }
 
-sf::Sprite& KratosCard::getspr(sf::Sprite spr)
+sf::Sprite& KratosCard::getspr( )
 {
     return spr;
 }

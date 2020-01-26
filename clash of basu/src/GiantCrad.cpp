@@ -19,7 +19,7 @@ void GiantCrad::DrawCard(sf::RenderWindow* window)
     window->draw(spr);
 }
 
-sf::Sprite& GiantCrad::getspr(sf::Sprite spr)
+sf::Sprite& GiantCrad::getspr()
 {
     return spr;
 }

@@ -19,7 +19,7 @@ void RobiCard::DrawCard(sf::RenderWindow* window)
     window->draw(spr);
 }
 
-sf::Sprite& RobiCard::getspr(sf::Sprite spr)
+sf::Sprite& RobiCard::getspr()
 {
     return spr;
 }

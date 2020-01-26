@@ -19,7 +19,7 @@ void DrMarryCard::DrawCard(sf::RenderWindow* window)
     window->draw(spr);
 }
 
-sf::Sprite& DrMarryCard::getspr(sf::Sprite spr)
+sf::Sprite& DrMarryCard::getspr( )
 {
     return spr;
 }

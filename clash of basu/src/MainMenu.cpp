@@ -9,6 +9,7 @@ MainMenu::MainMenu() : UI_Menu()
     spr.setTexture(tex);
     OptionText1();
     textButton1();
+    hero_Cards = _None;
     //fieldObj.DrawField(window);
     //MMDisplay(sf::RenderWindow* wind);
     //Field obj();
@@ -92,54 +93,54 @@ void MainMenu::textButton3()
 
 }
 
-void MainMenu::DrawCardsOnField()
+void MainMenu::ChooseCards()
 {
-    if (AMCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    if (AMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
             sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::A;
     }
-    else if (CCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    else if (CCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::C;
     }
-    else if (DRMCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    else if (DRMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::Dr;
     }
-    else if (GCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    else if (GCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::G;
     }
-    else if (KCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    else if (KCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::K;
     }
-    else if (LCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    else if (LCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::L;
     }
-    else if (MRSGCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    else if (MRSGCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::Mrs;
     }
-    else if (PCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    else if (PCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::P;
     }
-    else if (RCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    else if (RCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::R;
     }
-    else if (SCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    else if (SCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::S;
@@ -147,6 +148,17 @@ void MainMenu::DrawCardsOnField()
     else
     {
         hero_Cards = heroC::_None;
+    }
+    for (int i = 0; i < fieldObj.getrow(); i++)
+    {
+        for (int j = 0; j < fieldObj.getcol(); j++)
+        {
+            if (fieldObj.square[i][j].getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+                sf::Mouse::isButtonPressed(sf::Mouse::Left))
+            {
+                fieldObj.Draw_Icons(static_cast<sf::Vector2f>(sf::Mouse::getPosition()), hero_Cards);
+            }
+        }
     }
 }
 

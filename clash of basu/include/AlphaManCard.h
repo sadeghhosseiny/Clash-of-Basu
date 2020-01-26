@@ -9,7 +9,7 @@ class AlphaManCard : public HeroCards
 public:
     virtual void DrawCard(sf::RenderWindow *);
     AlphaManCard();
-    sf::Sprite& getspr(sf::Sprite spr);
+    sf::Sprite& getspr();
 private:
 
 };

@@ -19,7 +19,7 @@ void SniperCard::DrawCard(sf::RenderWindow* window)
     window->draw(spr);
 }
 
-sf::Sprite& SniperCard::getspr(sf::Sprite spr)
+sf::Sprite& SniperCard::getspr()
 {
     return spr;
 }

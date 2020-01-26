@@ -19,7 +19,7 @@ void ProfessorCard::DrawCard(sf::RenderWindow* window)
     window->draw(spr);
 }
 
-sf::Sprite& ProfessorCard::getspr(sf::Sprite spr)
+sf::Sprite& ProfessorCard::getspr()
 {
     return spr;
 }

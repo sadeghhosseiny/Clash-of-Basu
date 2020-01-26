@@ -9,7 +9,7 @@ public:
     KratosCard();
     virtual ~KratosCard();
     virtual void DrawCard(sf::RenderWindow*);
-    sf::Sprite& getspr(sf::Sprite spr);
+    sf::Sprite& getspr();
 
 protected:
 

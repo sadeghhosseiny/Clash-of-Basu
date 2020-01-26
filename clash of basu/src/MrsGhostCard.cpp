@@ -19,7 +19,7 @@ void MrsGhostCard::DrawCard(sf::RenderWindow *window)
     window->draw(spr);
 }
 
-sf::Sprite& MrsGhostCard::getspr(sf::Sprite spr)
+sf::Sprite& MrsGhostCard::getspr()
 {
     return spr;
 }

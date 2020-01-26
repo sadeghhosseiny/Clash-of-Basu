@@ -19,7 +19,7 @@ void CommanderCard::DrawCard(sf::RenderWindow* window)
     window->draw(spr);
 }
 
-sf::Sprite& CommanderCard::getspr(sf::Sprite spr)
+sf::Sprite& CommanderCard::getspr()
 {
     return spr;
 }
