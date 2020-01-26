@@ -18,3 +18,8 @@ void ProfessorCard::DrawCard(sf::RenderWindow* window)
     spr.setScale(sf::Vector2f(0.85, 0.85));
     window->draw(spr);
 }
+
+sf::Sprite& ProfessorCard::getspr(sf::Sprite spr)
+{
+    return spr;
+}

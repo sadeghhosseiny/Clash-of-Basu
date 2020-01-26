@@ -18,3 +18,8 @@ void DrMarryCard::DrawCard(sf::RenderWindow* window)
     spr.setScale(sf::Vector2f(0.85, 0.85));
     window->draw(spr);
 }
+
+sf::Sprite& DrMarryCard::getspr(sf::Sprite spr)
+{
+    return spr;
+}

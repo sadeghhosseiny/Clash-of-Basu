@@ -5,14 +5,15 @@
 
 class KratosCard : public HeroCards
 {
-    public:
-        KratosCard();
-        virtual ~KratosCard();
-        virtual void DrawCard(sf::RenderWindow*);
+public:
+    KratosCard();
+    virtual ~KratosCard();
+    virtual void DrawCard(sf::RenderWindow*);
+    sf::Sprite& getspr(sf::Sprite spr);
 
-    protected:
+protected:
 
-    private:
+private:
 };
 
 #endif // KRATOSCARD_H

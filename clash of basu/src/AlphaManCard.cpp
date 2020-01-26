@@ -13,7 +13,7 @@ void AlphaManCard::DrawCard(sf::RenderWindow *window)
     //sf::Color OC = spr.getColor();
     spr.setPosition(20,15);
     spr.setScale(sf::Vector2f(0.85, 0.85));
-    if (spr.getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())))
+    /*if (spr.getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())))
     {
        spr.setColor(sf::Color(215, 189, 226 ));
     }
@@ -23,5 +23,10 @@ void AlphaManCard::DrawCard(sf::RenderWindow *window)
     }
     */
     window->draw(spr);
+}
+
+sf::Sprite& AlphaManCard::getspr(sf::Sprite spr)
+{
+    return spr;
 }
 

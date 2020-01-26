@@ -9,6 +9,7 @@ public:
     SniperCard();
     virtual ~SniperCard();
     virtual void DrawCard(sf::RenderWindow*);
+    sf::Sprite& getspr(sf::Sprite spr);
 
 protected:
 

@@ -5,6 +5,11 @@ GiantCrad::GiantCrad()
     //ctor
 }
 
+GiantCrad::~GiantCrad()
+{
+    //dtor
+}
+
 void GiantCrad::DrawCard(sf::RenderWindow* window)
 {
     tex.loadFromFile("Giant Card.png");
@@ -14,7 +19,7 @@ void GiantCrad::DrawCard(sf::RenderWindow* window)
     window->draw(spr);
 }
 
-GiantCrad::~GiantCrad()
+sf::Sprite& GiantCrad::getspr(sf::Sprite spr)
 {
-    //dtor
+    return spr;
 }

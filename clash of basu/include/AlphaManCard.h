@@ -6,12 +6,12 @@
 
 class AlphaManCard : public HeroCards
 {
-    public:
-        virtual void DrawCard(sf::RenderWindow *);
-        AlphaManCard();
-    private:
-        sf::Texture tex;
-        sf::Sprite spr;
+public:
+    virtual void DrawCard(sf::RenderWindow *);
+    AlphaManCard();
+    sf::Sprite& getspr(sf::Sprite spr);
+private:
+
 };
 
 #endif // ALPHAMANCARD_H

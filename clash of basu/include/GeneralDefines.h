@@ -17,6 +17,6 @@
 #include "SniperCard.h"
 
 enum class menus{SM = 0, MM};
-enum class heroC{A = 0, C, Dr, G, K, L, Mrs, P, R, S};
+enum class heroC{A = 0, C, Dr, G, K, L, Mrs, P, R, S, _None};
 
 #endif // GENERALDEFINES_H

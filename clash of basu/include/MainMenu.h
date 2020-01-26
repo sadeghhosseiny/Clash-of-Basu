@@ -26,6 +26,7 @@ public:
     virtual void textButton2()override;
     virtual void textButton3()override;
     void OptionText1();
+    void DrawCardsOnField();
     //void MMDisplay(sf::RenderWindow*);
     //void Field();
 private:
@@ -43,6 +44,7 @@ private:
     ProfessorCard PCobj;
     RobiCard RCobj;
     SniperCard SCobj;
+    heroC hero_Cards; //object from enum for drawing pictures in Field
 };
 
 #endif // MAINMENU_H

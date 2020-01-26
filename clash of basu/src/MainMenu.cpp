@@ -36,7 +36,7 @@ void MainMenu::display(sf::RenderWindow* window, menus &CurrentMenu)
     //wind = window;
     window->draw(spr);
     window->draw(optionText1);
-   // window->draw(MMspr);
+    // window->draw(MMspr);
     MouseClicked2(CurrentMenu);
     textButton1();
     fieldObj.DrawField(window);
@@ -90,6 +90,64 @@ void MainMenu::textButton2()
 void MainMenu::textButton3()
 {
 
+}
+
+void MainMenu::DrawCardsOnField()
+{
+    if (AMCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+            sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::A;
+    }
+    else if (CCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::C;
+    }
+    else if (DRMCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::Dr;
+    }
+    else if (GCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::G;
+    }
+    else if (KCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::K;
+    }
+    else if (LCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::L;
+    }
+    else if (MRSGCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::Mrs;
+    }
+    else if (PCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::P;
+    }
+    else if (RCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::R;
+    }
+    else if (SCobj.getspr(spr).getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::S;
+    }
+    else
+    {
+        hero_Cards = heroC::_None;
+    }
 }
 
 /*void MainMenu::Field()

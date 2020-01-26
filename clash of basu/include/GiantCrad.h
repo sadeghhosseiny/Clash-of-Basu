@@ -9,6 +9,7 @@ public:
     GiantCrad();
     virtual void DrawCard(sf::RenderWindow*);
     virtual ~GiantCrad();
+    sf::Sprite& getspr(sf::Sprite spr);
 private:
 };
 

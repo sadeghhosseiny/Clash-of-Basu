@@ -9,6 +9,7 @@ public:
     MrsGhostCard();
     virtual ~MrsGhostCard();
     virtual void DrawCard(sf::RenderWindow*);
+    sf::Sprite& getspr(sf::Sprite spr);
 
 protected:
 
