@@ -17,16 +17,6 @@
 #include "SniperCard.h"
 
 enum class menus{SM = 0, MM};
-
-class GeneralDefines
-{
-    public:
-        GeneralDefines();
-        ~GeneralDefines();
-
-    protected:
-
-    private:
-};
+enum class heroC{A = 0, C, Dr, G, K, L, Mrs, P, R, S};
 
 #endif // GENERALDEFINES_H

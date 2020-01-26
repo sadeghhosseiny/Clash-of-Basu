@@ -4,7 +4,8 @@
 	<SFML/Graphics.hpp>
 	"../include/MenuControl.h"
 
-1578339731 source:/home/sadegh/Desktop/Finall project/clash of basu/src/Hero.cpp
+1580030743 source:/home/sadegh/Desktop/Finall project/clash of basu/src/Hero.cpp
+	"Hero.h"
 
 1578339731 source:/home/sadegh/Desktop/Finall project/clash of basu/src/Mrs.Ghost.cpp
 
@@ -44,20 +45,20 @@
 	<iostream>
 	"../include/MenuControl.h"
 
-1579801882 /home/sadegh/Desktop/Finall project/clash of basu/include/MenuControl.h
+1579975278 /home/sadegh/Desktop/Finall project/clash of basu/include/MenuControl.h
 	"UI_Menu.h"
 	"StartMenu.h"
 	"MainMenu.h"
 	"Field.h"
 	<vector>
 
-1579801865 source:/home/sadegh/Desktop/Finall project/clash of basu/src/MenuControl.cpp
+1579969716 source:/home/sadegh/Desktop/Finall project/clash of basu/src/MenuControl.cpp
 	"../include/MenuControl.h"
 
 1579959695 /home/sadegh/Desktop/Finall project/clash of basu/include/Field.h
 	"SFML/Graphics.hpp"
 
-1579960248 source:/home/sadegh/Desktop/Finall project/clash of basu/src/Field.cpp
+1580032936 source:/home/sadegh/Desktop/Finall project/clash of basu/src/Field.cpp
 	"../include/Field.h"
 	<iostream>
 
@@ -109,9 +110,9 @@
 1579864865 source:/home/sadegh/Desktop/Finall project/clash of basu/src/LeonCard.cpp
 	"LeonCard.h"
 
-1579525589 /home/sadegh/Desktop/Finall project/clash of basu/include/Hero.h
+1580031527 /home/sadegh/Desktop/Finall project/clash of basu/include/Hero.h
 
-1579866224 /home/sadegh/Desktop/Finall project/clash of basu/include/MrsGhost.h
+1580032321 /home/sadegh/Desktop/Finall project/clash of basu/include/MrsGhost.h
 	"Hero.h"
 
 1579880676 /home/sadegh/Desktop/Finall project/clash of basu/include/MrsGhostCard.h
@@ -154,7 +155,7 @@
 	"RobiCard.h"
 	"SniperCard.h"
 
-1579967509 /home/sadegh/Desktop/Finall project/clash of basu/include/GeneralDefines.h
+1579972676 /home/sadegh/Desktop/Finall project/clash of basu/include/GeneralDefines.h
 	"UI_Menu.h"
 	"Hero.h"
 	"HeroCards.h"
@@ -169,4 +170,55 @@
 	"ProfessorCard.h"
 	"RobiCard.h"
 	"SniperCard.h"
+
+1580031560 source:/home/sadegh/Desktop/Finall project/clash of basu/src/AlphaMan.cpp
+	"AlphaMan.h"
+
+1580031377 /home/sadegh/Desktop/Finall project/clash of basu/include/AlphaMan.h
+	"Hero.h"
+
+1580031730 source:/home/sadegh/Desktop/Finall project/clash of basu/src/Commander.cpp
+	"Commander.h"
+
+1580031662 /home/sadegh/Desktop/Finall project/clash of basu/include/Commander.h
+	"Hero.h"
+
+1580031972 source:/home/sadegh/Desktop/Finall project/clash of basu/src/DrMarry.cpp
+	"DrMarry.h"
+
+1580031904 /home/sadegh/Desktop/Finall project/clash of basu/include/DrMarry.h
+	"Hero.h"
+
+1580032114 source:/home/sadegh/Desktop/Finall project/clash of basu/src/Kratos.cpp
+	"Kratos.h"
+
+1580032049 /home/sadegh/Desktop/Finall project/clash of basu/include/Kratos.h
+	"Hero.h"
+
+1580032261 source:/home/sadegh/Desktop/Finall project/clash of basu/src/Leon.cpp
+	"Leon.h"
+
+1580032189 /home/sadegh/Desktop/Finall project/clash of basu/include/Leon.h
+	"Hero.h"
+
+1580032383 source:/home/sadegh/Desktop/Finall project/clash of basu/src/MrsGhost.cpp
+	"MrsGhost.h"
+
+1580032497 source:/home/sadegh/Desktop/Finall project/clash of basu/src/Professor.cpp
+	"Professor.h"
+
+1580032441 /home/sadegh/Desktop/Finall project/clash of basu/include/Professor.h
+	"Hero.h"
+
+1580032618 source:/home/sadegh/Desktop/Finall project/clash of basu/src/Robi.cpp
+	"Robi.h"
+
+1580032572 /home/sadegh/Desktop/Finall project/clash of basu/include/Robi.h
+	"Hero.h"
+
+1580032752 source:/home/sadegh/Desktop/Finall project/clash of basu/src/Sniper.cpp
+	"Sniper.h"
+
+1580032691 /home/sadegh/Desktop/Finall project/clash of basu/include/Sniper.h
+	"Hero.h"
 

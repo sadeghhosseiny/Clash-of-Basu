@@ -5,11 +5,14 @@
 
 class MrsGhost : public Hero
 {
-public:
-    MrsGhost(Health = 15)
-    {
+    public:
+        MrsGhost();
+        virtual ~MrsGhost();
+        virtual void Strike();
 
-    }
+    protected:
+
+    private:
 };
 
 #endif // MRSGHOST_H

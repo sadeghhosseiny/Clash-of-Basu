@@ -4,9 +4,11 @@
 class Hero
 {
 public:
-    virtual void Strike () = 0;
+    Hero();
+    virtual void Strike() = 0;
 protected:
     unsigned short int Health;
+    unsigned short int Damage;
 
 };
 

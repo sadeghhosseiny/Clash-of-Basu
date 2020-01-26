@@ -84,31 +84,18 @@ void Field::DrawField(sf::RenderWindow* window)
     }
 }*/
 
-void Field::SelectedSquare(sf::RenderWindow* window)
+/*void Field::SelectedSquare(sf::RenderWindow* window)
 {
-    /*for(int i = 0; i < row; i++)
-    {
-        for (int j = 0; j < col; j++)
-        {
-
-            if(spr[i][j].getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())))
-            {
-                spr[i][j].setColor(sf::Color::Yellow);
-                window->draw(spr[i][j]);
-            }
-        }
-    }*/
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
         {
             if (square[i][j].getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())))
-                square[i][j].setFillColor(sf::Color::Yellow);
-            //std::cout << "afgha" << std::endl;
-            window->draw(square[i][j]);
+                if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
+                    square[i][j].setFillColor(sf::Color::Yellow);
         }
     }
-}
+}*/
 
 Field::~Field()
 {

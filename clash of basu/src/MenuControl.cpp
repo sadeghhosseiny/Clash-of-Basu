@@ -15,5 +15,4 @@ void MenuControl::display(sf::RenderWindow* window)
             menu->display(window, CurrentMenu);
             break;
         }
-
 }

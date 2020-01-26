@@ -50,7 +50,7 @@ void MainMenu::display(sf::RenderWindow* window, menus &CurrentMenu)
     PCobj.DrawCard(window);
     RCobj.DrawCard(window);
     SCobj.DrawCard(window);
-    fieldObj.SelectedSquare(window);
+    //fieldObj.SelectedSquare(window);
 }
 
 /*void MainMenu::MMDisplay(sf::RenderWindow* wind)
