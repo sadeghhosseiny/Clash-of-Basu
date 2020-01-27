@@ -1,4 +1,4 @@
-#include "DrMarryCard.h"
+#include "../include/DrMarryCard.h"
 
 DrMarryCard::DrMarryCard()
 {

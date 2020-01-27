@@ -1,7 +1,6 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include "../include/MenuControl.h"
-
+#include "include/MenuControl.h"
 
 using namespace std;
 

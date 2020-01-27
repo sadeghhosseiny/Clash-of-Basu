@@ -1,4 +1,4 @@
-#include "CommanderCard.h"
+#include "../include/CommanderCard.h"
 
 CommanderCard::CommanderCard()
 {

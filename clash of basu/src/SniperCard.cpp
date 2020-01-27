@@ -1,4 +1,4 @@
-#include "SniperCard.h"
+#include "../include/SniperCard.h"
 
 SniperCard::SniperCard()
 {

@@ -1,4 +1,4 @@
-#include "Sniper.h"
+#include "../include/Sniper.h"
 
 Sniper::Sniper()
 {

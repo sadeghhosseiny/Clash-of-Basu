@@ -1,4 +1,4 @@
-#include "CardControl.h"
+#include "../include/CardControl.h"
 
 CardControl::CardControl()
 {

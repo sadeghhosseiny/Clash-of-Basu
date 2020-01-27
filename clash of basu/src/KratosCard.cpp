@@ -1,4 +1,4 @@
-#include "KratosCard.h"
+#include "../include/KratosCard.h"
 #include <iostream>
 
 KratosCard::KratosCard()

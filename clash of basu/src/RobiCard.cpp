@@ -1,4 +1,4 @@
-#include "RobiCard.h"
+#include "../include/RobiCard.h"
 
 RobiCard::RobiCard()
 {

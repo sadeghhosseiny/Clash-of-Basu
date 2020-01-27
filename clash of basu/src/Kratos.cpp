@@ -1,4 +1,4 @@
-#include "Kratos.h"
+#include "../include/Kratos.h"
 
 Kratos::Kratos()
 {

@@ -1,4 +1,4 @@
-#include "MrsGhostCard.h"
+#include "../include/MrsGhostCard.h"
 
 MrsGhostCard::MrsGhostCard()
 {

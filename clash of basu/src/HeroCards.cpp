@@ -1,4 +1,4 @@
-#include "HeroCards.h"
+#include "../include/HeroCards.h"
 
 HeroCards::HeroCards()
 {

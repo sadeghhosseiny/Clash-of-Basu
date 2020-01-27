@@ -1,4 +1,4 @@
-#include "AlphaMan.h"
+#include "../include/AlphaMan.h"
 
 AlphaMan::AlphaMan()
 {

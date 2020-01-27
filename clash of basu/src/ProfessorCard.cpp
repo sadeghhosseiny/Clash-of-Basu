@@ -1,4 +1,4 @@
-#include "ProfessorCard.h"
+#include "../include/ProfessorCard.h"
 
 ProfessorCard::ProfessorCard()
 {

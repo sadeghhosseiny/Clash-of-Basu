@@ -1,4 +1,4 @@
-#include "GiantCrad.h"
+#include "../include/GiantCrad.h"
 
 GiantCrad::GiantCrad()
 {

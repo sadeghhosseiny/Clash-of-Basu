@@ -1,4 +1,4 @@
-#include "LeonCard.h"
+#include "../include/LeonCard.h"
 
 LeonCard::LeonCard()
 {
