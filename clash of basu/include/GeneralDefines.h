@@ -18,6 +18,6 @@
 */
 
 enum class menus{SM = 0, MM};
-enum heroC{A , C, Dr, G, K, L, Mrs, P, R, S, _None};
+enum class heroC{A , C, Dr, G, K, L, Mrs, P, R, S, _None};
 
 #endif // GENERALDEFINES_H

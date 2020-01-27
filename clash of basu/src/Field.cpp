@@ -5,6 +5,9 @@ using namespace sf;
 
 Field::Field()
 {
+    tex.loadFromFile("alpha_man icon.png");
+    tex.loadFromFile("commander icon.png");
+    hero_Cards = heroC::_None;
     row = 9;
     col = 9;
     ve.x = 82;
@@ -36,6 +39,98 @@ Field::Field()
 
 }
 
+/*void Field::Draw_Icons(sf::Vector2f, sf::RenderWindow* window, heroC hc)
+{
+
+    /*if (AMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+            sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::A;
+    }
+    else if (CCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::C;
+    }
+    else if (DRMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::Dr;
+    }
+    else if (GCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::G;
+    }
+    else if (KCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::K;
+    }
+    else if (LCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::L;
+    }
+    else if (MRSGCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::Mrs;
+    }
+    else if (PCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::P;
+    }
+    else if (RCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::R;
+    }
+    else if (SCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::S;
+    }
+    else
+    {
+        hero_Cards = heroC::_None;
+    }
+
+    hc = heroC::A;
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            if (square[i][j].getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+                    sf::Mouse::isButtonPressed(sf::Mouse::Left))
+            {
+                std::cout << "haerdbf";
+                std::cout << static_cast<int>(hc);
+                switch (hc)
+                {
+                case heroC::A :
+                {
+                    tex.loadFromFile("alpha_man icon.png");
+                    spr.setTexture(tex);
+                    std::cout << static_cast<int>(hc);
+                    break;
+                }
+                case heroC::S :
+                {
+                    tex.loadFromFile("commander icon.png");
+                    spr.setTexture(tex);
+                    std::cout << static_cast<int>(hc);
+                    break;
+                }
+                }
+            }
+        }
+    }
+    window->draw(spr);
+
+}*/
+
 void Field::DrawField(sf::RenderWindow* window)
 {
     /*square = new RectangleShape* [row];
@@ -60,42 +155,95 @@ void Field::DrawField(sf::RenderWindow* window)
     }
 }
 
-/*void Field::DrawField(sf::RenderWindow* window)
+void Field::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
 {
-    //int row = 9;
-    //int col = 9;
-
-    spr = new Sprite* [row];
-    for (int i = 0; i < row; i++)
+    if (AMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+            sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
-        spr[i] = new Sprite[col];
+        hero_Cards = heroC::A;
+        AMCobj.getspr().setColor(sf::Color::Red);
+        window->draw(AMCobj.getspr());
+    }
+    else if (CCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::C;
+        CCobj.getspr().setColor(sf::Color::Yellow);
+        window->draw(CCobj.getspr());
+    }
+    else if (DRMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::Dr;
+    }
+    else if (GCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::G;
+    }
+    else if (KCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::K;
+    }
+    else if (LCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::L;
+    }
+    else if (MRSGCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::Mrs;
+    }
+    else if (PCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::P;
+    }
+    else if (RCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::R;
+    }
+    else if (SCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        hero_Cards = heroC::S;
+    }
+    else
+    {
+        hero_Cards = heroC::_None;
     }
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
         {
-            tex.loadFromFile("Green.png");
-            spr[i][j].setTexture(tex);
-            spr[i][j].setScale(sf::Vector2f(ve.x, ve.y));
-            spr[i][j].setPosition(i * ve.x + 1185, j * ve.y + 50);
-            window->draw(spr[i][j]);
-
+            if (square[i][j].getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+                    sf::Mouse::isButtonPressed(sf::Mouse::Left))
+            {
+                switch (hc)
+                {
+                case heroC::A :
+                {
+                    tex.loadFromFile("alpha_man icon.png");
+                    spr.setTexture(tex);
+                    spr.setPosition(sf::Vector2f(1080, 200));
+                    std::cout << static_cast<int>(hc);
+                    break;
+                }
+                case heroC::C :
+                {
+                    tex.loadFromFile("commander icon.png");
+                    spr.setTexture(tex);
+                    break;
+                }
+                }
+            }
         }
     }
-}*/
-
-/*void Field::SelectedSquare(sf::RenderWindow* window)
-{
-    for (int i = 0; i < row; i++)
-    {
-        for (int j = 0; j < col; j++)
-        {
-            if (square[i][j].getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())))
-                if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
-                    square[i][j].setFillColor(sf::Color::Yellow);
-        }
-    }
-}*/
+    window->draw(spr);
+}
 
 unsigned short int& Field::getrow()
 {
@@ -117,20 +265,6 @@ unsigned short int& Field::getcol()
     float pos = static_cast<sf::Vector2f>(sf::Mouse::getPosition());
     return pos;
 }*/
-
-void Field::Draw_Icons(sf::Vector2f, heroC& hc)
-{
-switch (hc)
-    {
-       case A:
-            {
-                tex.loadFromFile("alpha_man icon.png");
-                spr.setTexture(tex);
-            }
-    }
-}
-
-
 
 Field::~Field()
 {

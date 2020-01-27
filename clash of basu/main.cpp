@@ -2,6 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include "../include/MenuControl.h"
 
+
 using namespace std;
 
 int main()
@@ -26,7 +27,11 @@ int main()
                     window.close();
                 }
             }
+            if (event.type == sf::Event::MouseButtonPressed)
+                if(event.mouseButton.button == sf::Mouse::Left)
+                Obj.MouseClicked(static_cast<sf::Vector2f>(sf::Mouse::getPosition()), Obj.geten());
         }
+
         window.clear();
         Obj.display(&window);
         window.display();

@@ -9,17 +9,18 @@ MainMenu::MainMenu() : UI_Menu()
     spr.setTexture(tex);
     OptionText1();
     textButton1();
-    hero_Cards = _None;
+    //hero_Cards = heroC::_None;
+    //ChooseCards();
     //fieldObj.DrawField(window);
     //MMDisplay(sf::RenderWindow* wind);
     //Field obj();
     //obj().DrawField();
 }
 
-void MainMenu::MouseClicked1()
+/*void MainMenu::MouseClicked1()
 {
 
-}
+}*/
 
 void MainMenu::MouseClicked2(menus& CurrentMenus)
 {
@@ -51,6 +52,9 @@ void MainMenu::display(sf::RenderWindow* window, menus &CurrentMenu)
     PCobj.DrawCard(window);
     RCobj.DrawCard(window);
     SCobj.DrawCard(window);
+    fieldObj.ChooseCards(window, static_cast<sf::Vector2f>(sf::Mouse::getPosition()), hero_Cards);
+    //std::cout << static_cast<int> (hero_Cards) << std::endl;
+    //fieldObj.Draw_Icons(static_cast<sf::Vector2f>(sf::Mouse::getPosition()), window, hero_Cards);
     //fieldObj.SelectedSquare(window);
 }
 
@@ -65,10 +69,6 @@ void MainMenu::OptionText1()
     optionText1.setString("Back");
     optionText1.setCharacterSize(60);
     optionText1.setColor(sf::Color::White);
-    if (optionText1.getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())))
-    {
-        std::cout << "fu" << std::endl;
-    }
 }
 
 void MainMenu::textButton1()
@@ -93,7 +93,7 @@ void MainMenu::textButton3()
 
 }
 
-void MainMenu::ChooseCards()
+/*void MainMenu::ChooseCards()
 {
     if (AMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
             sf::Mouse::isButtonPressed(sf::Mouse::Left))
@@ -156,11 +156,11 @@ void MainMenu::ChooseCards()
             if (fieldObj.square[i][j].getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
                 sf::Mouse::isButtonPressed(sf::Mouse::Left))
             {
-                fieldObj.Draw_Icons(static_cast<sf::Vector2f>(sf::Mouse::getPosition()), hero_Cards);
+                fieldObj.Draw_Icons(sf::RenderWindow* window, static_cast<sf::Vector2f>(sf::Mouse::getPosition()), hero_Cards);
             }
         }
     }
-}
+}*/
 
 /*void MainMenu::Field()
 {

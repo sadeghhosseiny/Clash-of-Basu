@@ -38,6 +38,7 @@
 		<Unit filename="include/CommanderCard.h" />
 		<Unit filename="include/DrMarryCard.h" />
 		<Unit filename="include/Field.h" />
+		<Unit filename="include/GeneralDefines.h" />
 		<Unit filename="include/GiantCrad.h" />
 		<Unit filename="include/Hero.h" />
 		<Unit filename="include/HeroCards.h" />
