@@ -10,9 +10,9 @@ class UI_Menu
 {
 public:
     UI_Menu();
-    virtual void display(sf::Vector2f pos, sf::RenderWindow* window, menus& CurrnetMenu) = 0;
+    virtual void display(sf::RenderWindow* window, menus& CurrnetMenu) = 0;
     //virtual void MouseClicked1() = 0;
-    virtual void MouseClicked2(sf::Vector2f, menus& CurrentMenu) = 0;
+    virtual void MouseClicked2(sf::Vector2f pos, menus& CurrentMenu) = 0;
     virtual void textButton1() = 0;
     virtual void textButton2() = 0;
     virtual void textButton3() = 0;

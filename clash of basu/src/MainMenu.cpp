@@ -22,14 +22,11 @@ MainMenu::MainMenu() : UI_Menu()
 
 }*/
 
-void MainMenu::MouseClicked2(menus& CurrentMenus)
+void MainMenu::MouseClicked2(sf::Vector2f pos, menus& CurrentMenu)
 {
-    if(optionText1.getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())))
+    if(optionText1.getGlobalBounds().contains(pos))
     {
-        if(sf::Mouse::isButtonPressed(sf::Mouse::Left))
-        {
-            CurrentMenus = menus::SM;
-        }
+            CurrentMenu = menus::SM;
     }
 }
 
@@ -39,7 +36,6 @@ void MainMenu::display(sf::RenderWindow* window, menus &CurrentMenu)
     window->draw(spr);
     window->draw(optionText1);
     // window->draw(MMspr);
-    MouseClicked2(CurrentMenu);
     textButton1();
     fieldObj.DrawField(window);
     AMCobj.DrawCard(window);

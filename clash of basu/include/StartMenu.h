@@ -8,9 +8,9 @@ class StartMenu : public UI_Menu
 {
 public:
     StartMenu();
-    virtual void display(sf::Vector2f, sf::RenderWindow *window, menus& CurrentMenu);
+    virtual void display(sf::RenderWindow *window, menus& CurrentMenu);
     //virtual void MouseClicked1();
-    virtual void MouseClicked2(sf::Vector2f, menus& CurrentMenu);
+    virtual void MouseClicked2(sf::Vector2f pos, menus& CurrentMenu);
     void OptionText1();
     void OptionText2();
     void OptionText3();

@@ -7,6 +7,19 @@ MenuControl::MenuControl()
    //w = window;
 }
 
+
+void MenuControl::MouseClicked(sf::Vector2f pos)
+{
+    for (auto& menu : menuVec)
+        if (menu->getName() == CurrentMenu)
+        {
+            menu->MouseClicked2(pos, CurrentMenu);
+            break;
+        }
+
+
+}
+
 void MenuControl::display(sf::RenderWindow* window)
 {
     for (auto& menu : menuVec)

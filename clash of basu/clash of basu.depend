@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1580118716 source:/home/sadegh/Desktop/Finall project/clash of basu/main.cpp
+1580132208 source:/home/sadegh/Desktop/Finall project/clash of basu/main.cpp
 	<iostream>
 	<SFML/Graphics.hpp>
 	"../include/MenuControl.h"
@@ -12,16 +12,16 @@
 1579784085 source:/home/sadegh/Desktop/Finall project/clash of basu/src/UI_Menu.cpp
 	"../include/UI_Menu.h"
 
-1580118716 /home/sadegh/Desktop/Finall project/clash of basu/include/UI_Menu.h
+1580133124 /home/sadegh/Desktop/Finall project/clash of basu/include/UI_Menu.h
 	"SFML/Graphics.hpp"
 	"GeneralDefines.h"
 
-1580118208 source:/home/sadegh/Desktop/Finall project/clash of basu/src/MainMenu.cpp
+1580133162 source:/home/sadegh/Desktop/Finall project/clash of basu/src/MainMenu.cpp
 	"../include/MainMenu.h"
 	"SFML/Graphics.hpp"
 	<iostream>
 
-1580117119 /home/sadegh/Desktop/Finall project/clash of basu/include/MainMenu.h
+1580133114 /home/sadegh/Desktop/Finall project/clash of basu/include/MainMenu.h
 	"UI_Menu.h"
 	"GeneralDefines.h"
 	"Field.h"
@@ -38,7 +38,7 @@
 
 1579526509 source:/home/sadegh/Desktop/Finall project/clash of basu/src/Start Menu.cpp
 
-1580118144 /home/sadegh/Desktop/Finall project/clash of basu/include/StartMenu.h
+1580133073 /home/sadegh/Desktop/Finall project/clash of basu/include/StartMenu.h
 	"UI_Menu.h"
 
 1579805804 source:/home/sadegh/Desktop/Finall project/clash of basu/src/StartMenu.cpp
@@ -46,13 +46,13 @@
 	<iostream>
 	"../include/MenuControl.h"
 
-1580118681 /home/sadegh/Desktop/Finall project/clash of basu/include/MenuControl.h
+1580132286 /home/sadegh/Desktop/Finall project/clash of basu/include/MenuControl.h
 	"UI_Menu.h"
 	"StartMenu.h"
 	"MainMenu.h"
 	<vector>
 
-1579969716 source:/home/sadegh/Desktop/Finall project/clash of basu/src/MenuControl.cpp
+1580133410 source:/home/sadegh/Desktop/Finall project/clash of basu/src/MenuControl.cpp
 	"../include/MenuControl.h"
 
 1580069759 /home/sadegh/Desktop/Finall project/clash of basu/include/Field.h

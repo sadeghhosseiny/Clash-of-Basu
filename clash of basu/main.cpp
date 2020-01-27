@@ -29,7 +29,7 @@ int main()
             }
             if (event.type == sf::Event::MouseButtonPressed)
                 if(event.mouseButton.button == sf::Mouse::Left)
-                Obj.MouseClicked(static_cast<sf::Vector2f>(sf::Mouse::getPosition()), Obj.geten());
+                    Obj.MouseClicked(static_cast<sf::Vector2f>(sf::Mouse::getPosition()));
         }
 
         window.clear();

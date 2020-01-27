@@ -19,9 +19,9 @@ class MainMenu : public UI_Menu
 {
 public:
     MainMenu();
-    virtual void display(sf::Vector2f, sf::RenderWindow* window, menus& CurrentMenu);
+    virtual void display(sf::RenderWindow* window, menus& CurrentMenu);
     //virtual void MouseClicked1()override;
-    virtual void MouseClicked2(sf::Vector2f, menus& CurrentMenu);
+    virtual void MouseClicked2(sf::Vector2f pos, menus& CurrentMenu);
     virtual void textButton1();
     virtual void textButton2()override;
     virtual void textButton3()override;

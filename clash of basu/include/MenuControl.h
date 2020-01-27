@@ -12,7 +12,7 @@ class MenuControl
 public:
     MenuControl();
     void display(sf::RenderWindow* window);
-    void MouseClicked(sf::Vector2f, menus &);
+    void MouseClicked(sf::Vector2f pos);
     menus& geten();
 
 private:
@@ -21,7 +21,7 @@ private:
     std::vector <UI_Menu*> menuVec;
     StartMenu SMenu1;
     MainMenu Mmenu;
-    sf::Vector2f pos;
+    //sf::Vector2f pos;
     //sf::RenderWindow* w;
 
 };

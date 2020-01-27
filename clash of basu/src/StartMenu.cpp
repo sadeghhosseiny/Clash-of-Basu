@@ -22,7 +22,7 @@ void StartMenu::display(sf::RenderWindow *window,menus& CurrentMenu)
 {
     _window = window;
     //MouseClicked1();
-    MouseClicked2(CurrentMenu);
+    //MouseClicked2(CurrentMenu);
     textButton1();
     textButton2();
     textButton3();
@@ -107,22 +107,19 @@ void StartMenu::textButton3()
     }
 }*/
 
-void StartMenu::MouseClicked2(menus &CurrentMenu)
+void StartMenu::MouseClicked2(sf::Vector2f pos, menus& CurrentMenu)
 {
     if(optionText1.getGlobalBounds().contains(pos))
     {
-        if(sf::Mouse::isButtonPressed(sf::Mouse::Left))
-        {
-            // std::cout << "under construstion" << std::endl;
-            CurrentMenu = menus::MM;
-        }
+        CurrentMenu = menus::MM;
+
     }
     if(optionText3.getGlobalBounds().contains(pos))
     {
-        if(sf::Mouse::isButtonPressed(sf::Mouse::Left))
-        {
-            _window->close();
-        }
+
+        _window->close();
+
     }
+
 }
 
