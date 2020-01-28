@@ -6,8 +6,8 @@ using namespace std;
 
 Field::Field()
 {
-    tex.loadFromFile("alpha_man icon.png");
-    tex.loadFromFile("commander icon.png");
+    //tex1.loadFromFile("alpha_man icon.png");
+    //tex.loadFromFile("commander icon.png");
     //hero_Cards = heroC::_None;
     row = 9;
     col = 9;
@@ -156,13 +156,13 @@ void Field::DrawField(sf::RenderWindow* window)
     }
 }
 
-void Field::ChooseCards(sf::RenderWindow* window, sf::Vector2f pos, heroC hc)
+/*void Field::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
 {
-    if (AMCobj.getspr().getGlobalBounds().contains(pos) &&
+    if (AMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
             sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::A;
-        //cout << static_cast<int>(hero_Cards) << endl;
+        cout << static_cast<int>(hero_Cards) << endl;
         AMCobj.getspr().setColor(sf::Color::Red);
         window->draw(AMCobj.getspr());
     }
@@ -171,7 +171,7 @@ void Field::ChooseCards(sf::RenderWindow* window, sf::Vector2f pos, heroC hc)
     {
         hero_Cards = heroC::C;
         CCobj.getspr().setColor(sf::Color::Yellow);
-        //cout << static_cast<int>(hero_Cards) << endl;
+        cout << static_cast<int>(hero_Cards) << endl;
         window->draw(CCobj.getspr());
     }
     else if (DRMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
@@ -214,6 +214,7 @@ void Field::ChooseCards(sf::RenderWindow* window, sf::Vector2f pos, heroC hc)
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::S;
+        cout << static_cast<int>(hero_Cards) << endl;
     }
 
     for (int i = 0; i < row; i++)
@@ -223,19 +224,21 @@ void Field::ChooseCards(sf::RenderWindow* window, sf::Vector2f pos, heroC hc)
             if (square[i][j].getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
                     sf::Mouse::isButtonPressed(sf::Mouse::Left))
             {
+                //square[i][j].setFillColor(sf::Color::Red);
                 switch (hc)
                 {
                 case heroC::A :
                 {
+                    cout << "awgeaweg" << endl;
                     std::cout << static_cast<int>(hc);
-                    //tex.loadFromFile("alpha_man icon.png");
-                    square[i][j].setTexture(&tex);
+                    //tex1.loadFromFile("alpha_man icon.png");
+                    square[i][j].setTexture(&tex1);
                     break;
                 }
                 case heroC::C :
                 {
-                    tex.loadFromFile("commander icon.png");
-                    spr.setTexture(tex);
+                    //tex.loadFromFile("commander icon.png");
+                    square[i][j].setTexture(&tex);
                     break;
                 }
                 }
@@ -244,7 +247,7 @@ void Field::ChooseCards(sf::RenderWindow* window, sf::Vector2f pos, heroC hc)
         }
     }
 }
-
+*/
 unsigned short int& Field::getrow()
 {
     return row;

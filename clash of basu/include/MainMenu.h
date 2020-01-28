@@ -26,12 +26,21 @@ public:
     virtual void textButton2()override;
     virtual void textButton3()override;
     void OptionText1();
+    void OptionText2();
     void ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC);
     //void MMDisplay(sf::RenderWindow*);
     //void Field();
 private:
-    //sf::Texture MMtex;
-    //sf::Sprite MMspr;
+    sf::Texture tex1;
+    sf::Texture tex2;
+    sf::Texture tex3;
+    sf::Texture tex4;
+    sf::Texture tex5;
+    sf::Texture tex6;
+    sf::Texture tex7;
+    sf::Texture tex8;
+    sf::Texture tex9;
+    sf::Texture tex10;
     //sf::RenderWindow* wind;
     AlphaManCard AMCobj;
     Field fieldObj;

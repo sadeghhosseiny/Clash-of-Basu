@@ -9,9 +9,20 @@ MainMenu::MainMenu() : UI_Menu()
     menuName = menus::MM;
     tex.loadFromFile("spartan.jpg");
     spr.setTexture(tex);
-    //tex.loadFromFile("alpha_man icon.png");
+    tex1.loadFromFile("alpha_man icon.png");
+    tex2.loadFromFile("commander icon.png");
+    tex3.loadFromFile("dr_marry icon.png");
+    tex4.loadFromFile("giant icon.png");
+    tex5.loadFromFile("kratos icon.png");
+    tex6.loadFromFile("leon icon.png");
+    tex7.loadFromFile("mrs_ghost icon.png");
+    tex8.loadFromFile("professor icon.png");
+    tex9.loadFromFile("robi icon.png");
+    tex10.loadFromFile("sniper icon.png");
     OptionText1();
     textButton1();
+    OptionText2();
+    textButton2();
     hero_Cards = heroC::_None;
     //ChooseCards();
     //fieldObj.DrawField(window);
@@ -38,7 +49,9 @@ void MainMenu::display(sf::RenderWindow* window, menus &CurrentMenu)
     //wind = window;
     window->draw(spr);
     window->draw(optionText1);
+    window->draw(optionText2);
     // window->draw(MMspr);
+    textButton2();
     textButton1();
     fieldObj.DrawField(window);
     AMCobj.DrawCard(window);
@@ -82,9 +95,24 @@ void MainMenu::textButton1()
     }
 }
 
+void MainMenu::OptionText2()
+{
+    optionText2.setPosition(sf::Vector2f(1700, 900));
+    optionText2.setString("Ok");
+    optionText2.setCharacterSize(60);
+    optionText3.setColor(sf::Color::White);
+}
+
 void MainMenu::textButton2()
 {
-
+    if (optionText2.getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())))
+    {
+        optionText2.setColor(sf::Color::Magenta);
+    }
+    else
+    {
+        optionText2.setColor(sf::Color::White);
+    }
 }
 
 void MainMenu::textButton3()
@@ -92,7 +120,7 @@ void MainMenu::textButton3()
 
 }
 
-/*void MainMenu::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
+void MainMenu::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
 {
     if (AMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
             sf::Mouse::isButtonPressed(sf::Mouse::Left))
@@ -146,6 +174,7 @@ void MainMenu::textButton3()
     {
         hero_Cards = heroC::S;
     }
+
     for (int i = 0; i < fieldObj.getrow(); i++)
     {
         for (int j = 0; j < fieldObj.getcol(); j++)
@@ -158,30 +187,81 @@ void MainMenu::textButton3()
                 {
                 case heroC::A :
                 {
-                    //tex.loadFromFile("alpha_man icon.png");
-                    fieldObj.square[i][j].setTexture(&tex);
+                    fieldObj.square[i][j].setTexture(&tex1);
+                    fieldObj.square[i][j].setFillColor(sf::Color::White);
                     break;
                 }
                 case heroC::C :
                 {
-                    tex.loadFromFile("commander icon.png");
-                    spr.setTexture(tex);
+                    //tex2.loadFromFile("commander icon.png");
+                    fieldObj.square[i][j].setTexture(&tex2);
+                    fieldObj.square[i][j].setFillColor(sf::Color::White);
                     break;
                 }
                 case heroC::Dr :
+                {
+                    fieldObj.square[i][j].setTexture(&tex3);
+                    fieldObj.square[i][j].setFillColor(sf::Color::White);
+                    break;
+                }
+                case heroC::G :
+                {
+                    fieldObj.square[i][j].setTexture(&tex4);
+                    fieldObj.square[i][j].setFillColor(sf::Color::White);
+                    break;
+                }
+                case heroC::K :
+                {
+                    fieldObj.square[i][j].setTexture(&tex5);
+                    fieldObj.square[i][j].setFillColor(sf::Color::White);
+                    break;
+                }
+                case heroC::L :
+                {
+                    fieldObj.square[i][j].setTexture(&tex6);
+                    fieldObj.square[i][j].setFillColor(sf::Color::White);
+                    break;
+                }
+                case heroC::Mrs :
+                {
+                    fieldObj.square[i][j].setTexture(&tex7);
+                    fieldObj.square[i][j].setFillColor(sf::Color::White);
+                    break;
+                }
+                case heroC::P :
+                {
+                    fieldObj.square[i][j].setTexture(&tex8);
+                    fieldObj.square[i][j].setFillColor(sf::Color::White);
+                    break;
+                }
+                case heroC::R :
+                {
+                    fieldObj.square[i][j].setTexture(&tex9);
+                    fieldObj.square[i][j].setFillColor(sf::Color::White);
+                    break;
+                }
+                case heroC::S :
+                {
+                    fieldObj.square[i][j].setTexture(&tex10);
+                    fieldObj.square[i][j].setFillColor(sf::Color::White);
+                    break;
+                }
+                default:
                     {
-                        tex.loadFromFile("")
+
                     }
                 }
             }
-                window->draw(fieldObj.square[i][j]);
+            window->draw(fieldObj.square[i][j]);
         }
-    }*/
+    }
 }
 
-/*void MainMenu::Field()
-{
-    MMtex.loadFromFile("Green.png");
-    MMspr.setTexture(MMtex);
-    MMspr.setPosition(sf::Vector2f(100, 100));
-}*/
+
+
+
+
+
+
+
+
