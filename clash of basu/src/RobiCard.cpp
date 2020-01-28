@@ -2,7 +2,10 @@
 
 RobiCard::RobiCard()
 {
-    //ctor
+    tex.loadFromFile("Robi Card.png");
+    spr.setTexture(tex);
+    spr.setPosition(200, 630);
+    spr.setScale(sf::Vector2f(0.85, 0.85));
 }
 
 RobiCard::~RobiCard()
@@ -12,10 +15,11 @@ RobiCard::~RobiCard()
 
 void RobiCard::DrawCard(sf::RenderWindow* window)
 {
-    tex.loadFromFile("Robi Card.png");
+   /* tex.loadFromFile("Robi Card.png");
     spr.setTexture(tex);
     spr.setPosition(200, 630);
     spr.setScale(sf::Vector2f(0.85, 0.85));
+    */
     window->draw(spr);
 }
 

@@ -2,7 +2,10 @@
 
 ProfessorCard::ProfessorCard()
 {
-    //ctor
+    tex.loadFromFile("Professor Card.png");
+    spr.setTexture(tex);
+    spr.setPosition(200, 430);
+    spr.setScale(sf::Vector2f(0.85, 0.85));
 }
 
 ProfessorCard::~ProfessorCard()
@@ -12,10 +15,11 @@ ProfessorCard::~ProfessorCard()
 
 void ProfessorCard::DrawCard(sf::RenderWindow* window)
 {
-    tex.loadFromFile("Professor Card.png");
+    /*tex.loadFromFile("Professor Card.png");
     spr.setTexture(tex);
     spr.setPosition(200, 430);
     spr.setScale(sf::Vector2f(0.85, 0.85));
+    */
     window->draw(spr);
 }
 

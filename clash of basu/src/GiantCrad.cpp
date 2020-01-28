@@ -2,7 +2,10 @@
 
 GiantCrad::GiantCrad()
 {
-    //ctor
+    tex.loadFromFile("Giant Card.png");
+    spr.setTexture(tex);
+    spr.setPosition(20, 840);
+    spr.setScale(sf::Vector2f(0.85, 0.85));
 }
 
 GiantCrad::~GiantCrad()
@@ -12,10 +15,11 @@ GiantCrad::~GiantCrad()
 
 void GiantCrad::DrawCard(sf::RenderWindow* window)
 {
-    tex.loadFromFile("Giant Card.png");
+    /*tex.loadFromFile("Giant Card.png");
     spr.setTexture(tex);
     spr.setPosition(20, 840);
     spr.setScale(sf::Vector2f(0.85, 0.85));
+    */
     window->draw(spr);
 }
 
