@@ -27,6 +27,7 @@ public:
     virtual void textButton2()override;
     virtual void textButton3()override;
     void OptionText1();
+    void ChooseCards(sf::RenderWindow*, sf::Vector2f, heroC);
 
 protected:
 

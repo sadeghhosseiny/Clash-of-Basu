@@ -29,10 +29,13 @@ public:
     void OptionText1();
     void OptionText2();
     void ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC);
-    void nx(sf::Vector2f, menus&);
+    void setp_on_field(sf::Vector2i);
+    //sf::Vector2i getp();
+    //void nx(sf::Vector2f, menus&);
     //void MMDisplay(sf::RenderWindow*);
     //void Field();
 private:
+    sf::Vector2i position_on_field;
     sf::Texture tex1;
     sf::Texture tex2;
     sf::Texture tex3;

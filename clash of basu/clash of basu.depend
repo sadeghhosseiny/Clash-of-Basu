@@ -320,7 +320,7 @@
 1580156685 d:\finall p\clash of basu\include\startmenu.h
 	"UI_Menu.h"
 
-1580235600 d:\finall p\clash of basu\include\mainmenu.h
+1580248443 d:\finall p\clash of basu\include\mainmenu.h
 	"UI_Menu.h"
 	"GeneralDefines.h"
 	"Field.h"
@@ -412,10 +412,10 @@
 	"Player.h"
 	<iostream>
 
-1580238737 source:d:\finall p\clash of basu\src\mainmenu2.cpp
+1580243453 source:d:\finall p\clash of basu\src\mainmenu2.cpp
 	"MainMenu2.h"
 
-1580241721 d:\finall p\clash of basu\include\mainmenu2.h
+1580243433 d:\finall p\clash of basu\include\mainmenu2.h
 	"UI_Menu.h"
 	"GeneralDefines.h"
 	"Field.h"
