@@ -270,7 +270,7 @@
 1580156685 d:\finall p\clash of basu\include\herocards.h
 	"SFML/Graphics.hpp"
 
-1580156685 d:\finall p\clash of basu\include\field.h
+1580209825 d:\finall p\clash of basu\include\field.h
 	"SFML/Graphics.hpp"
 	"GeneralDefines.h"
 	"UI_Menu.h"
@@ -321,7 +321,7 @@
 1580156685 d:\finall p\clash of basu\include\startmenu.h
 	"UI_Menu.h"
 
-1580156685 d:\finall p\clash of basu\include\mainmenu.h
+1580209565 d:\finall p\clash of basu\include\mainmenu.h
 	"UI_Menu.h"
 	"GeneralDefines.h"
 	"Field.h"
@@ -336,21 +336,21 @@
 	"RobiCard.h"
 	"SniperCard.h"
 
-1580156685 source:d:\finall p\clash of basu\src\alphamancard.cpp
+1580203093 source:d:\finall p\clash of basu\src\alphamancard.cpp
 	"../include/AlphaManCard.h"
 	<iostream>
 
-1580162191 source:d:\finall p\clash of basu\src\commandercard.cpp
+1580195039 source:d:\finall p\clash of basu\src\commandercard.cpp
 	"../include/CommanderCard.h"
 
-1580162207 source:d:\finall p\clash of basu\src\drmarrycard.cpp
+1580195023 source:d:\finall p\clash of basu\src\drmarrycard.cpp
 	"../include/DrMarryCard.h"
 
-1580156685 source:d:\finall p\clash of basu\src\field.cpp
+1580210006 source:d:\finall p\clash of basu\src\field.cpp
 	"../include/Field.h"
 	<iostream>
 
-1580162222 source:d:\finall p\clash of basu\src\giantcrad.cpp
+1580195086 source:d:\finall p\clash of basu\src\giantcrad.cpp
 	"../include/GiantCrad.h"
 
 1580162235 source:d:\finall p\clash of basu\src\hero.cpp
@@ -359,14 +359,14 @@
 1580162251 source:d:\finall p\clash of basu\src\herocards.cpp
 	"../include/HeroCards.h"
 
-1580162278 source:d:\finall p\clash of basu\src\kratoscard.cpp
+1580195160 source:d:\finall p\clash of basu\src\kratoscard.cpp
 	"../include/KratosCard.h"
 	<iostream>
 
-1580162297 source:d:\finall p\clash of basu\src\leoncard.cpp
+1580195223 source:d:\finall p\clash of basu\src\leoncard.cpp
 	"../include/LeonCard.h"
 
-1580156685 source:d:\finall p\clash of basu\src\mainmenu.cpp
+1580209887 source:d:\finall p\clash of basu\src\mainmenu.cpp
 	"../include/MainMenu.h"
 	"SFML/Graphics.hpp"
 	<iostream>
@@ -374,16 +374,16 @@
 1580156685 source:d:\finall p\clash of basu\src\menucontrol.cpp
 	"../include/MenuControl.h"
 
-1580162306 source:d:\finall p\clash of basu\src\mrsghostcard.cpp
+1580195265 source:d:\finall p\clash of basu\src\mrsghostcard.cpp
 	"../include/MrsGhostCard.h"
 
-1580162331 source:d:\finall p\clash of basu\src\professorcard.cpp
+1580195308 source:d:\finall p\clash of basu\src\professorcard.cpp
 	"../include/ProfessorCard.h"
 
-1580162354 source:d:\finall p\clash of basu\src\robicard.cpp
+1580195361 source:d:\finall p\clash of basu\src\robicard.cpp
 	"../include/RobiCard.h"
 
-1580162362 source:d:\finall p\clash of basu\src\snipercard.cpp
+1580208887 source:d:\finall p\clash of basu\src\snipercard.cpp
 	"../include/SniperCard.h"
 
 1580164085 source:d:\finall p\clash of basu\src\startmenu.cpp

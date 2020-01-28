@@ -2,12 +2,13 @@
 #include <iostream>
 
 using namespace sf;
+using namespace std;
 
 Field::Field()
 {
     tex.loadFromFile("alpha_man icon.png");
     tex.loadFromFile("commander icon.png");
-    hero_Cards = heroC::_None;
+    //hero_Cards = heroC::_None;
     row = 9;
     col = 9;
     ve.x = 82;
@@ -42,7 +43,7 @@ Field::Field()
 /*void Field::Draw_Icons(sf::Vector2f, sf::RenderWindow* window, heroC hc)
 {
 
-    /*if (AMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    if (AMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
             sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::A;
@@ -111,8 +112,8 @@ Field::Field()
                 {
                 case heroC::A :
                 {
-                    tex.loadFromFile("alpha_man icon.png");
-                    spr.setTexture(tex);
+                    //tex.loadFromFile("alpha_man icon.png");
+                    square[i][j].setTexture(&tex);
                     std::cout << static_cast<int>(hc);
                     break;
                 }
@@ -155,12 +156,13 @@ void Field::DrawField(sf::RenderWindow* window)
     }
 }
 
-void Field::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
+void Field::ChooseCards(sf::RenderWindow* window, sf::Vector2f pos, heroC hc)
 {
-    if (AMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    if (AMCobj.getspr().getGlobalBounds().contains(pos) &&
             sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::A;
+        //cout << static_cast<int>(hero_Cards) << endl;
         AMCobj.getspr().setColor(sf::Color::Red);
         window->draw(AMCobj.getspr());
     }
@@ -169,12 +171,14 @@ void Field::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
     {
         hero_Cards = heroC::C;
         CCobj.getspr().setColor(sf::Color::Yellow);
+        //cout << static_cast<int>(hero_Cards) << endl;
         window->draw(CCobj.getspr());
     }
     else if (DRMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::Dr;
+        //cout << static_cast<int>(hero_Cards) << endl;
     }
     else if (GCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
@@ -211,10 +215,7 @@ void Field::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
     {
         hero_Cards = heroC::S;
     }
-    else
-    {
-        hero_Cards = heroC::_None;
-    }
+
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
@@ -226,10 +227,9 @@ void Field::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
                 {
                 case heroC::A :
                 {
-                    tex.loadFromFile("alpha_man icon.png");
-                    spr.setTexture(tex);
-                    spr.setPosition(sf::Vector2f(1080, 200));
                     std::cout << static_cast<int>(hc);
+                    //tex.loadFromFile("alpha_man icon.png");
+                    square[i][j].setTexture(&tex);
                     break;
                 }
                 case heroC::C :
@@ -240,9 +240,9 @@ void Field::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
                 }
                 }
             }
+    window->draw(square[i][j]);
         }
     }
-    window->draw(spr);
 }
 
 unsigned short int& Field::getrow()

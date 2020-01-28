@@ -2,14 +2,17 @@
 #include "SFML/Graphics.hpp"
 #include <iostream>
 
+using namespace std;
+
 MainMenu::MainMenu() : UI_Menu()
 {
     menuName = menus::MM;
     tex.loadFromFile("spartan.jpg");
     spr.setTexture(tex);
+    //tex.loadFromFile("alpha_man icon.png");
     OptionText1();
     textButton1();
-    //hero_Cards = heroC::_None;
+    hero_Cards = heroC::_None;
     //ChooseCards();
     //fieldObj.DrawField(window);
     //MMDisplay(sf::RenderWindow* wind);
@@ -26,7 +29,7 @@ void MainMenu::MouseClicked2(sf::Vector2f pos, menus& CurrentMenu)
 {
     if(optionText1.getGlobalBounds().contains(pos))
     {
-            CurrentMenu = menus::SM;
+        CurrentMenu = menus::SM;
     }
 }
 
@@ -48,7 +51,7 @@ void MainMenu::display(sf::RenderWindow* window, menus &CurrentMenu)
     PCobj.DrawCard(window);
     RCobj.DrawCard(window);
     SCobj.DrawCard(window);
-    fieldObj.ChooseCards(window, static_cast<sf::Vector2f>(sf::Mouse::getPosition()), hero_Cards);
+    ChooseCards(window, static_cast<sf::Vector2f>(sf::Mouse::getPosition()), hero_Cards);
     //std::cout << static_cast<int> (hero_Cards) << std::endl;
     //fieldObj.Draw_Icons(static_cast<sf::Vector2f>(sf::Mouse::getPosition()), window, hero_Cards);
     //fieldObj.SelectedSquare(window);
@@ -89,17 +92,19 @@ void MainMenu::textButton3()
 
 }
 
-/*void MainMenu::ChooseCards()
+/*void MainMenu::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
 {
     if (AMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
             sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::A;
+        //cout << static_cast<int>(hero_Cards) << endl;
     }
     else if (CCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::C;
+        //cout << static_cast<int>(hero_Cards) << endl;
     }
     else if (DRMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
@@ -141,22 +146,38 @@ void MainMenu::textButton3()
     {
         hero_Cards = heroC::S;
     }
-    else
-    {
-        hero_Cards = heroC::_None;
-    }
     for (int i = 0; i < fieldObj.getrow(); i++)
     {
         for (int j = 0; j < fieldObj.getcol(); j++)
         {
             if (fieldObj.square[i][j].getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
-                sf::Mouse::isButtonPressed(sf::Mouse::Left))
+                    sf::Mouse::isButtonPressed(sf::Mouse::Left))
             {
-                fieldObj.Draw_Icons(sf::RenderWindow* window, static_cast<sf::Vector2f>(sf::Mouse::getPosition()), hero_Cards);
+                cout << static_cast<int>(hero_Cards) << endl;
+                switch (hc)
+                {
+                case heroC::A :
+                {
+                    //tex.loadFromFile("alpha_man icon.png");
+                    fieldObj.square[i][j].setTexture(&tex);
+                    break;
+                }
+                case heroC::C :
+                {
+                    tex.loadFromFile("commander icon.png");
+                    spr.setTexture(tex);
+                    break;
+                }
+                case heroC::Dr :
+                    {
+                        tex.loadFromFile("")
+                    }
+                }
             }
+                window->draw(fieldObj.square[i][j]);
         }
-    }
-}*/
+    }*/
+}
 
 /*void MainMenu::Field()
 {
