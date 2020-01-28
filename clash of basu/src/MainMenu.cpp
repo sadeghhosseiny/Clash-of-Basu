@@ -1,5 +1,4 @@
-#include "../include/MainMenu.h"
-#include "SFML/Graphics.hpp"
+#include "MainMenu.h"
 #include <iostream>
 
 using namespace std;
@@ -42,6 +41,10 @@ void MainMenu::MouseClicked2(sf::Vector2f pos, menus& CurrentMenu)
     {
         CurrentMenu = menus::SM;
     }
+    if (optionText2.getGlobalBounds().contains(pos))
+    {
+        CurrentMenu = menus::MM2;
+    }
 }
 
 void MainMenu::display(sf::RenderWindow* window, menus &CurrentMenu)
@@ -65,6 +68,7 @@ void MainMenu::display(sf::RenderWindow* window, menus &CurrentMenu)
     RCobj.DrawCard(window);
     SCobj.DrawCard(window);
     ChooseCards(window, static_cast<sf::Vector2f>(sf::Mouse::getPosition()), hero_Cards);
+    //p1.ChooseCards(window, static_cast<sf::Vector2f>(sf::Mouse::getPosition()), hero_Cards);
     //std::cout << static_cast<int> (hero_Cards) << std::endl;
     //fieldObj.Draw_Icons(static_cast<sf::Vector2f>(sf::Mouse::getPosition()), window, hero_Cards);
     //fieldObj.SelectedSquare(window);
@@ -256,6 +260,15 @@ void MainMenu::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
         }
     }
 }
+
+/*void MainMenu::nx(sf::Vector2f pos, menus& CurrentMenu)
+{
+    if(optionText2.getGlobalBounds().contains(pos))
+    {
+        cout << "gafdag" << endl;
+        _window->draw(spr);
+    }
+}*/
 
 
 

@@ -4,6 +4,7 @@ MenuControl::MenuControl()
 {
    menuVec.push_back(&SMenu1);
    menuVec.push_back(&Mmenu);
+   menuVec.push_back(&Mmenu2);
    //w = window;
 }
 
@@ -31,7 +32,7 @@ void MenuControl::display(sf::RenderWindow* window)
         }
 }
 
-menus& MenuControl::geten()
+/*menus& MenuControl::geten()
 {
     return CurrentMenu;
-}
+}*/

@@ -4,6 +4,7 @@
 #include "UI_Menu.h"
 #include "StartMenu.h"
 #include "MainMenu.h"
+#include "MainMenu2.h"
 #include <vector>
 
 
@@ -13,7 +14,7 @@ public:
     MenuControl();
     void display(sf::RenderWindow* window);
     void MouseClicked(sf::Vector2f pos);
-    menus& geten();
+   // menus& geten();
 
 private:
     menus CurrentMenu = menus::SM;
@@ -21,6 +22,7 @@ private:
     std::vector <UI_Menu*> menuVec;
     StartMenu SMenu1;
     MainMenu Mmenu;
+    MainMenu2 Mmenu2;
     //sf::Vector2f pos;
     //sf::RenderWindow* w;
 

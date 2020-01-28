@@ -45,9 +45,11 @@
 		<Unit filename="include/KratosCard.h" />
 		<Unit filename="include/LeonCard.h" />
 		<Unit filename="include/MainMenu.h" />
+		<Unit filename="include/MainMenu2.h" />
 		<Unit filename="include/MenuControl.h" />
 		<Unit filename="include/MrsGhost.h" />
 		<Unit filename="include/MrsGhostCard.h" />
+		<Unit filename="include/Player.h" />
 		<Unit filename="include/ProfessorCard.h" />
 		<Unit filename="include/RobiCard.h" />
 		<Unit filename="include/SniperCard.h" />
@@ -64,8 +66,10 @@
 		<Unit filename="src/KratosCard.cpp" />
 		<Unit filename="src/LeonCard.cpp" />
 		<Unit filename="src/MainMenu.cpp" />
+		<Unit filename="src/MainMenu2.cpp" />
 		<Unit filename="src/MenuControl.cpp" />
 		<Unit filename="src/MrsGhostCard.cpp" />
+		<Unit filename="src/Player.cpp" />
 		<Unit filename="src/ProfessorCard.cpp" />
 		<Unit filename="src/RobiCard.cpp" />
 		<Unit filename="src/SniperCard.cpp" />

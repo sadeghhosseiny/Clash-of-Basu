@@ -10,6 +10,7 @@
 
 UI_Menu::UI_Menu()
 {
+    //_window = new sf::RenderWindow();
     font.loadFromFile("nightmare.TTF");
     optionText1.setFont(font);
     optionText2.setFont(font);

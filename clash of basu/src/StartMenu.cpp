@@ -18,7 +18,7 @@ StartMenu::StartMenu() : UI_Menu()
     OptionText3();
 }
 
-void StartMenu::display(sf::RenderWindow *window,menus& CurrentMenu)
+void StartMenu::display(sf::RenderWindow *window, menus& CurrentMenu)
 {
     _window = window;
     //MouseClicked1();
@@ -112,13 +112,10 @@ void StartMenu::MouseClicked2(sf::Vector2f pos, menus& CurrentMenu)
     if(optionText1.getGlobalBounds().contains(pos))
     {
         CurrentMenu = menus::MM;
-
     }
     if(optionText3.getGlobalBounds().contains(pos))
     {
-
         _window->close();
-
     }
 
 }

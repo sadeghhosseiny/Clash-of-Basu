@@ -240,17 +240,18 @@
 	<SFML/Graphics.hpp>
 	"include/MenuControl.h"
 
-1580156685 d:\finall p\clash of basu\include\menucontrol.h
+1580239074 d:\finall p\clash of basu\include\menucontrol.h
 	"UI_Menu.h"
 	"StartMenu.h"
 	"MainMenu.h"
+	"MainMenu2.h"
 	<vector>
 
 1580156685 d:\finall p\clash of basu\include\ui_menu.h
 	"SFML/Graphics.hpp"
 	"GeneralDefines.h"
 
-1580156685 d:\finall p\clash of basu\include\generaldefines.h
+1580238909 d:\finall p\clash of basu\include\generaldefines.h
 	"Hero.h"
 	"HeroCards.h"
 	"Field.h"
@@ -270,10 +271,8 @@
 1580156685 d:\finall p\clash of basu\include\herocards.h
 	"SFML/Graphics.hpp"
 
-1580212668 d:\finall p\clash of basu\include\field.h
+1580231409 d:\finall p\clash of basu\include\field.h
 	"SFML/Graphics.hpp"
-	"GeneralDefines.h"
-	"UI_Menu.h"
 	"GeneralDefines.h"
 	"Field.h"
 	"AlphaManCard.h"
@@ -287,7 +286,7 @@
 	"RobiCard.h"
 	"SniperCard.h"
 
-1580156685 d:\finall p\clash of basu\include\alphamancard.h
+1580233038 d:\finall p\clash of basu\include\alphamancard.h
 	"SFML/Graphics.hpp"
 	"HeroCards.h"
 
@@ -321,7 +320,7 @@
 1580156685 d:\finall p\clash of basu\include\startmenu.h
 	"UI_Menu.h"
 
-1580218009 d:\finall p\clash of basu\include\mainmenu.h
+1580235600 d:\finall p\clash of basu\include\mainmenu.h
 	"UI_Menu.h"
 	"GeneralDefines.h"
 	"Field.h"
@@ -335,8 +334,9 @@
 	"ProfessorCard.h"
 	"RobiCard.h"
 	"SniperCard.h"
+	"Player.h"
 
-1580203093 source:d:\finall p\clash of basu\src\alphamancard.cpp
+1580233017 source:d:\finall p\clash of basu\src\alphamancard.cpp
 	"../include/AlphaManCard.h"
 	<iostream>
 
@@ -366,12 +366,11 @@
 1580195223 source:d:\finall p\clash of basu\src\leoncard.cpp
 	"../include/LeonCard.h"
 
-1580216728 source:d:\finall p\clash of basu\src\mainmenu.cpp
-	"../include/MainMenu.h"
-	"SFML/Graphics.hpp"
+1580238839 source:d:\finall p\clash of basu\src\mainmenu.cpp
+	"MainMenu.h"
 	<iostream>
 
-1580156685 source:d:\finall p\clash of basu\src\menucontrol.cpp
+1580239052 source:d:\finall p\clash of basu\src\menucontrol.cpp
 	"../include/MenuControl.h"
 
 1580195265 source:d:\finall p\clash of basu\src\mrsghostcard.cpp
@@ -386,11 +385,49 @@
 1580208887 source:d:\finall p\clash of basu\src\snipercard.cpp
 	"../include/SniperCard.h"
 
-1580164085 source:d:\finall p\clash of basu\src\startmenu.cpp
+1580238648 source:d:\finall p\clash of basu\src\startmenu.cpp
 	"../include/StartMenu.h"
 	<iostream>
 	"../include/MenuControl.h"
 
-1580194850 source:d:\finall p\clash of basu\src\ui_menu.cpp
+1580237417 source:d:\finall p\clash of basu\src\ui_menu.cpp
 	"../include/UI_Menu.h"
+
+1580231715 d:\finall p\clash of basu\include\player.h
+	"GeneralDefines.h"
+	"UI_Menu.h"
+	"Field.h"
+	"AlphaManCard.h"
+	"GiantCrad.h"
+	"CommanderCard.h"
+	"DrMarryCard.h"
+	"KratosCard.h"
+	"LeonCard.h"
+	"MrsGhostCard.h"
+	"ProfessorCard.h"
+	"RobiCard.h"
+	"SniperCard.h"
+
+1580231715 source:d:\finall p\clash of basu\src\player.cpp
+	"Player.h"
+	<iostream>
+
+1580238737 source:d:\finall p\clash of basu\src\mainmenu2.cpp
+	"MainMenu2.h"
+
+1580241721 d:\finall p\clash of basu\include\mainmenu2.h
+	"UI_Menu.h"
+	"GeneralDefines.h"
+	"Field.h"
+	"AlphaManCard.h"
+	"GiantCrad.h"
+	"CommanderCard.h"
+	"DrMarryCard.h"
+	"KratosCard.h"
+	"LeonCard.h"
+	"MrsGhostCard.h"
+	"ProfessorCard.h"
+	"RobiCard.h"
+	"SniperCard.h"
+	"Player.h"
 

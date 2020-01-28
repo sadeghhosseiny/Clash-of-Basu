@@ -2,9 +2,9 @@
 #define FIELD_H
 
 #include "SFML/Graphics.hpp"
-#include "GeneralDefines.h"
+//#include "GeneralDefines.h"
 
-#include "UI_Menu.h"
+/*#include "UI_Menu.h"
 #include "GeneralDefines.h"
 #include "Field.h"
 #include "AlphaManCard.h"
@@ -17,7 +17,7 @@
 #include "ProfessorCard.h"
 #include "RobiCard.h"
 #include "SniperCard.h"
-
+*/
 class Field
 {
 public:
@@ -29,7 +29,7 @@ public:
     unsigned short int& getrow();
     unsigned short int& getcol();
     //void Draw_Icons(sf::Vector2f, sf::RenderWindow*, heroC);
-    void ChooseCards(sf::RenderWindow*, sf::Vector2f, heroC);
+    //void ChooseCards(sf::RenderWindow*, sf::Vector2f, heroC);
 
 private:
     unsigned short int row;
@@ -38,7 +38,7 @@ private:
     sf::Sprite spr;
     sf::Texture tex;
     sf::Texture tex1;
-    AlphaManCard AMCobj;
+    /*AlphaManCard AMCobj;
     GiantCrad GCobj;
     CommanderCard CCobj;
     DrMarryCard DRMCobj;
@@ -48,7 +48,7 @@ private:
     ProfessorCard PCobj;
     RobiCard RCobj;
     SniperCard SCobj;
-    heroC hero_Cards;
+    heroC hero_Cards;*/
 };
 
 #endif // FIELD_H
