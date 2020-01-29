@@ -90,7 +90,7 @@ void MainMenu::textButton1()
 void MainMenu::OptionText2()
 {
     optionText2.setPosition(sf::Vector2f(1700, 900));
-    optionText2.setString("Ok");
+    optionText2.setString("Next Player");
     optionText2.setCharacterSize(60);
     optionText3.setColor(sf::Color::White);
 }
