@@ -321,7 +321,7 @@
 1580156685 d:\finall p\clash of basu\include\startmenu.h
 	"UI_Menu.h"
 
-1580317770 d:\finall p\clash of basu\include\mainmenu.h
+1580321962 d:\finall p\clash of basu\include\mainmenu.h
 	"UI_Menu.h"
 	"GeneralDefines.h"
 	"Field.h"
@@ -338,6 +338,14 @@
 	"Player.h"
 	"AlphaMan.h"
 	"Commander.h"
+	"Giant.h"
+	"DrMarry.h"
+	"Kratos.h"
+	"Leon.h"
+	"MrsGhost.h"
+	"Professor.h"
+	"Robi.h"
+	"Sniper.h"
 
 1580308875 source:d:\finall p\clash of basu\src\alphamancard.cpp
 	"../include/AlphaManCard.h"
@@ -369,7 +377,7 @@
 1580195223 source:d:\finall p\clash of basu\src\leoncard.cpp
 	"../include/LeonCard.h"
 
-1580319579 source:d:\finall p\clash of basu\src\mainmenu.cpp
+1580323219 source:d:\finall p\clash of basu\src\mainmenu.cpp
 	"MainMenu.h"
 	<iostream>
 
@@ -417,11 +425,11 @@
 	"Player.h"
 	<iostream>
 
-1580319817 source:d:\finall p\clash of basu\src\mainmenu2.cpp
+1580328202 source:d:\finall p\clash of basu\src\mainmenu2.cpp
 	"MainMenu2.h"
 	<iostream>
 
-1580319757 d:\finall p\clash of basu\include\mainmenu2.h
+1580328220 d:\finall p\clash of basu\include\mainmenu2.h
 	"UI_Menu.h"
 	"GeneralDefines.h"
 	"Field.h"
@@ -437,6 +445,16 @@
 	"RobiCard.h"
 	"SniperCard.h"
 	"Player.h"
+	"AlphaMan.h"
+	"Commander.h"
+	"Giant.h"
+	"DrMarry.h"
+	"Kratos.h"
+	"Leon.h"
+	"MrsGhost.h"
+	"Professor.h"
+	"Robi.h"
+	"Sniper.h"
 
 1580293087 d:\finall p\clash of basu\include\field2.h
 	"SFML/Graphics.hpp"
@@ -447,60 +465,60 @@
 1580313602 d:\finall p\clash of basu\include\alphaman.h
 	"Hero.h"
 
-1580302717 d:\finall p\clash of basu\include\commander.h
+1580321444 d:\finall p\clash of basu\include\commander.h
 	"Hero.h"
 
-1580315913 source:d:\finall p\clash of basu\src\alphaman.cpp
+1580321384 source:d:\finall p\clash of basu\src\alphaman.cpp
 	"../include/AlphaMan.h"
 
-1580162157 source:d:\finall p\clash of basu\src\commander.cpp
+1580321477 source:d:\finall p\clash of basu\src\commander.cpp
 	"../include/Commander.h"
 
-1580162174 source:d:\finall p\clash of basu\src\drmarry.cpp
+1580322134 source:d:\finall p\clash of basu\src\drmarry.cpp
 	"../include/DrMarry.h"
 
-1580156685 d:\finall p\clash of basu\include\drmarry.h
+1580322067 d:\finall p\clash of basu\include\drmarry.h
 	"Hero.h"
 
-1580302095 source:d:\finall p\clash of basu\src\giant.cpp
+1580322324 source:d:\finall p\clash of basu\src\giant.cpp
 	"Giant.h"
 
-1580302043 d:\finall p\clash of basu\include\giant.h
+1580322287 d:\finall p\clash of basu\include\giant.h
 	"Hero.h"
 
-1580162263 source:d:\finall p\clash of basu\src\kratos.cpp
+1580322410 source:d:\finall p\clash of basu\src\kratos.cpp
 	"../include/Kratos.h"
 
-1580156685 d:\finall p\clash of basu\include\kratos.h
+1580322384 d:\finall p\clash of basu\include\kratos.h
 	"Hero.h"
 
-1580162288 source:d:\finall p\clash of basu\src\leon.cpp
+1580322506 source:d:\finall p\clash of basu\src\leon.cpp
 	"../include/Leon.h"
 
-1580156685 d:\finall p\clash of basu\include\leon.h
+1580322480 d:\finall p\clash of basu\include\leon.h
 	"Hero.h"
 
-1580162313 source:d:\finall p\clash of basu\src\mrsghost.cpp
+1580322600 source:d:\finall p\clash of basu\src\mrsghost.cpp
 	"../include/MrsGhost.h"
 
-1580156685 d:\finall p\clash of basu\include\mrsghost.h
+1580322562 d:\finall p\clash of basu\include\mrsghost.h
 	"Hero.h"
 
-1580162322 source:d:\finall p\clash of basu\src\professor.cpp
+1580322701 source:d:\finall p\clash of basu\src\professor.cpp
 	"../include/Professor.h"
 
-1580156685 d:\finall p\clash of basu\include\professor.h
+1580322654 d:\finall p\clash of basu\include\professor.h
 	"Hero.h"
 
-1580162346 source:d:\finall p\clash of basu\src\robi.cpp
+1580322795 source:d:\finall p\clash of basu\src\robi.cpp
 	"../include/Robi.h"
 
-1580156685 d:\finall p\clash of basu\include\robi.h
+1580322751 d:\finall p\clash of basu\include\robi.h
 	"Hero.h"
 
-1580162368 source:d:\finall p\clash of basu\src\sniper.cpp
+1580322890 source:d:\finall p\clash of basu\src\sniper.cpp
 	"../include/Sniper.h"
 
-1580156685 d:\finall p\clash of basu\include\sniper.h
+1580322840 d:\finall p\clash of basu\include\sniper.h
 	"Hero.h"
 

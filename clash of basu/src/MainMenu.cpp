@@ -128,12 +128,12 @@ void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
     {
         //if (nt.type == sf::Event::EventType::MouseButtonReleased)
         hero_Cards = heroC::A;
-        cout << static_cast<int>(hero_Cards) << endl;
+        //cout << static_cast<int>(hero_Cards) << endl;
     }
     else if (CCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::C;
-        cout << static_cast<int>(hero_Cards) << endl;
+        //cout << static_cast<int>(hero_Cards) << endl;
     }
     else if (DRMCobj.getspr().getGlobalBounds().contains(pos))
     {

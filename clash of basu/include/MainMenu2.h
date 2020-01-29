@@ -16,6 +16,17 @@
 #include "RobiCard.h"
 #include "SniperCard.h"
 #include "Player.h"
+#include "AlphaMan.h"
+#include "Commander.h"
+#include "Giant.h"
+#include "DrMarry.h"
+#include "Kratos.h"
+#include "Leon.h"
+#include "MrsGhost.h"
+#include "Professor.h"
+#include "Robi.h"
+#include "Sniper.h"
+
 
 class MainMenu2 : public UI_Menu
 {
@@ -29,10 +40,10 @@ public:
     virtual void textButton3()override;
     void OptionText1();
     void ChooseCards(sf::Vector2f, heroC);
-
-protected:
+    void setp_on_field2(sf::Vector2i);
 
 private:
+    sf::Vector2i position_on_field2;
     sf::Texture tex1;
     sf::Texture tex2;
     sf::Texture tex3;
@@ -43,6 +54,17 @@ private:
     sf::Texture tex8;
     sf::Texture tex9;
     sf::Texture tex10;
+    AlphaMan aobj;
+    Giant gobj;
+    Commander cobj;
+    DrMarry drmobj;
+    Kratos kobj;
+    Leon lobj;
+    MrsGhost mrsgobj;
+    Professor pobj;
+    Robi robj;
+    Sniper sobj;
+    Player p2;
     AlphaManCard AMCobj;
     Field2 fieldObj2;
     GiantCrad GCobj;
