@@ -38,6 +38,7 @@
 		<Unit filename="include/CommanderCard.h" />
 		<Unit filename="include/DrMarryCard.h" />
 		<Unit filename="include/Field.h" />
+		<Unit filename="include/Field2.h" />
 		<Unit filename="include/GeneralDefines.h" />
 		<Unit filename="include/GiantCrad.h" />
 		<Unit filename="include/Hero.h" />
@@ -60,6 +61,7 @@
 		<Unit filename="src/CommanderCard.cpp" />
 		<Unit filename="src/DrMarryCard.cpp" />
 		<Unit filename="src/Field.cpp" />
+		<Unit filename="src/Field2.cpp" />
 		<Unit filename="src/GiantCrad.cpp" />
 		<Unit filename="src/Hero.cpp" />
 		<Unit filename="src/HeroCards.cpp" />

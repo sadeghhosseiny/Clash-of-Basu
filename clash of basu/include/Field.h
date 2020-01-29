@@ -37,8 +37,8 @@ private:
     sf::Vector2f ve;
     sf::Sprite spr;
     sf::Texture tex;
-    sf::Texture tex1;
     /*AlphaManCard AMCobj;
+    //sf::Texture tex1;
     GiantCrad GCobj;
     CommanderCard CCobj;
     DrMarryCard DRMCobj;

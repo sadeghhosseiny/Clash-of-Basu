@@ -14,7 +14,6 @@ Field::Field()
     ve.x = 82;
     ve.y = 82;
     square = new RectangleShape* [row];
-
     for (int i = 0; i < row; i++)
     {
         square[i] = new RectangleShape [col];

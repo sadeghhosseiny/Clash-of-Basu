@@ -4,6 +4,7 @@
 #include "UI_Menu.h"
 #include "GeneralDefines.h"
 #include "Field.h"
+#include "Field2.h"
 #include "AlphaManCard.h"
 #include "GiantCrad.h"
 #include "CommanderCard.h"
@@ -43,7 +44,7 @@ private:
     sf::Texture tex9;
     sf::Texture tex10;
     AlphaManCard AMCobj;
-    Field fieldObj;
+    Field2 fieldObj2;
     GiantCrad GCobj;
     CommanderCard CCobj;
     DrMarryCard DRMCobj;

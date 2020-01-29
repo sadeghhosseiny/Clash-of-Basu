@@ -37,6 +37,7 @@ void MainMenu2::display(sf::RenderWindow* window, menus &CurrentMenu)
     window->draw(spr);
     window->draw(optionText1);
     textButton1();
+    fieldObj2.DrawField2(window);
     AMCobj.DrawCard(window);
     GCobj.DrawCard(window);
     CCobj.DrawCard(window);
@@ -135,11 +136,11 @@ void MainMenu2::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
         hero_Cards = heroC::S;
     }
 
-    for (int i = 0; i < fieldObj.getrow(); i++)
+    for (int i = 0; i < fieldObj2.getrow(); i++)
     {
-        for (int j = 0; j < fieldObj.getcol(); j++)
+        for (int j = 0; j < fieldObj2.getcol(); j++)
         {
-            if (fieldObj.square[i][j].getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+            if (fieldObj2.square2[i][j].getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
                     sf::Mouse::isButtonPressed(sf::Mouse::Left))
             {
                 //cout << static_cast<int>(hero_Cards) << endl;
@@ -147,63 +148,63 @@ void MainMenu2::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
                 {
                 case heroC::A :
                 {
-                    fieldObj.square[i][j].setTexture(&tex1);
-                    fieldObj.square[i][j].setFillColor(sf::Color::White);
+                    fieldObj2.square2[i][j].setTexture(&tex1);
+                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     break;
                 }
                 case heroC::C :
                 {
                     //tex2.loadFromFile("commander icon.png");
-                    fieldObj.square[i][j].setTexture(&tex2);
-                    fieldObj.square[i][j].setFillColor(sf::Color::White);
+                    fieldObj2.square2[i][j].setTexture(&tex2);
+                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     break;
                 }
                 case heroC::Dr :
                 {
-                    fieldObj.square[i][j].setTexture(&tex3);
-                    fieldObj.square[i][j].setFillColor(sf::Color::White);
+                    fieldObj2.square2[i][j].setTexture(&tex3);
+                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     break;
                 }
                 case heroC::G :
                 {
-                    fieldObj.square[i][j].setTexture(&tex4);
-                    fieldObj.square[i][j].setFillColor(sf::Color::White);
+                    fieldObj2.square2[i][j].setTexture(&tex4);
+                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     break;
                 }
                 case heroC::K :
                 {
-                    fieldObj.square[i][j].setTexture(&tex5);
-                    fieldObj.square[i][j].setFillColor(sf::Color::White);
+                    fieldObj2.square2[i][j].setTexture(&tex5);
+                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     break;
                 }
                 case heroC::L :
                 {
-                    fieldObj.square[i][j].setTexture(&tex6);
-                    fieldObj.square[i][j].setFillColor(sf::Color::White);
+                    fieldObj2.square2[i][j].setTexture(&tex6);
+                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     break;
                 }
                 case heroC::Mrs :
                 {
-                    fieldObj.square[i][j].setTexture(&tex7);
-                    fieldObj.square[i][j].setFillColor(sf::Color::White);
+                    fieldObj2.square2[i][j].setTexture(&tex7);
+                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     break;
                 }
                 case heroC::P :
                 {
-                    fieldObj.square[i][j].setTexture(&tex8);
-                    fieldObj.square[i][j].setFillColor(sf::Color::White);
+                    fieldObj2.square2[i][j].setTexture(&tex8);
+                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     break;
                 }
                 case heroC::R :
                 {
-                    fieldObj.square[i][j].setTexture(&tex9);
-                    fieldObj.square[i][j].setFillColor(sf::Color::White);
+                    fieldObj2.square2[i][j].setTexture(&tex9);
+                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     break;
                 }
                 case heroC::S :
                 {
-                    fieldObj.square[i][j].setTexture(&tex10);
-                    fieldObj.square[i][j].setFillColor(sf::Color::White);
+                    fieldObj2.square2[i][j].setTexture(&tex10);
+                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     break;
                 }
                 default:
@@ -212,7 +213,7 @@ void MainMenu2::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
                 }
                 }
             }
-            window->draw(fieldObj.square[i][j]);
+            window->draw(fieldObj2.square2[i][j]);
         }
     }
 }

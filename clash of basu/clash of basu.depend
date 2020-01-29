@@ -271,7 +271,7 @@
 1580156685 d:\finall p\clash of basu\include\herocards.h
 	"SFML/Graphics.hpp"
 
-1580231409 d:\finall p\clash of basu\include\field.h
+1580293056 d:\finall p\clash of basu\include\field.h
 	"SFML/Graphics.hpp"
 	"GeneralDefines.h"
 	"Field.h"
@@ -346,7 +346,7 @@
 1580195023 source:d:\finall p\clash of basu\src\drmarrycard.cpp
 	"../include/DrMarryCard.h"
 
-1580214518 source:d:\finall p\clash of basu\src\field.cpp
+1580292501 source:d:\finall p\clash of basu\src\field.cpp
 	"../include/Field.h"
 	<iostream>
 
@@ -366,7 +366,7 @@
 1580195223 source:d:\finall p\clash of basu\src\leoncard.cpp
 	"../include/LeonCard.h"
 
-1580238839 source:d:\finall p\clash of basu\src\mainmenu.cpp
+1580248401 source:d:\finall p\clash of basu\src\mainmenu.cpp
 	"MainMenu.h"
 	<iostream>
 
@@ -412,13 +412,14 @@
 	"Player.h"
 	<iostream>
 
-1580243453 source:d:\finall p\clash of basu\src\mainmenu2.cpp
+1580293111 source:d:\finall p\clash of basu\src\mainmenu2.cpp
 	"MainMenu2.h"
 
-1580243433 d:\finall p\clash of basu\include\mainmenu2.h
+1580292887 d:\finall p\clash of basu\include\mainmenu2.h
 	"UI_Menu.h"
 	"GeneralDefines.h"
 	"Field.h"
+	"Field2.h"
 	"AlphaManCard.h"
 	"GiantCrad.h"
 	"CommanderCard.h"
@@ -430,4 +431,10 @@
 	"RobiCard.h"
 	"SniperCard.h"
 	"Player.h"
+
+1580293087 d:\finall p\clash of basu\include\field2.h
+	"SFML/Graphics.hpp"
+
+1580293101 source:d:\finall p\clash of basu\src\field2.cpp
+	"Field2.h"
 
