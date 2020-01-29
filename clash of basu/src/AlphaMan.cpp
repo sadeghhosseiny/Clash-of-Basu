@@ -4,6 +4,7 @@ AlphaMan::AlphaMan()
 {
     Health = 13;
     Damage = 2;
+    //hn = "alphaman";
 }
 
 AlphaMan::~AlphaMan()
@@ -14,4 +15,9 @@ AlphaMan::~AlphaMan()
 void AlphaMan::Strike()
 {
 
+}
+
+AlphaMan* AlphaMan::getpointer()
+{
+    return alphaman;
 }

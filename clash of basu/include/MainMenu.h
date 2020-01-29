@@ -15,6 +15,8 @@
 #include "RobiCard.h"
 #include "SniperCard.h"
 #include "Player.h"
+#include "AlphaMan.h"
+#include "Commander.h"
 
 class MainMenu : public UI_Menu
 {
@@ -28,8 +30,9 @@ public:
     virtual void textButton3()override;
     void OptionText1();
     void OptionText2();
-    void ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC);
+    void ChooseCards(sf::Vector2f, heroC);
     void setp_on_field(sf::Vector2i);
+    //void display2(sf::RenderWindow*, heroC);
     //sf::Vector2i getp();
     //void nx(sf::Vector2f, menus&);
     //void MMDisplay(sf::RenderWindow*);
@@ -47,6 +50,7 @@ private:
     sf::Texture tex9;
     sf::Texture tex10;
     Player p1;
+    AlphaMan alobj;
     //sf::RenderWindow* wind;
     AlphaManCard AMCobj;
     Field fieldObj;

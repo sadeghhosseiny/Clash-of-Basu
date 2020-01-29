@@ -12,7 +12,6 @@ int main()
     sf::Texture tex;
 
     MenuControl Obj;
-    //Field obj;
 
     sf::Sprite spr(tex);
     while (window.isOpen())
@@ -27,10 +26,13 @@ int main()
                 }
             }
             if (event.type == sf::Event::MouseButtonPressed)
+            {
                 if(event.mouseButton.button == sf::Mouse::Left)
+                {
                     Obj.MouseClicked(static_cast<sf::Vector2f>(sf::Mouse::getPosition()));
+                }
+            }
         }
-
         window.clear();
         Obj.display(&window);
         window.display();

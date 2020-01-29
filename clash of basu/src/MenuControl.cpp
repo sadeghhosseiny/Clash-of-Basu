@@ -17,8 +17,6 @@ void MenuControl::MouseClicked(sf::Vector2f pos)
             menu->MouseClicked2(pos, CurrentMenu);
             break;
         }
-
-
 }
 
 void MenuControl::display(sf::RenderWindow* window)

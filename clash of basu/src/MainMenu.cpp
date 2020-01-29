@@ -45,6 +45,9 @@ void MainMenu::MouseClicked2(sf::Vector2f pos, menus& CurrentMenu)
     {
         CurrentMenu = menus::MM2;
     }
+
+    ChooseCards(pos, hero_Cards);
+
 }
 
 void MainMenu::display(sf::RenderWindow* window, menus &CurrentMenu)
@@ -67,7 +70,6 @@ void MainMenu::display(sf::RenderWindow* window, menus &CurrentMenu)
     PCobj.DrawCard(window);
     RCobj.DrawCard(window);
     SCobj.DrawCard(window);
-    ChooseCards(window, static_cast<sf::Vector2f>(sf::Mouse::getPosition()), hero_Cards);
     //p1.ChooseCards(window, static_cast<sf::Vector2f>(sf::Mouse::getPosition()), hero_Cards);
     //std::cout << static_cast<int> (hero_Cards) << std::endl;
     //fieldObj.Draw_Icons(static_cast<sf::Vector2f>(sf::Mouse::getPosition()), window, hero_Cards);
@@ -134,13 +136,13 @@ void MainMenu::textButton3()
 
 }
 
-void MainMenu::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
+void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
 {
-    if (AMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
-            sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    if (AMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(pos)))
     {
+        //if (nt.type == sf::Event::EventType::MouseButtonReleased)
         hero_Cards = heroC::A;
-        //cout << static_cast<int>(hero_Cards) << endl;
+        cout << static_cast<int>(hero_Cards) << endl;
     }
     else if (CCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
@@ -204,6 +206,15 @@ void MainMenu::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
                     fieldObj.square[i][j].setTexture(&tex1);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
+                    p1.getvec().push_back(alobj.getpointer());
+                    /*for (auto& h : p1.getvec())
+                    {
+                        if ())
+                        {
+                            p1.getvec().erase(h);
+                        }
+                    }*/
+                    cout << p1.getvec().size() << endl;
                     //cout << getp().x << endl;
                     break;
                 }
@@ -272,15 +283,16 @@ void MainMenu::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
                     break;
                 }
                 default:
-                    {
+                {
 
-                    }
+                }
                 }
             }
-            window->draw(fieldObj.square[i][j]);
+           //+ window->draw(fieldObj.square[i][j]);
         }
     }
 }
+
 
 /*void MainMenu::nx(sf::Vector2f pos, menus& CurrentMenu)
 {

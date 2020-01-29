@@ -1,6 +1,8 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
+#include "Hero.h"
+#include <vector>
 /*#include "SFML/Graphics.hpp"
 #include "GeneralDefines.h"
 #include "UI_Menu.h"
@@ -21,35 +23,13 @@ class Player
 public:
     Player();
     virtual ~Player();
-    //void ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC);
+    std::vector<Hero*>& getvec();
 
 protected:
 
 private:
-    /*sf::Texture tex1;
-    sf::Texture tex2;
-    sf::Texture tex3;
-    sf::Texture tex4;
-    sf::Texture tex5;
-    sf::Texture tex6;
-    sf::Texture tex7;
-    sf::Texture tex8;
-    sf::Texture tex9;
-    sf::Texture tex10;
-   // Player Player1;
-   // Player Player2;
-    AlphaManCard AMCobj;
-    Field fieldObj;
-    GiantCrad GCobj;
-    CommanderCard CCobj;
-    DrMarryCard DRMCobj;
-    KratosCard KCobj;
-    LeonCard LCobj;
-    MrsGhostCard MRSGCobj;
-    ProfessorCard PCobj;
-    RobiCard RCobj;
-    SniperCard SCobj;
-    heroC hero_Cards;*/
+    std::vector<Hero*>HeroVector;
+
 };
 
 #endif // PLAYER_H

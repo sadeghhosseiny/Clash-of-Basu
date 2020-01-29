@@ -5,14 +5,15 @@
 
 class Commander : public Hero
 {
-    public:
-        Commander();
-        virtual ~Commander();
-        virtual void Strike();
+public:
+    Commander();
+    virtual ~Commander();
+    virtual void Strike();
 
-    protected:
+protected:
 
-    private:
+private:
+    Commander *commander;
 };
 
 #endif // COMMANDER_H
