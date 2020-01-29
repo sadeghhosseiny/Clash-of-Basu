@@ -5,14 +5,14 @@
 
 class Leon : public Hero
 {
-    public:
-        Leon();
-        virtual ~Leon();
-        virtual void Strike();
+public:
+    Leon();
+    virtual ~Leon();
+    virtual void Strike();
+    Leon* getpointer();
 
-    protected:
-
-    private:
+private:
+    Leon* leon;
 };
 
 #endif // LEON_H

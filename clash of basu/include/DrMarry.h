@@ -5,14 +5,14 @@
 
 class DrMarry : public Hero
 {
-    public:
-        DrMarry();
-        virtual ~DrMarry();
-        virtual void Strike();
+public:
+    DrMarry();
+    virtual ~DrMarry();
+    virtual void Strike();
+    DrMarry* getpointer();
 
-    protected:
-
-    private:
+private:
+    DrMarry *drmarry;
 };
 
 #endif // DRMARRY_H

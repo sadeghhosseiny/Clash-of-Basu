@@ -15,3 +15,8 @@ void DrMarry::Strike()
 {
 
 }
+
+DrMarry* DrMarry::getpointer()
+{
+    return drmarry;
+}

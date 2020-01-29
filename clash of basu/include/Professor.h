@@ -5,14 +5,14 @@
 
 class Professor : public Hero
 {
-    public:
-        Professor();
-        virtual ~Professor();
-        virtual void Strike();
+public:
+    Professor();
+    virtual ~Professor();
+    virtual void Strike();
+    Professor* getpointer();
 
-    protected:
-
-    private:
+private:
+    Professor* professor;
 };
 
 #endif // PROFESSOR_H

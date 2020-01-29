@@ -5,14 +5,14 @@
 
 class Sniper : public Hero
 {
-    public:
-        Sniper();
-        virtual ~Sniper();
-        virtual void Strike();
+public:
+    Sniper();
+    virtual ~Sniper();
+    virtual void Strike();
+    Sniper* getpointer();
 
-    protected:
-
-    private:
+private:
+    Sniper* sniper;
 };
 
 #endif // SNIPER_H

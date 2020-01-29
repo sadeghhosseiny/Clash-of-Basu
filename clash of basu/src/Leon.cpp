@@ -15,3 +15,8 @@ void Leon::Strike()
 {
 
 }
+
+Leon* Leon::getpointer()
+{
+    return leon;
+}

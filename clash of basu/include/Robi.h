@@ -5,14 +5,14 @@
 
 class Robi : public Hero
 {
-    public:
-        Robi();
-        virtual ~Robi();
-        virtual void Strike();
+public:
+    Robi();
+    virtual ~Robi();
+    virtual void Strike();
+    Robi* getpointer();
 
-    protected:
-
-    private:
+private:
+    Robi* robi;
 };
 
 #endif // ROBI_H

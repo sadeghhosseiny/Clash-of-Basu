@@ -30,11 +30,6 @@ MainMenu::MainMenu() : UI_Menu()
     //obj().DrawField();
 }
 
-/*void MainMenu::MouseClicked1()
-{
-
-}*/
-
 void MainMenu::MouseClicked2(sf::Vector2f pos, menus& CurrentMenu)
 {
     if(optionText1.getGlobalBounds().contains(pos))
@@ -70,15 +65,7 @@ void MainMenu::display(sf::RenderWindow* window, menus &CurrentMenu)
     RCobj.DrawCard(window);
     SCobj.DrawCard(window);
     //p1.ChooseCards(window, static_cast<sf::Vector2f>(sf::Mouse::getPosition()), hero_Cards);
-    //std::cout << static_cast<int> (hero_Cards) << std::endl;
-    //fieldObj.Draw_Icons(static_cast<sf::Vector2f>(sf::Mouse::getPosition()), window, hero_Cards);
-    //fieldObj.SelectedSquare(window);
 }
-
-/*void MainMenu::MMDisplay(sf::RenderWindow* wind)
-{
-    fieldObj.DrawField(wind);
-}*/
 
 void MainMenu::OptionText1()
 {
@@ -137,55 +124,46 @@ void MainMenu::textButton3()
 
 void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
 {
-    if (AMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(pos)))
+    if (AMCobj.getspr().getGlobalBounds().contains(pos))
     {
         //if (nt.type == sf::Event::EventType::MouseButtonReleased)
         hero_Cards = heroC::A;
         cout << static_cast<int>(hero_Cards) << endl;
     }
-    else if (CCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
-             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    else if (CCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::C;
-        //cout << static_cast<int>(hero_Cards) << endl;
+        cout << static_cast<int>(hero_Cards) << endl;
     }
-    else if (DRMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
-             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    else if (DRMCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::Dr;
     }
-    else if (GCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
-             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    else if (GCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::G;
     }
-    else if (KCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
-             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    else if (KCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::K;
     }
-    else if (LCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
-             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    else if (LCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::L;
     }
-    else if (MRSGCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
-             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    else if (MRSGCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::Mrs;
     }
-    else if (PCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
-             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    else if (PCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::P;
     }
-    else if (RCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
-             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    else if (RCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::R;
     }
-    else if (SCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
-             sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    else if (SCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::S;
     }
@@ -194,8 +172,7 @@ void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
     {
         for (int j = 0; j < fieldObj.getcol(); j++)
         {
-            if (fieldObj.square[i][j].getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
-                    sf::Mouse::isButtonPressed(sf::Mouse::Left))
+            if (fieldObj.square[i][j].getGlobalBounds().contains(pos))
             {
                 //cout << static_cast<int>(hero_Cards) << endl;
                 switch (hc)
@@ -205,15 +182,8 @@ void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
                     fieldObj.square[i][j].setTexture(&tex1);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
-                    p1.getvec().push_back(alobj.getpointer());
-                    /*for (auto& h : p1.getvec())
-                    {
-                        if ())
-                        {
-                            p1.getvec().erase(h);
-                        }
-                    }*/
-                    cout << p1.getvec().size() << endl;
+                    p1.getvec().push_back(aobj.getpointer());
+                    //cout << p1.getvec().size() << endl;
                     //cout << getp().x << endl;
                     break;
                 }
@@ -223,6 +193,7 @@ void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
                     fieldObj.square[i][j].setTexture(&tex2);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
+                    p1.getvec().push_back(cobj.getpointer());
                     break;
                 }
                 case heroC::Dr :
@@ -230,6 +201,7 @@ void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
                     fieldObj.square[i][j].setTexture(&tex3);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
+                    p1.getvec().push_back(drmobj.getpointer());
                     break;
                 }
                 case heroC::G :
@@ -237,6 +209,7 @@ void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
                     fieldObj.square[i][j].setTexture(&tex4);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
+                    p1.getvec().push_back(gobj.getpointer());
                     break;
                 }
                 case heroC::K :
@@ -244,6 +217,7 @@ void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
                     fieldObj.square[i][j].setTexture(&tex5);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
+                    p1.getvec().push_back(kobj.getpointer());
                     break;
                 }
                 case heroC::L :
@@ -251,6 +225,7 @@ void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
                     fieldObj.square[i][j].setTexture(&tex6);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
+                    p1.getvec().push_back(lobj.getpointer());
                     break;
                 }
                 case heroC::Mrs :
@@ -258,6 +233,7 @@ void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
                     fieldObj.square[i][j].setTexture(&tex7);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
+                    p1.getvec().push_back(mrsgobj.getpointer());
                     break;
                 }
                 case heroC::P :
@@ -265,6 +241,7 @@ void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
                     fieldObj.square[i][j].setTexture(&tex8);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
+                    p1.getvec().push_back(pobj.getpointer());
                     break;
                 }
                 case heroC::R :
@@ -272,6 +249,7 @@ void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
                     fieldObj.square[i][j].setTexture(&tex9);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
+                    p1.getvec().push_back(robj.getpointer());
                     break;
                 }
                 case heroC::S :
@@ -279,6 +257,7 @@ void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
                     fieldObj.square[i][j].setTexture(&tex10);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
+                    p1.getvec().push_back(sobj.getpointer());
                     break;
                 }
                 default:

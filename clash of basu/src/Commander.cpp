@@ -15,3 +15,8 @@ void Commander::Strike()
 {
 
 }
+
+Commander* Commander::getpointer()
+{
+    return commander;
+}

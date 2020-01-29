@@ -9,13 +9,10 @@ public:
     Giant();
     virtual ~Giant();
     virtual void Strike();
-
-protected:
+    Giant* getpointer();
 
 private:
-    unsigned short int Health;
-    unsigned short int Damage;
-
+    Giant* giant;
 };
 
 #endif // GIANT_H

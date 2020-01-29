@@ -15,3 +15,8 @@ void Kratos::Strike()
 {
 
 }
+
+Kratos* Kratos::getpointer()
+{
+    return kratos;
+}

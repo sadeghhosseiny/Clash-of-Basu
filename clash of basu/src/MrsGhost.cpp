@@ -15,3 +15,8 @@ void MrsGhost::Strike()
 {
 
 }
+
+MrsGhost* MrsGhost::getpointer()
+{
+    return mrsghost;
+}

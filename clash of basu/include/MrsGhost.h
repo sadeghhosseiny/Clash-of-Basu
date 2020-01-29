@@ -5,14 +5,14 @@
 
 class MrsGhost : public Hero
 {
-    public:
-        MrsGhost();
-        virtual ~MrsGhost();
-        virtual void Strike();
+public:
+    MrsGhost();
+    virtual ~MrsGhost();
+    virtual void Strike();
+    MrsGhost* getpointer();
 
-    protected:
-
-    private:
+private:
+    MrsGhost* mrsghost;
 };
 
 #endif // MRSGHOST_H

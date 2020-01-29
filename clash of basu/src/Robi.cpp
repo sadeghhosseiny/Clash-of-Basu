@@ -15,3 +15,8 @@ void Robi::Strike()
 {
 
 }
+
+Robi* Robi::getpointer()
+{
+    return robi;
+}

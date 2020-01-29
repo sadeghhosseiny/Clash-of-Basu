@@ -15,3 +15,8 @@ void Giant::Strike()
 {
 
 }
+
+Giant* Giant::getpointer()
+{
+    return giant;
+}

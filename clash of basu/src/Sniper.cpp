@@ -15,3 +15,8 @@ void Sniper::Strike()
 {
 
 }
+
+Sniper* Sniper::getpointer()
+{
+    return sniper;
+}

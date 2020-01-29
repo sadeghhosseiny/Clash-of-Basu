@@ -9,8 +9,7 @@ public:
     Commander();
     virtual ~Commander();
     virtual void Strike();
-
-protected:
+    Commander* getpointer();
 
 private:
     Commander *commander;

@@ -5,14 +5,14 @@
 
 class Kratos : public Hero
 {
-    public:
-        Kratos();
-        virtual ~Kratos();
-        virtual void Strike();
+public:
+    Kratos();
+    virtual ~Kratos();
+    virtual void Strike();
+    Kratos* getpointer();
 
-    protected:
-
-    private:
+private:
+    Kratos* kratos;
 };
 
 #endif // KRATOS_H

@@ -15,3 +15,8 @@ void Professor::Strike()
 {
 
 }
+
+Professor* Professor::getpointer()
+{
+    return professor;
+}
