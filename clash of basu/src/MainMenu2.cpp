@@ -1,4 +1,7 @@
 #include "MainMenu2.h"
+#include <iostream>
+
+using namespace std;
 
 MainMenu2::MainMenu2() : UI_Menu()
 {
@@ -30,6 +33,7 @@ void MainMenu2::MouseClicked2(sf::Vector2f pos, menus& CurrentMenu)
     {
         CurrentMenu = menus::MM;
     }
+    ChooseCards(static_cast<sf::Vector2f>(sf::Mouse::getPosition()), hero_Cards);
 }
 
 void MainMenu2::display(sf::RenderWindow* window, menus &CurrentMenu)
@@ -48,7 +52,6 @@ void MainMenu2::display(sf::RenderWindow* window, menus &CurrentMenu)
     PCobj.DrawCard(window);
     RCobj.DrawCard(window);
     SCobj.DrawCard(window);
-    ChooseCards(window, static_cast<sf::Vector2f>(sf::Mouse::getPosition()), hero_Cards);
 }
 
 void MainMenu2::OptionText1()
@@ -81,13 +84,13 @@ void MainMenu2::textButton3()
 {
 
 }
-void MainMenu2::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
+void MainMenu2::ChooseCards(sf::Vector2f, heroC hc)
 {
     if (AMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
             sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::A;
-        //cout << static_cast<int>(hero_Cards) << endl;
+        cout << static_cast<int>(hero_Cards) << endl;
     }
     else if (CCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
@@ -213,7 +216,7 @@ void MainMenu2::ChooseCards(sf::RenderWindow* window, sf::Vector2f, heroC hc)
                 }
                 }
             }
-            window->draw(fieldObj2.square2[i][j]);
+            //window->draw(fieldObj2.square2[i][j]);
         }
     }
 }

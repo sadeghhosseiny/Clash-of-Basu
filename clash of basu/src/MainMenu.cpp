@@ -47,7 +47,6 @@ void MainMenu::MouseClicked2(sf::Vector2f pos, menus& CurrentMenu)
     }
 
     ChooseCards(pos, hero_Cards);
-
 }
 
 void MainMenu::display(sf::RenderWindow* window, menus &CurrentMenu)
