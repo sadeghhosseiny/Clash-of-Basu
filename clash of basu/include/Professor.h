@@ -10,6 +10,9 @@ public:
     virtual ~Professor();
     virtual void Strike();
     Professor* getpointer();
+    void setp_on_field(sf::Vector2i);
+    sf::Vector2i position_on_field;
+
 
 private:
     Professor* professor;

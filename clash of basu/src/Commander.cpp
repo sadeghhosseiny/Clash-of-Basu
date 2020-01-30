@@ -20,3 +20,9 @@ Commander* Commander::getpointer()
 {
     return commander;
 }
+
+void Commander::setp_on_field(sf::Vector2i position)
+{
+    position_on_field = position;
+}
+

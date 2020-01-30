@@ -20,3 +20,8 @@ DrMarry* DrMarry::getpointer()
 {
     return drmarry;
 }
+
+void DrMarry::setp_on_field(sf::Vector2i position)
+{
+    position_on_field = position;
+}

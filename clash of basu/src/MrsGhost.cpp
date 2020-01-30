@@ -20,3 +20,8 @@ MrsGhost* MrsGhost::getpointer()
 {
     return mrsghost;
 }
+
+void MrsGhost::setp_on_field(sf::Vector2i position)
+{
+    position_on_field = position;
+}

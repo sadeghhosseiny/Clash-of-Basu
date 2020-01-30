@@ -20,3 +20,8 @@ Leon* Leon::getpointer()
 {
     return leon;
 }
+
+void Leon::setp_on_field(sf::Vector2i position)
+{
+    position_on_field = position;
+}

@@ -10,6 +10,9 @@ public:
     virtual ~Sniper();
     virtual void Strike();
     Sniper* getpointer();
+    void setp_on_field(sf::Vector2i);
+    sf::Vector2i position_on_field;
+
 
 private:
     Sniper* sniper;

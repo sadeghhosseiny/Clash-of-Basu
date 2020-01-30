@@ -20,6 +20,7 @@ MainMenu2::MainMenu2() : UI_Menu()
     hero_Cards = heroC::_None;
     spr.setTexture(tex);
     OptionText1();
+    OptionText2();
 }
 
 MainMenu2::~MainMenu2()
@@ -33,15 +34,29 @@ void MainMenu2::MouseClicked2(sf::Vector2f pos, menus& CurrentMenu)
     {
         CurrentMenu = menus::MM;
     }
+
     ChooseCards(static_cast<sf::Vector2f>(sf::Mouse::getPosition()), hero_Cards);
+
+    if (optionText2.getGlobalBounds().contains(pos))
+    {
+        CurrentMenu = menus::BM;
+    }
+    /*if (optionText2.getGlobalBounds().contains(pos))
+    {
+        CurrentMenu = menus::MM;
+        mmobj.HiddenCards(mmobj.getp_on_field());
+    }*/
 }
 
 void MainMenu2::display(sf::RenderWindow* window, menus &CurrentMenu)
 {
+    _window = window;
     window->draw(spr);
     window->draw(optionText1);
+    window->draw(optionText2);
     textButton1();
-    fieldObj2.DrawField2(window);
+    textButton2();
+    fieldobj2.DrawField2(window);
     AMCobj.DrawCard(window);
     GCobj.DrawCard(window);
     CCobj.DrawCard(window);
@@ -60,9 +75,16 @@ void MainMenu2::OptionText1()
     optionText1.setString("Back");
     optionText1.setCharacterSize(60);
     optionText1.setColor(sf::Color::White);
-
-
 }
+
+void MainMenu2::OptionText2()
+{
+    optionText2.setPosition(sf::Vector2f(1600, 900));
+    optionText2.setString("Lets Battle");
+    optionText2.setCharacterSize(60);
+    optionText2.setColor(sf::Color::White);
+}
+
 void MainMenu2::textButton1()
 {
     if (optionText1.getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())))
@@ -77,7 +99,14 @@ void MainMenu2::textButton1()
 
 void MainMenu2::textButton2()
 {
-
+    if (optionText2.getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())))
+    {
+        optionText2.setColor(sf::Color::Magenta);
+    }
+    else
+    {
+        optionText2.setColor(sf::Color::White);
+    }
 }
 
 void MainMenu2::textButton3()
@@ -152,15 +181,15 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC hc)
         hero_Cards = heroC::S;
     }
 
-    for (int i = 0; i < fieldObj2.getrow(); i++)
+    for (int i = 0; i < fieldobj2.getrow(); i++)
     {
         if (counter2 == 5)
         {
             break;
         }
-        for (int j = 0; j < fieldObj2.getcol(); j++)
+        for (int j = 0; j < fieldobj2.getcol(); j++)
         {
-            if (fieldObj2.square2[i][j].getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+            if (fieldobj2.square2[i][j].getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
                     sf::Mouse::isButtonPressed(sf::Mouse::Left))
             {
                 if (counter2 == 5)
@@ -174,10 +203,10 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC hc)
                 {
                     if (a2 == 0)
                     {
-                    fieldObj2.square2[i][j].setTexture(&tex1);
-                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
-                    setp_on_field2(sf::Vector2i(i, j));
-                    p2.getvec().push_back(aobj.getpointer());
+                    fieldobj2.square2[i][j].setTexture(&tex1);
+                    fieldobj2.square2[i][j].setFillColor(sf::Color::White);
+                    p2.aobj.setp_on_field(sf::Vector2i(i, j));
+                    p2.getvec().push_back(p2.aobj.getpointer());
                     counter2++;
                     a2++;
                     }
@@ -188,10 +217,10 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC hc)
                 {
                     if(c2 == 0)
                     {
-                    fieldObj2.square2[i][j].setTexture(&tex2);
-                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
-                    setp_on_field2(sf::Vector2i(i, j));
-                    p2.getvec().push_back(cobj.getpointer());
+                    fieldobj2.square2[i][j].setTexture(&tex2);
+                    fieldobj2.square2[i][j].setFillColor(sf::Color::White);
+                    p2.cobj.setp_on_field(sf::Vector2i(i, j));
+                    p2.getvec().push_back(p2.cobj.getpointer());
                     counter2++;
                     c2++;
                     }
@@ -202,10 +231,10 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC hc)
                 {
                     if (dr2 == 0)
                     {
-                    fieldObj2.square2[i][j].setTexture(&tex3);
-                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
-                    setp_on_field2(sf::Vector2i(i, j));
-                    p2.getvec().push_back(drmobj.getpointer());
+                    fieldobj2.square2[i][j].setTexture(&tex3);
+                    fieldobj2.square2[i][j].setFillColor(sf::Color::White);
+                    p2.drmobj.setp_on_field(sf::Vector2i(i, j));
+                    p2.getvec().push_back(p2.drmobj.getpointer());
                     counter2++;
                     dr2++;
                     }
@@ -216,10 +245,10 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC hc)
                 {
                     if (g2 == 0)
                     {
-                    fieldObj2.square2[i][j].setTexture(&tex4);
-                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
-                    setp_on_field2(sf::Vector2i(i, j));
-                    p2.getvec().push_back(gobj.getpointer());
+                    fieldobj2.square2[i][j].setTexture(&tex4);
+                    fieldobj2.square2[i][j].setFillColor(sf::Color::White);
+                    p2.gobj.setp_on_field(sf::Vector2i(i, j));
+                    p2.getvec().push_back(p2.gobj.getpointer());
                     counter2++;
                     g2++;
                     }
@@ -230,24 +259,24 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC hc)
                 {
                     if (k2 == 0)
                     {
-                    fieldObj2.square2[i][j].setTexture(&tex5);
-                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
-                    setp_on_field2(sf::Vector2i(i, j));
-                    p2.getvec().push_back(kobj.getpointer());
+                    fieldobj2.square2[i][j].setTexture(&tex5);
+                    fieldobj2.square2[i][j].setFillColor(sf::Color::White);
+                    p2.kobj.setp_on_field(sf::Vector2i(i, j));
+                    p2.getvec().push_back(p2.kobj.getpointer());
                     counter2++;
                     k2++;
                     }
                     //cout << c << endl;
-                    //break;
+                    break;
                 }
                 case heroC::L :
                 {
                     if (l2 == 0)
                     {
-                    fieldObj2.square2[i][j].setTexture(&tex6);
-                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
-                    setp_on_field2(sf::Vector2i(i, j));
-                    p2.getvec().push_back(lobj.getpointer());
+                    fieldobj2.square2[i][j].setTexture(&tex6);
+                    fieldobj2.square2[i][j].setFillColor(sf::Color::White);
+                    p2.lobj.setp_on_field(sf::Vector2i(i, j));
+                    p2.getvec().push_back(p2.lobj.getpointer());
                     counter2++;
                     l2++;
                     }
@@ -258,10 +287,10 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC hc)
                 {
                     if (mrs2 == 0)
                     {
-                    fieldObj2.square2[i][j].setTexture(&tex7);
-                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
-                    setp_on_field2(sf::Vector2i(i, j));
-                    p2.getvec().push_back(mrsgobj.getpointer());
+                    fieldobj2.square2[i][j].setTexture(&tex7);
+                    fieldobj2.square2[i][j].setFillColor(sf::Color::White);
+                    p2.mrsgobj.setp_on_field(sf::Vector2i(i, j));
+                    p2.getvec().push_back(p2.mrsgobj.getpointer());
                     counter2++;
                     mrs2++;
                     }
@@ -276,10 +305,10 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC hc)
                     */
                     if (pp == 0)
                     {
-                    fieldObj2.square2[i][j].setTexture(&tex8);
-                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
-                    setp_on_field2(sf::Vector2i(i, j));
-                    p2.getvec().push_back(pobj.getpointer());
+                    fieldobj2.square2[i][j].setTexture(&tex8);
+                    fieldobj2.square2[i][j].setFillColor(sf::Color::White);
+                    p2.pobj.setp_on_field(sf::Vector2i(i, j));
+                    p2.getvec().push_back(p2.pobj.getpointer());
                     counter2++;
                     pp++;
                     }
@@ -290,10 +319,10 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC hc)
                 {
                     if (r2 == 0)
                     {
-                    fieldObj2.square2[i][j].setTexture(&tex9);
-                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
-                    setp_on_field2(sf::Vector2i(i, j));
-                    p2.getvec().push_back(robj.getpointer());
+                    fieldobj2.square2[i][j].setTexture(&tex9);
+                    fieldobj2.square2[i][j].setFillColor(sf::Color::White);
+                    p2.robj.setp_on_field(sf::Vector2i(i, j));
+                    p2.getvec().push_back(p2.robj.getpointer());
                     counter2++;
                     r2++;
                     }
@@ -304,10 +333,10 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC hc)
                 {
                     if (s2 == 0)
                     {
-                    fieldObj2.square2[i][j].setTexture(&tex10);
-                    fieldObj2.square2[i][j].setFillColor(sf::Color::White);
-                    setp_on_field2(sf::Vector2i(i, j));
-                    p2.getvec().push_back(sobj.getpointer());
+                    fieldobj2.square2[i][j].setTexture(&tex10);
+                    fieldobj2.square2[i][j].setFillColor(sf::Color::White);
+                    p2.sobj.setp_on_field(sf::Vector2i(i, j));
+                    p2.getvec().push_back(p2.sobj.getpointer());
                     counter2++;
                     s2++;
                     }
@@ -325,13 +354,23 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC hc)
     }
 }
 
-void MainMenu2::setp_on_field2(sf::Vector2i position)
+/*void MainMenu2::setp_on_field2(sf::Vector2i position)
 {
     //you can also use 'this->' instead of define position
     //it means : this->position_on_field2 = position_on_field2
     position_on_field2 = position;
-}
+}*/
 
+/*void MainMenu2::HiddenCards(sf::Vector2f pos, sf::Vector2i p_on_f)
+{
+    for (int i = 0; i < fieldObj2.row; i++)
+    {
+        for (int j = 0; j < fieldObj2.col; j++)
+        {
+
+        }
+    }
+}*/
 
 
 

@@ -5,6 +5,7 @@
 #include "StartMenu.h"
 #include "MainMenu.h"
 #include "MainMenu2.h"
+#include "BattleMenu.h"
 #include <vector>
 
 
@@ -23,6 +24,7 @@ private:
     StartMenu SMenu1;
     MainMenu Mmenu;
     MainMenu2 Mmenu2;
+    BattleMenu Bmenu;
     //sf::Vector2f pos;
     //sf::RenderWindow* w;
 

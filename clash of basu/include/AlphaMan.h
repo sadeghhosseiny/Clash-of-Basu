@@ -10,8 +10,8 @@ public:
     virtual ~AlphaMan();
     virtual void Strike();
     AlphaMan* getpointer();
-
-protected:
+    void setp_on_field(sf::Vector2i);
+    sf::Vector2i position_on_field;
 
 private:
     AlphaMan* alphaman;

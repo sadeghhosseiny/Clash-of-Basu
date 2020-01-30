@@ -10,6 +10,9 @@ public:
     virtual ~Kratos();
     virtual void Strike();
     Kratos* getpointer();
+    void setp_on_field(sf::Vector2i);
+    sf::Vector2i position_on_field;
+
 
 private:
     Kratos* kratos;

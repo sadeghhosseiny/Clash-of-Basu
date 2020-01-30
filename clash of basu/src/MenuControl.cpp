@@ -5,6 +5,7 @@ MenuControl::MenuControl()
    menuVec.push_back(&SMenu1);
    menuVec.push_back(&Mmenu);
    menuVec.push_back(&Mmenu2);
+   menuVec.push_back(&Bmenu);
    //w = window;
 }
 
@@ -17,6 +18,10 @@ void MenuControl::MouseClicked(sf::Vector2f pos)
             menu->MouseClicked2(pos, CurrentMenu);
             break;
         }
+
+        Bmenu.p1ptr = &Mmenu.p1;
+        Bmenu.p2ptr = &Mmenu.p2;
+
 }
 
 void MenuControl::display(sf::RenderWindow* window)

@@ -1,8 +1,10 @@
 #ifndef UI_MENU_H
 #define UI_MENU_H
 #include "SFML/Graphics.hpp"
-
+#include "Field.h"
+#include "Field2.h"
 #include "GeneralDefines.h"
+#include "Player.h"
 
 //enum class menus{SM = 0, MM};
 
@@ -17,6 +19,12 @@ public:
     virtual void textButton2() = 0;
     virtual void textButton3() = 0;
     menus getName();
+    Player* p1ptr;
+    Player* p2ptr;
+    Player p1;
+    Player p2;
+    Field fieldobj;
+    Field2 fieldobj2;
 protected:
     sf::Text optionText1;
     sf::Text optionText2;
@@ -26,6 +34,5 @@ protected:
     sf::Font font;
     sf::RenderWindow* _window;
     menus menuName;
-
 };
 #endif // UI_MENU_H

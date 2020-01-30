@@ -3,7 +3,7 @@
 
 #include "UI_Menu.h"
 #include "GeneralDefines.h"
-#include "Field.h"
+//#include "Field.h"
 #include "AlphaManCard.h"
 #include "GiantCrad.h"
 #include "CommanderCard.h"
@@ -15,7 +15,7 @@
 #include "RobiCard.h"
 #include "SniperCard.h"
 #include "Player.h"
-#include "AlphaMan.h"
+/*#include "AlphaMan.h"
 #include "Commander.h"
 #include "Giant.h"
 #include "DrMarry.h"
@@ -25,7 +25,7 @@
 #include "Professor.h"
 #include "Robi.h"
 #include "Sniper.h"
-
+*/
 class MainMenu : public UI_Menu
 {
 public:
@@ -39,14 +39,15 @@ public:
     void OptionText1();
     void OptionText2();
     void ChooseCards(sf::Vector2f, heroC);
-    void setp_on_field(sf::Vector2i);
+    //void setp_on_field(sf::Vector2i);
+    //void HiddenCards(sf::Vector2i);
+    //sf::Vector2i& getp_on_field();
     //void display2(sf::RenderWindow*, heroC);
-    //sf::Vector2i getp();
     //void nx(sf::Vector2f, menus&);
     //void MMDisplay(sf::RenderWindow*);
     //void Field();
 private:
-    sf::Vector2i position_on_field;
+    //sf::Vector2i position_on_field;
     sf::Texture tex1;
     sf::Texture tex2;
     sf::Texture tex3;
@@ -57,8 +58,7 @@ private:
     sf::Texture tex8;
     sf::Texture tex9;
     sf::Texture tex10;
-    Player p1;
-    AlphaMan aobj;
+    /*AlphaMan aobj;
     Giant gobj;
     Commander cobj;
     DrMarry drmobj;
@@ -67,10 +67,10 @@ private:
     MrsGhost mrsgobj;
     Professor pobj;
     Robi robj;
-    Sniper sobj;
+    Sniper sobj;*/
     //sf::RenderWindow* wind;
     AlphaManCard AMCobj;
-    Field fieldObj;
+    //Field fieldObj;
     GiantCrad GCobj;
     CommanderCard CCobj;
     DrMarryCard DRMCobj;

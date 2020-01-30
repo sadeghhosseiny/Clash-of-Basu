@@ -10,6 +10,9 @@ public:
     virtual ~DrMarry();
     virtual void Strike();
     DrMarry* getpointer();
+    void setp_on_field(sf::Vector2i);
+    sf::Vector2i position_on_field;
+
 
 private:
     DrMarry *drmarry;
