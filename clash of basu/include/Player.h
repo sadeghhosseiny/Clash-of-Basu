@@ -35,6 +35,7 @@ public:
     Player();
     virtual ~Player();
     std::vector<Hero*>& getvec();
+    void setvec(Hero*);
     AlphaMan aobj;
     Commander cobj;
     Giant gobj;

@@ -2,11 +2,10 @@
 #define BATTLEMENU_H
 
 #include "UI_Menu.h"
-#include "GeneralDefines.h"
 //#include "Field.h"
 //#include "Field2.h"
 #include "MainMenu.h"
-#include "Player.h"
+#include "Hero.h"
 
 class BattleMenu : public UI_Menu
 {
@@ -21,8 +20,18 @@ public:
     void situation(sf::Vector2f);
 
 private:
-    sf::Texture texbm1;
-    MainMenu mmobj;
+    sf::Texture tex1;
+    sf::Texture tex2;
+    sf::Texture tex3;
+    sf::Texture tex4;
+    sf::Texture tex5;
+    sf::Texture tex6;
+    sf::Texture tex7;
+    sf::Texture tex8;
+    sf::Texture tex9;
+    sf::Texture tex10;
+    //heroC hero_Cards;
+    //MainMenu mmobj;
 };
 
 #endif // BATTLEMENU_H

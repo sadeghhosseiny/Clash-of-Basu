@@ -16,3 +16,8 @@ vector<Hero*>& Player::getvec()
 {
     return HeroVector;
 }
+
+void Player::setvec(Hero* heros)
+{
+    HeroVector.push_back(heros);
+}

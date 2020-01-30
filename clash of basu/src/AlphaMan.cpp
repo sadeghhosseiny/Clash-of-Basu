@@ -2,8 +2,10 @@
 
 AlphaMan::AlphaMan()
 {
+    //heroName = heroC::A;
     Health = 13;
     Damage = 2;
+    heroname = "alphaman";
 }
 
 AlphaMan::~AlphaMan()
@@ -25,3 +27,8 @@ void AlphaMan::setp_on_field(sf::Vector2i position)
 {
     position_on_field = position;
 }
+
+/*heroC AlphaMan::get_hero_name()
+{
+    return heroName;
+}*/

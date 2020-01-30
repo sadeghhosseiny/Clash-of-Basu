@@ -270,7 +270,7 @@
 	"RobiCard.h"
 	"SniperCard.h"
 
-1580397773 d:\finall p\clash of basu\include\hero.h
+1580415309 d:\finall p\clash of basu\include\hero.h
 	"SFML/Graphics.hpp"
 
 1580156685 d:\finall p\clash of basu\include\herocards.h
@@ -379,11 +379,12 @@
 1580195223 source:d:\finall p\clash of basu\src\leoncard.cpp
 	"../include/LeonCard.h"
 
-1580407432 source:d:\finall p\clash of basu\src\mainmenu.cpp
+1580421641 source:d:\finall p\clash of basu\src\mainmenu.cpp
 	"MainMenu.h"
 	<iostream>
+	<typeinfo>
 
-1580409512 source:d:\finall p\clash of basu\src\menucontrol.cpp
+1580410982 source:d:\finall p\clash of basu\src\menucontrol.cpp
 	"../include/MenuControl.h"
 
 1580195265 source:d:\finall p\clash of basu\src\mrsghostcard.cpp
@@ -406,7 +407,7 @@
 1580237417 source:d:\finall p\clash of basu\src\ui_menu.cpp
 	"../include/UI_Menu.h"
 
-1580405273 d:\finall p\clash of basu\include\player.h
+1580419534 d:\finall p\clash of basu\include\player.h
 	"Hero.h"
 	<vector>
 	"GeneralDefines.h"
@@ -433,7 +434,7 @@
 	"Robi.h"
 	"Sniper.h"
 
-1580303806 source:d:\finall p\clash of basu\src\player.cpp
+1580419623 source:d:\finall p\clash of basu\src\player.cpp
 	"Player.h"
 	<iostream>
 
@@ -471,13 +472,13 @@
 1580375765 source:d:\finall p\clash of basu\src\field2.cpp
 	"Field2.h"
 
-1580403901 d:\finall p\clash of basu\include\alphaman.h
+1580414665 d:\finall p\clash of basu\include\alphaman.h
 	"Hero.h"
 
 1580398905 d:\finall p\clash of basu\include\commander.h
 	"Hero.h"
 
-1580409523 source:d:\finall p\clash of basu\src\alphaman.cpp
+1580418417 source:d:\finall p\clash of basu\src\alphaman.cpp
 	"../include/AlphaMan.h"
 
 1580398828 source:d:\finall p\clash of basu\src\commander.cpp
@@ -531,13 +532,12 @@
 1580398905 d:\finall p\clash of basu\include\sniper.h
 	"Hero.h"
 
-1580409512 d:\finall p\clash of basu\include\battlemenu.h
+1580420193 d:\finall p\clash of basu\include\battlemenu.h
 	"UI_Menu.h"
-	"GeneralDefines.h"
 	"MainMenu.h"
-	"Player.h"
+	"Hero.h"
 
-1580409585 source:d:\finall p\clash of basu\src\battlemenu.cpp
+1580419976 source:d:\finall p\clash of basu\src\battlemenu.cpp
 	"BattleMenu.h"
 	<iostream>
 

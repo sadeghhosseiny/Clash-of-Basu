@@ -12,9 +12,12 @@ public:
     AlphaMan* getpointer();
     void setp_on_field(sf::Vector2i);
     sf::Vector2i position_on_field;
+    //heroC get_hero_name();
+    //string heroname;
 
 private:
     AlphaMan* alphaman;
+    //heroC heroName;
 };
 
 #endif // ALPHAMAN_H
