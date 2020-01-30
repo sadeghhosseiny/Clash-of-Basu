@@ -84,6 +84,19 @@ void MainMenu2::textButton3()
 {
 
 }
+
+int counter2 = 0;
+int a2 = 0;
+int c2 = 0;
+int dr2 = 0;
+int g2 = 0;
+int k2 = 0;
+int l2 = 0;
+int mrs2 = 0;
+int pp = 0; //i have p2 object from Player class so i should declare this as pp
+int r2 = 0;
+int s2 = 0;
+
 void MainMenu2::ChooseCards(sf::Vector2f, heroC hc)
 {
     if (AMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
@@ -141,93 +154,164 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC hc)
 
     for (int i = 0; i < fieldObj2.getrow(); i++)
     {
+        if (counter2 == 5)
+        {
+            break;
+        }
         for (int j = 0; j < fieldObj2.getcol(); j++)
         {
             if (fieldObj2.square2[i][j].getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
                     sf::Mouse::isButtonPressed(sf::Mouse::Left))
             {
+                if (counter2 == 5)
+                {
+                    break;
+                }
                 //cout << static_cast<int>(hero_Cards) << endl;
                 switch (hc)
                 {
                 case heroC::A :
                 {
+                    if (a2 == 0)
+                    {
                     fieldObj2.square2[i][j].setTexture(&tex1);
                     fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     setp_on_field2(sf::Vector2i(i, j));
                     p2.getvec().push_back(aobj.getpointer());
+                    counter2++;
+                    a2++;
+                    }
+                    //cout << c << endl;
                     break;
                 }
                 case heroC::C :
                 {
-                    //tex2.loadFromFile("commander icon.png");
+                    if(c2 == 0)
+                    {
                     fieldObj2.square2[i][j].setTexture(&tex2);
                     fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     setp_on_field2(sf::Vector2i(i, j));
                     p2.getvec().push_back(cobj.getpointer());
+                    counter2++;
+                    c2++;
+                    }
+                    //cout << c << endl;
                     break;
                 }
                 case heroC::Dr :
                 {
+                    if (dr2 == 0)
+                    {
                     fieldObj2.square2[i][j].setTexture(&tex3);
                     fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     setp_on_field2(sf::Vector2i(i, j));
                     p2.getvec().push_back(drmobj.getpointer());
+                    counter2++;
+                    dr2++;
+                    }
+                    //cout << c << endl;
                     break;
                 }
                 case heroC::G :
                 {
+                    if (g2 == 0)
+                    {
                     fieldObj2.square2[i][j].setTexture(&tex4);
                     fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     setp_on_field2(sf::Vector2i(i, j));
                     p2.getvec().push_back(gobj.getpointer());
+                    counter2++;
+                    g2++;
+                    }
+                    //cout << c << endl;
                     break;
                 }
                 case heroC::K :
                 {
+                    if (k2 == 0)
+                    {
                     fieldObj2.square2[i][j].setTexture(&tex5);
                     fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     setp_on_field2(sf::Vector2i(i, j));
                     p2.getvec().push_back(kobj.getpointer());
-                    break;
+                    counter2++;
+                    k2++;
+                    }
+                    //cout << c << endl;
+                    //break;
                 }
                 case heroC::L :
                 {
+                    if (l2 == 0)
+                    {
                     fieldObj2.square2[i][j].setTexture(&tex6);
                     fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     setp_on_field2(sf::Vector2i(i, j));
                     p2.getvec().push_back(lobj.getpointer());
+                    counter2++;
+                    l2++;
+                    }
+                    //cout << c << endl;
                     break;
                 }
                 case heroC::Mrs :
                 {
+                    if (mrs2 == 0)
+                    {
                     fieldObj2.square2[i][j].setTexture(&tex7);
                     fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     setp_on_field2(sf::Vector2i(i, j));
                     p2.getvec().push_back(mrsgobj.getpointer());
+                    counter2++;
+                    mrs2++;
+                    }
+                    //cout << c << endl;
                     break;
                 }
                 case heroC::P :
                 {
+                    /*
+                    i should declare this pp because i have 'p2' object from Player class in this '.h' and
+                    if i don't do this i face to the compilation error
+                    */
+                    if (pp == 0)
+                    {
                     fieldObj2.square2[i][j].setTexture(&tex8);
                     fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     setp_on_field2(sf::Vector2i(i, j));
                     p2.getvec().push_back(pobj.getpointer());
+                    counter2++;
+                    pp++;
+                    }
+                    //cout << c << endl;
                     break;
                 }
                 case heroC::R :
                 {
+                    if (r2 == 0)
+                    {
                     fieldObj2.square2[i][j].setTexture(&tex9);
                     fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     setp_on_field2(sf::Vector2i(i, j));
                     p2.getvec().push_back(robj.getpointer());
+                    counter2++;
+                    r2++;
+                    }
+                    //cout << c << endl;
                     break;
                 }
                 case heroC::S :
                 {
+                    if (s2 == 0)
+                    {
                     fieldObj2.square2[i][j].setTexture(&tex10);
                     fieldObj2.square2[i][j].setFillColor(sf::Color::White);
                     setp_on_field2(sf::Vector2i(i, j));
                     p2.getvec().push_back(sobj.getpointer());
+                    counter2++;
+                    s2++;
+                    }
+                    //cout << c << endl;
                     break;
                 }
                 default:

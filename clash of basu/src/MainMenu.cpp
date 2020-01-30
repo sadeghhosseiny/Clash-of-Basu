@@ -40,7 +40,6 @@ void MainMenu::MouseClicked2(sf::Vector2f pos, menus& CurrentMenu)
     {
         CurrentMenu = menus::MM2;
     }
-
     ChooseCards(pos, hero_Cards);
 }
 
@@ -89,7 +88,7 @@ void MainMenu::textButton1()
 
 void MainMenu::OptionText2()
 {
-    optionText2.setPosition(sf::Vector2f(1700, 900));
+    optionText2.setPosition(sf::Vector2f(1600, 900));
     optionText2.setString("Next Player");
     optionText2.setCharacterSize(60);
     optionText3.setColor(sf::Color::White);
@@ -122,11 +121,22 @@ void MainMenu::textButton3()
 
 }
 
+int counter = 0;
+int a = 0;
+int c = 0;
+int dr = 0;
+int g = 0;
+int  k = 0;
+int l = 0;
+int mrs = 0;
+int p = 0;
+int r = 0;
+int s = 0;
+
 void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
 {
     if (AMCobj.getspr().getGlobalBounds().contains(pos))
     {
-        //if (nt.type == sf::Event::EventType::MouseButtonReleased)
         hero_Cards = heroC::A;
         //cout << static_cast<int>(hero_Cards) << endl;
     }
@@ -170,94 +180,157 @@ void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
 
     for (int i = 0; i < fieldObj.getrow(); i++)
     {
+        if (counter == 5)
+        {
+            break;
+        }
         for (int j = 0; j < fieldObj.getcol(); j++)
         {
             if (fieldObj.square[i][j].getGlobalBounds().contains(pos))
             {
+                if (counter == 5)
+                {
+                    break;
+                }
                 //cout << static_cast<int>(hero_Cards) << endl;
                 switch (hc)
                 {
                 case heroC::A :
                 {
+                    if (a == 0)
+                    {
                     fieldObj.square[i][j].setTexture(&tex1);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
                     p1.getvec().push_back(aobj.getpointer());
-                    //cout << p1.getvec().size() << endl;
-                    //cout << getp().x << endl;
+                    counter++;
+                    a++;
+                    }
                     break;
                 }
                 case heroC::C :
                 {
-                    //tex2.loadFromFile("commander icon.png");
+                    if (c == 0)
+                    {
                     fieldObj.square[i][j].setTexture(&tex2);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
                     p1.getvec().push_back(cobj.getpointer());
+                    counter++;
+                    c++;
+                    }
                     break;
                 }
                 case heroC::Dr :
                 {
+                    if (dr == 0)
+                    {
                     fieldObj.square[i][j].setTexture(&tex3);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
                     p1.getvec().push_back(drmobj.getpointer());
+                    counter++;
+                    dr++;
+                    }
+                    //cout << c << endl;
                     break;
                 }
                 case heroC::G :
                 {
+                    if (g == 0)
+                    {
                     fieldObj.square[i][j].setTexture(&tex4);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
                     p1.getvec().push_back(gobj.getpointer());
+                    counter++;
+                    g++;
+                    }
+                    //cout << c << endl;
                     break;
                 }
                 case heroC::K :
                 {
+                    if (k == 0)
+                    {
                     fieldObj.square[i][j].setTexture(&tex5);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
                     p1.getvec().push_back(kobj.getpointer());
+                    counter++;
+                    k++;
+                    }
+                    //cout << c << endl;
                     break;
                 }
                 case heroC::L :
                 {
+                    if (l == 0)
+                    {
                     fieldObj.square[i][j].setTexture(&tex6);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
                     p1.getvec().push_back(lobj.getpointer());
+                    counter++;
+                    l++;
+                    }
+                    //cout << c << endl;
                     break;
                 }
                 case heroC::Mrs :
                 {
+                    if (mrs == 0)
+                    {
                     fieldObj.square[i][j].setTexture(&tex7);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
                     p1.getvec().push_back(mrsgobj.getpointer());
+                    counter++;
+                    mrs++;
+                    }
+                    //cout << c << endl;
                     break;
                 }
                 case heroC::P :
                 {
+                    if (p == 0)
+                    {
                     fieldObj.square[i][j].setTexture(&tex8);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
                     p1.getvec().push_back(pobj.getpointer());
+                    counter++;
+                    p++;
+                    }
+                    //cout << c << endl;
                     break;
                 }
                 case heroC::R :
                 {
+                    if (r == 0)
+                    {
                     fieldObj.square[i][j].setTexture(&tex9);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
                     p1.getvec().push_back(robj.getpointer());
+                    counter++;
+                    r++;
+                    }
                     break;
+                    //cout << c << endl;
                 }
                 case heroC::S :
                 {
+                    if (s == 0)
+                    {
                     fieldObj.square[i][j].setTexture(&tex10);
                     fieldObj.square[i][j].setFillColor(sf::Color::White);
                     setp_on_field(sf::Vector2i(i, j));
                     p1.getvec().push_back(sobj.getpointer());
+                    counter++;
+                    s++;
+                    }
+                    //cout << c << endl;
                     break;
                 }
                 default:
@@ -266,7 +339,7 @@ void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
                 }
                 }
             }
-           //+ window->draw(fieldObj.square[i][j]);
+           //window->draw(fieldObj.square[i][j]);
         }
     }
 }
