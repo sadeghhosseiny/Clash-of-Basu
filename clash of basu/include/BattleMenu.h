@@ -4,8 +4,9 @@
 #include "UI_Menu.h"
 //#include "Field.h"
 //#include "Field2.h"
-#include "MainMenu.h"
+//#include "MainMenu.h"
 #include "Hero.h"
+#include "AlphaMan.h"
 
 class BattleMenu : public UI_Menu
 {
@@ -17,7 +18,7 @@ public:
     virtual void textButton1();
     virtual void textButton2()override;
     virtual void textButton3()override;
-    void situation(sf::Vector2f);
+    void situation();
 
 private:
     sf::Texture tex1;

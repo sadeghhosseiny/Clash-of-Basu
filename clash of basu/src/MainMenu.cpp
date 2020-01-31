@@ -204,7 +204,7 @@ void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
                     fieldobj.square[i][j].setTexture(&tex1);
                     fieldobj.square[i][j].setFillColor(sf::Color::White);
                     p1.aobj.setp_on_field(sf::Vector2i(i, j));
-                    p1.setvec(p1.aobj.getpointer());
+                    p1.getvec().push_back(p1.aobj.getpointer());
                     cout << p1.getvec().size() << endl;
                     cout << typeid(p1.getvec()).name() << endl;
                     //cout << (aobj.position_on_field.x) << endl << (aobj.position_on_field.y) << endl;

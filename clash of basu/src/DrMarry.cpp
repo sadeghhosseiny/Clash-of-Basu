@@ -2,6 +2,7 @@
 
 DrMarry::DrMarry()
 {
+    drmarry = new DrMarry();
     Health = 8;
     Damage = 2;
 }

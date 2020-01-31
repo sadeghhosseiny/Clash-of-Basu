@@ -2,6 +2,7 @@
 
 AlphaMan::AlphaMan()
 {
+    alphaman = new AlphaMan();
     //heroName = heroC::A;
     Health = 13;
     Damage = 2;

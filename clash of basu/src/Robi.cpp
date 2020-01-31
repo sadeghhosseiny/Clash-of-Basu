@@ -2,6 +2,7 @@
 
 Robi::Robi()
 {
+    robi = new Robi();
     Health = 12;
     Damage = 2;
 }

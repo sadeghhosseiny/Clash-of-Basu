@@ -2,6 +2,7 @@
 
 Kratos::Kratos()
 {
+    kratos = new Kratos();
     Health = 15;
     Damage = 3;
 }

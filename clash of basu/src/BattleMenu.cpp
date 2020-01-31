@@ -1,5 +1,6 @@
 #include "BattleMenu.h"
 #include <iostream>
+#include <typeinfo>
 
 using namespace std;
 
@@ -21,7 +22,7 @@ BattleMenu::~BattleMenu()
 
 void BattleMenu::MouseClicked2(sf::Vector2f pos, menus& CurrentMenu)
 {
-    situation(pos);
+    situation();
 }
 void BattleMenu::display(sf::RenderWindow* window, menus& CurrentMenu)
 {
@@ -45,20 +46,27 @@ void BattleMenu::textButton3()
 
 }
 
-void BattleMenu::situation(sf::Vector2f pos)
+void BattleMenu::situation()
 {
     for (int i = 0; i < fieldobj.getrow(); i++)
     {
         for (int j = 0; j < fieldobj.getcol(); j++)
         {
-            if (fieldobj.square[i][j].getGlobalBounds().contains(pos))
+            //cout << i << j << endl;
+            if (fieldobj.square[i][j].getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())))
             {
-                if ((p1ptr->aobj.position_on_field.x == i) && (p1ptr->aobj.position_on_field.y == j) )
+                if ((p1ptr->aobj.position_on_field.x == i) && (p1ptr->aobj.position_on_field.y == j))
                 {
-                    for (Hero* p1ptr->begin(); p1ptr->end())
+                    //cout << p1ptr->aobj.Health << endl;
+                    //cout << p1ptr->aobj.heroname << endl;
+                    // cout << p1ptr->aobj.position_on_field.y << endl;
+                    //for (std::vector<Hero*>::iterator it = p1ptr->getvec().begin(); it != p1ptr->getvec().end(); it++)
+                      for (Hero* hero : p1ptr->getvec())
                     {
+                        cout << typeid(p1ptr->getvec()).name() << endl;
                         if (hero->heroname == "alphaman")
                         {
+                            cout << "fuck two" << endl;
                             fieldobj.square[i][j].setTexture(&tex1);
                         }
                     }
