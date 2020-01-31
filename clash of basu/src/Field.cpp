@@ -133,12 +133,6 @@ Field::Field()
 
 void Field::DrawField(sf::RenderWindow* window)
 {
-    /*square = new RectangleShape* [row];
-
-    for (int i = 0; i < row; i++)
-    {
-        square[i] = new RectangleShape [col];
-    }*/
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)

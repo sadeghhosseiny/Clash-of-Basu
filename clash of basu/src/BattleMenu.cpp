@@ -52,19 +52,15 @@ void BattleMenu::situation()
     {
         for (int j = 0; j < fieldobj.getcol(); j++)
         {
-            //cout << i << j << endl;
             if (fieldobj.square[i][j].getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())))
             {
                 if ((p1ptr->aobj.position_on_field.x == i) && (p1ptr->aobj.position_on_field.y == j))
                 {
-                    //cout << p1ptr->aobj.Health << endl;
-                    //cout << p1ptr->aobj.heroname << endl;
-                    // cout << p1ptr->aobj.position_on_field.y << endl;
-                    //for (std::vector<Hero*>::iterator it = p1ptr->getvec().begin(); it != p1ptr->getvec().end(); it++)
-                      for (Hero* hero : p1ptr->getvec())
+                    cout << p1ptr->aobj.position_on_field.x << endl << p1ptr->aobj.position_on_field.y << endl;
+                    for (int k = 0; k < p1ptr->getvec().size(); k++)
                     {
-                        cout << typeid(p1ptr->getvec()).name() << endl;
-                        if (hero->heroname == "alphaman")
+                        //cout << typeid(p1ptr->getvec()).name() << endl;
+                        if (p1ptr->getvec().at(k) == p1ptr->aobj.getpointer())
                         {
                             cout << "fuck two" << endl;
                             fieldobj.square[i][j].setTexture(&tex1);

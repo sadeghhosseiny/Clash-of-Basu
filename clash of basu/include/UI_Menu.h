@@ -25,6 +25,7 @@ public:
     Player p2;
     Field fieldobj;
     Field2 fieldobj2;
+    //BattleField bf;
 protected:
     sf::Text optionText1;
     sf::Text optionText2;

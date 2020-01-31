@@ -2,7 +2,7 @@
 
 Leon::Leon()
 {
-    leon = new Leon();
+    //leon = new Leon();
     Health = 10;
     Damage = 3;
 }

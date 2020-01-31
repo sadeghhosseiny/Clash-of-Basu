@@ -2,7 +2,7 @@
 
 AlphaMan::AlphaMan()
 {
-    alphaman = new AlphaMan();
+    //alphaman = new AlphaMan();
     //heroName = heroC::A;
     Health = 13;
     Damage = 2;
@@ -11,7 +11,7 @@ AlphaMan::AlphaMan()
 
 AlphaMan::~AlphaMan()
 {
-    //dtor
+    //delete alphaman;
 }
 
 void AlphaMan::Strike()

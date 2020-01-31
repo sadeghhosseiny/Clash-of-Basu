@@ -248,7 +248,7 @@
 	"BattleMenu.h"
 	<vector>
 
-1580409420 d:\finall p\clash of basu\include\ui_menu.h
+1580480179 d:\finall p\clash of basu\include\ui_menu.h
 	"SFML/Graphics.hpp"
 	"Field.h"
 	"Field2.h"
@@ -359,7 +359,7 @@
 1580195023 source:d:\finall p\clash of basu\src\drmarrycard.cpp
 	"../include/DrMarryCard.h"
 
-1580332381 source:d:\finall p\clash of basu\src\field.cpp
+1580477444 source:d:\finall p\clash of basu\src\field.cpp
 	"../include/Field.h"
 	<iostream>
 
@@ -384,7 +384,7 @@
 	<iostream>
 	<typeinfo>
 
-1580410982 source:d:\finall p\clash of basu\src\menucontrol.cpp
+1580476564 source:d:\finall p\clash of basu\src\menucontrol.cpp
 	"../include/MenuControl.h"
 
 1580195265 source:d:\finall p\clash of basu\src\mrsghostcard.cpp
@@ -404,7 +404,7 @@
 	<iostream>
 	"../include/MenuControl.h"
 
-1580237417 source:d:\finall p\clash of basu\src\ui_menu.cpp
+1580476670 source:d:\finall p\clash of basu\src\ui_menu.cpp
 	"../include/UI_Menu.h"
 
 1580460594 d:\finall p\clash of basu\include\player.h
@@ -438,7 +438,7 @@
 	"Player.h"
 	<iostream>
 
-1580460594 source:d:\finall p\clash of basu\src\mainmenu2.cpp
+1580474449 source:d:\finall p\clash of basu\src\mainmenu2.cpp
 	"MainMenu2.h"
 	<iostream>
 
@@ -478,67 +478,72 @@
 1580398905 d:\finall p\clash of basu\include\commander.h
 	"Hero.h"
 
-1580473308 source:d:\finall p\clash of basu\src\alphaman.cpp
+1580481463 source:d:\finall p\clash of basu\src\alphaman.cpp
 	"../include/AlphaMan.h"
 
-1580473605 source:d:\finall p\clash of basu\src\commander.cpp
+1580474337 source:d:\finall p\clash of basu\src\commander.cpp
 	"../include/Commander.h"
 
-1580473625 source:d:\finall p\clash of basu\src\drmarry.cpp
+1580474337 source:d:\finall p\clash of basu\src\drmarry.cpp
 	"../include/DrMarry.h"
 
 1580398905 d:\finall p\clash of basu\include\drmarry.h
 	"Hero.h"
 
-1580473645 source:d:\finall p\clash of basu\src\giant.cpp
+1580474337 source:d:\finall p\clash of basu\src\giant.cpp
 	"Giant.h"
 
 1580398905 d:\finall p\clash of basu\include\giant.h
 	"Hero.h"
 
-1580473672 source:d:\finall p\clash of basu\src\kratos.cpp
+1580474372 source:d:\finall p\clash of basu\src\kratos.cpp
 	"../include/Kratos.h"
 
 1580398905 d:\finall p\clash of basu\include\kratos.h
 	"Hero.h"
 
-1580473693 source:d:\finall p\clash of basu\src\leon.cpp
+1580474337 source:d:\finall p\clash of basu\src\leon.cpp
 	"../include/Leon.h"
 
 1580398905 d:\finall p\clash of basu\include\leon.h
 	"Hero.h"
 
-1580473719 source:d:\finall p\clash of basu\src\mrsghost.cpp
+1580474337 source:d:\finall p\clash of basu\src\mrsghost.cpp
 	"../include/MrsGhost.h"
 
 1580398905 d:\finall p\clash of basu\include\mrsghost.h
 	"Hero.h"
 
-1580473742 source:d:\finall p\clash of basu\src\professor.cpp
+1580474337 source:d:\finall p\clash of basu\src\professor.cpp
 	"../include/Professor.h"
 
 1580398905 d:\finall p\clash of basu\include\professor.h
 	"Hero.h"
 
-1580473758 source:d:\finall p\clash of basu\src\robi.cpp
+1580474337 source:d:\finall p\clash of basu\src\robi.cpp
 	"../include/Robi.h"
 
 1580398905 d:\finall p\clash of basu\include\robi.h
 	"Hero.h"
 
-1580473776 source:d:\finall p\clash of basu\src\sniper.cpp
+1580474337 source:d:\finall p\clash of basu\src\sniper.cpp
 	"../include/Sniper.h"
 
 1580398905 d:\finall p\clash of basu\include\sniper.h
 	"Hero.h"
 
-1580469658 d:\finall p\clash of basu\include\battlemenu.h
+1580477444 d:\finall p\clash of basu\include\battlemenu.h
 	"UI_Menu.h"
 	"Hero.h"
-	"AlphaMan.h"
 
-1580473775 source:d:\finall p\clash of basu\src\battlemenu.cpp
+1580480624 source:d:\finall p\clash of basu\src\battlemenu.cpp
 	"BattleMenu.h"
 	<iostream>
 	<typeinfo>
+
+1580477489 d:\finall p\clash of basu\include\battlefield.h
+	"SFML/Graphics.hpp"
+
+1580477536 source:d:\finall p\clash of basu\src\battlefield.cpp
+	"BattleField.h"
 

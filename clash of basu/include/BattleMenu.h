@@ -6,8 +6,6 @@
 //#include "Field2.h"
 //#include "MainMenu.h"
 #include "Hero.h"
-#include "AlphaMan.h"
-
 class BattleMenu : public UI_Menu
 {
 public:

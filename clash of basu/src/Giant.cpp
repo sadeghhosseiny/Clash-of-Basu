@@ -2,7 +2,7 @@
 
 Giant::Giant()
 {
-    giant = new Giant();
+    //giant = new Giant();
     Health = 20;
     Damage = 4;
 }

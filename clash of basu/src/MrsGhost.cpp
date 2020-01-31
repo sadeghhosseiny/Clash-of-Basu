@@ -2,7 +2,7 @@
 
 MrsGhost::MrsGhost()
 {
-    mrsghost = new MrsGhost();
+    //mrsghost = new MrsGhost();
     Health = 15;
     Damage = 3;
 }

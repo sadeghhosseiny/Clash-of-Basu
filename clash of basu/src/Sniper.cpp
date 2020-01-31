@@ -2,7 +2,7 @@
 
 Sniper::Sniper()
 {
-    sniper = new Sniper();
+    //sniper = new Sniper();
     Health = 9;
     Damage = 4;
 }

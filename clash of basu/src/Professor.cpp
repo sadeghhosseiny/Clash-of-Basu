@@ -2,7 +2,7 @@
 
 Professor::Professor()
 {
-    professor = new Professor();
+    //professor = new Professor();
     Health = 11;
     Damage = 3;
 }
