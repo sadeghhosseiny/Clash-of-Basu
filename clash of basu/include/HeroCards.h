@@ -9,6 +9,7 @@ public:
     HeroCards();
     virtual void DrawCard(sf::RenderWindow*) = 0;
     //virtual ~HeroCards();
+
 protected:
     sf::Texture tex;
     sf::Sprite spr;

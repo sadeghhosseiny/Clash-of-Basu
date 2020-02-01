@@ -248,7 +248,7 @@
 	"BattleMenu.h"
 	<vector>
 
-1580545145 d:\finall p\clash of basu\include\ui_menu.h
+1580560748 d:\finall p\clash of basu\include\ui_menu.h
 	"SFML/Graphics.hpp"
 	"Field.h"
 	"Field2.h"
@@ -275,7 +275,7 @@
 1580505018 d:\finall p\clash of basu\include\hero.h
 	"SFML/Graphics.hpp"
 
-1580504439 d:\finall p\clash of basu\include\herocards.h
+1580559255 d:\finall p\clash of basu\include\herocards.h
 	"SFML/Graphics.hpp"
 
 1580497091 d:\finall p\clash of basu\include\field.h
@@ -293,7 +293,7 @@
 	"RobiCard.h"
 	"SniperCard.h"
 
-1580233038 d:\finall p\clash of basu\include\alphamancard.h
+1580558223 d:\finall p\clash of basu\include\alphamancard.h
 	"SFML/Graphics.hpp"
 	"HeroCards.h"
 
@@ -327,10 +327,9 @@
 1580507026 d:\finall p\clash of basu\include\startmenu.h
 	"UI_Menu.h"
 
-1580507026 d:\finall p\clash of basu\include\mainmenu.h
+1580554714 d:\finall p\clash of basu\include\mainmenu.h
 	"UI_Menu.h"
 	"GeneralDefines.h"
-	"AlphaManCard.h"
 	"GiantCrad.h"
 	"CommanderCard.h"
 	"DrMarryCard.h"
@@ -351,11 +350,11 @@
 	"Robi.h"
 	"Sniper.h"
 
-1580308875 source:d:\finall p\clash of basu\src\alphamancard.cpp
+1580562027 source:d:\finall p\clash of basu\src\alphamancard.cpp
 	"../include/AlphaManCard.h"
 	<iostream>
 
-1580195039 source:d:\finall p\clash of basu\src\commandercard.cpp
+1580559836 source:d:\finall p\clash of basu\src\commandercard.cpp
 	"../include/CommanderCard.h"
 
 1580195023 source:d:\finall p\clash of basu\src\drmarrycard.cpp
@@ -381,7 +380,7 @@
 1580195223 source:d:\finall p\clash of basu\src\leoncard.cpp
 	"../include/LeonCard.h"
 
-1580542688 source:d:\finall p\clash of basu\src\mainmenu.cpp
+1580558347 source:d:\finall p\clash of basu\src\mainmenu.cpp
 	"MainMenu.h"
 	<iostream>
 	<typeinfo>
@@ -409,12 +408,10 @@
 1580476670 source:d:\finall p\clash of basu\src\ui_menu.cpp
 	"../include/UI_Menu.h"
 
-1580460594 d:\finall p\clash of basu\include\player.h
+1580556763 d:\finall p\clash of basu\include\player.h
 	"Hero.h"
 	<vector>
 	"GeneralDefines.h"
-	"UI_Menu.h"
-	"Field.h"
 	"AlphaManCard.h"
 	"GiantCrad.h"
 	"CommanderCard.h"
@@ -436,18 +433,17 @@
 	"Robi.h"
 	"Sniper.h"
 
-1580460594 source:d:\finall p\clash of basu\src\player.cpp
+1580556841 source:d:\finall p\clash of basu\src\player.cpp
 	"Player.h"
 	<iostream>
 
-1580549879 source:d:\finall p\clash of basu\src\mainmenu2.cpp
+1580555104 source:d:\finall p\clash of basu\src\mainmenu2.cpp
 	"MainMenu2.h"
 	<iostream>
 
-1580507026 d:\finall p\clash of basu\include\mainmenu2.h
+1580554768 d:\finall p\clash of basu\include\mainmenu2.h
 	"UI_Menu.h"
 	"GeneralDefines.h"
-	"AlphaManCard.h"
 	"GiantCrad.h"
 	"CommanderCard.h"
 	"DrMarryCard.h"
@@ -534,11 +530,11 @@
 1580504190 d:\finall p\clash of basu\include\sniper.h
 	"Hero.h"
 
-1580546071 d:\finall p\clash of basu\include\battlemenu.h
+1580560269 d:\finall p\clash of basu\include\battlemenu.h
 	"UI_Menu.h"
 	"Hero.h"
 
-1580547332 source:d:\finall p\clash of basu\src\battlemenu.cpp
+1580562073 source:d:\finall p\clash of basu\src\battlemenu.cpp
 	"BattleMenu.h"
 	<iostream>
 	<typeinfo>

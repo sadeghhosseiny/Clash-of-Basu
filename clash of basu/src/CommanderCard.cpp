@@ -6,7 +6,6 @@ CommanderCard::CommanderCard()
     spr.setTexture(tex);
     spr.setPosition(20, 220);
     spr.setScale(sf::Vector2f(0.85, 0.85));
-
 }
 
 CommanderCard::~CommanderCard()

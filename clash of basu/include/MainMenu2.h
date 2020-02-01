@@ -6,7 +6,7 @@
 #include "GeneralDefines.h"
 //#include "Field.h"
 //#include "Field2.h"
-#include "AlphaManCard.h"
+/*#include "AlphaManCard.h"
 #include "GiantCrad.h"
 #include "CommanderCard.h"
 #include "DrMarryCard.h"
@@ -68,11 +68,11 @@ private:
     MrsGhost mrsgobj;
     Professor pobj;
     Robi robj;
-    Sniper sobj;*/
+    Sniper sobj;
     AlphaManCard AMCobj;
     //Field fieldObj;
     //Field2 fieldObj2;
-    GiantCrad GCobj;
+    /*GiantCrad GCobj;
     CommanderCard CCobj;
     DrMarryCard DRMCobj;
     KratosCard KCobj;
@@ -80,7 +80,7 @@ private:
     MrsGhostCard MRSGCobj;
     ProfessorCard PCobj;
     RobiCard RCobj;
-    SniperCard SCobj;
+    SniperCard SCobj;*/
     heroC hero_Cards;
 };
 

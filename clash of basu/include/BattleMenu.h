@@ -20,6 +20,7 @@ public:
     virtual void textButton3()override;
     void situation(sf::Vector2f);
     void situation2(sf::Vector2f);
+    void player1_cards(sf::RenderWindow*);
 
 private:
     sf::Texture tex1;

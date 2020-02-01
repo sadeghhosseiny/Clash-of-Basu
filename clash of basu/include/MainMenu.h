@@ -4,7 +4,7 @@
 #include "UI_Menu.h"
 #include "GeneralDefines.h"
 //#include "Field.h"
-#include "AlphaManCard.h"
+/*#include "AlphaManCard.h"
 #include "GiantCrad.h"
 #include "CommanderCard.h"
 #include "DrMarryCard.h"
@@ -14,7 +14,7 @@
 #include "ProfessorCard.h"
 #include "RobiCard.h"
 #include "SniperCard.h"
-#include "Player.h"
+#include "Player.h"*/
 /*#include "AlphaMan.h"
 #include "Commander.h"
 #include "Giant.h"
@@ -69,8 +69,8 @@ private:
     Robi robj;
     Sniper sobj;*/
     //sf::RenderWindow* wind;
-    AlphaManCard AMCobj;
     //Field fieldObj;
+    /*AlphaManCard AMCobj;
     GiantCrad GCobj;
     CommanderCard CCobj;
     DrMarryCard DRMCobj;
@@ -79,7 +79,7 @@ private:
     MrsGhostCard MRSGCobj;
     ProfessorCard PCobj;
     RobiCard RCobj;
-    SniperCard SCobj;
+    SniperCard SCobj;*/
     heroC hero_Cards; //object from enum for drawing pictures in Field
 };
 

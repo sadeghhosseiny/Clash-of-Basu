@@ -19,6 +19,7 @@ BattleMenu::BattleMenu() : UI_Menu()
     tex8.loadFromFile("professor icon.png");
     tex9.loadFromFile("robi icon.png");
     tex10.loadFromFile("sniper icon.png");
+    texc1.loadFromFile("AlphaMan Card.png");
     //_p1 = &p1;
 }
 
@@ -38,6 +39,7 @@ void BattleMenu::display(sf::RenderWindow* window, menus& CurrentMenu)
     window->draw(spr);
     battlefieldobj.DrawField3(window);
     battlefieldobj2.DrawField4(window);
+    //player1_cards(window);
     //situation();
 }
 
@@ -347,6 +349,22 @@ void BattleMenu::situation2(sf::Vector2f pos)
                     }
                 }
             }
+        }
+    }
+}
+
+void BattleMenu::player1_cards(sf::RenderWindow* window)
+{
+    for (int c = 0; c < p1ptr->getveccard().size(); c++)
+    {
+        //cout << "fsdfasdfasdf" << p1ptr->getveccard().size() << endl;
+        //cout << "adfsdfsa" << endl;
+        if (p1ptr->AMCobj.getpointer_card())
+        {
+            cout << "asg" << endl;
+            sprc.setTexture(texc1);
+            sprc.setPosition(1000, 1000);
+            window->draw(sprc);
         }
     }
 }

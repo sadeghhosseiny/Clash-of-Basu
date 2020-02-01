@@ -54,16 +54,17 @@ void MainMenu::display(sf::RenderWindow* window, menus &CurrentMenu)
     textButton2();
     textButton1();
     fieldobj.DrawField(window);
-    AMCobj.DrawCard(window);
-    GCobj.DrawCard(window);
-    CCobj.DrawCard(window);
-    DRMCobj.DrawCard(window);
-    KCobj.DrawCard(window);
-    LCobj.DrawCard(window);
-    MRSGCobj.DrawCard(window);
-    PCobj.DrawCard(window);
-    RCobj.DrawCard(window);
-    SCobj.DrawCard(window);
+    p1.AMCobj.DrawCard(window);
+    p1.GCobj.DrawCard(window);
+    p1.CCobj.DrawCard(window);
+    p1.DRMCobj.DrawCard(window);
+    p1.KCobj.DrawCard(window);
+    p1.LCobj.DrawCard(window);
+    p1.MRSGCobj.DrawCard(window);
+    p1.PCobj.DrawCard(window);
+    p1.RCobj.DrawCard(window);
+    p1.SCobj.DrawCard(window);
+
     //HiddenCards(position_on_field);
     //p1.ChooseCards(window, static_cast<sf::Vector2f>(sf::Mouse::getPosition()), hero_Cards);
 }
@@ -137,45 +138,45 @@ int s = 0;
 
 void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
 {
-    if (AMCobj.getspr().getGlobalBounds().contains(pos))
+    if (p1.AMCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::A;
         //cout << static_cast<int>(hero_Cards) << endl;
     }
-    else if (CCobj.getspr().getGlobalBounds().contains(pos))
+    else if (p1.CCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::C;
         //cout << static_cast<int>(hero_Cards) << endl;
     }
-    else if (DRMCobj.getspr().getGlobalBounds().contains(pos))
+    else if (p1.DRMCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::Dr;
     }
-    else if (GCobj.getspr().getGlobalBounds().contains(pos))
+    else if (p1.GCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::G;
     }
-    else if (KCobj.getspr().getGlobalBounds().contains(pos))
+    else if (p1.KCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::K;
     }
-    else if (LCobj.getspr().getGlobalBounds().contains(pos))
+    else if (p1.LCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::L;
     }
-    else if (MRSGCobj.getspr().getGlobalBounds().contains(pos))
+    else if (p1.MRSGCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::Mrs;
     }
-    else if (PCobj.getspr().getGlobalBounds().contains(pos))
+    else if (p1.PCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::P;
     }
-    else if (RCobj.getspr().getGlobalBounds().contains(pos))
+    else if (p1.RCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::R;
     }
-    else if (SCobj.getspr().getGlobalBounds().contains(pos))
+    else if (p1.SCobj.getspr().getGlobalBounds().contains(pos))
     {
         hero_Cards = heroC::S;
     }
@@ -209,7 +210,9 @@ void MainMenu::ChooseCards(sf::Vector2f pos, heroC hc)
                     fieldobj.square[i][j].setFillColor(sf::Color::White);
                     p1.aobj.setp_on_field(sf::Vector2i(i, j));
                     p1.getvec().push_back(p1.aobj.getpointer());
+                    p1.getveccard().push_back(p1.AMCobj.getpointer_card());
                     cout << p1.getvec().size() << endl;
+                    //cout << "jghh" << p1.getveccard().size() << endl;
                     //cout << typeid(p1.getvec()).name() << endl;
                     //cout << (aobj.position_on_field.x) << endl << (aobj.position_on_field.y) << endl;
                     //cout << getp_on_field().x << endl << getp_on_field().y << endl;

@@ -4,9 +4,7 @@
 #include "Hero.h"
 #include <vector>
 /*#include "SFML/Graphics.hpp"
-#include "GeneralDefines.h"
-#include "UI_Menu.h"
-#include "Field.h"
+#include "GeneralDefines.h"*/
 #include "AlphaManCard.h"
 #include "GiantCrad.h"
 #include "CommanderCard.h"
@@ -17,7 +15,7 @@
 #include "ProfessorCard.h"
 #include "RobiCard.h"
 #include "SniperCard.h"
-*/
+
 #include "AlphaMan.h"
 #include "Commander.h"
 #include "Giant.h"
@@ -35,7 +33,18 @@ public:
     Player();
     virtual ~Player();
     std::vector<Hero*>& getvec();
+    std::vector<HeroCards*>& getveccard();
     //void setvec(Hero*);
+    AlphaManCard AMCobj;
+    GiantCrad GCobj;
+    CommanderCard CCobj;
+    DrMarryCard DRMCobj;
+    KratosCard KCobj;
+    LeonCard LCobj;
+    MrsGhostCard MRSGCobj;
+    ProfessorCard PCobj;
+    RobiCard RCobj;
+    SniperCard SCobj;
     AlphaMan aobj;
     Commander cobj;
     Giant gobj;
@@ -49,6 +58,7 @@ public:
 
 private:
     std::vector<Hero*>HeroVector;
+    std::vector<HeroCards*>HeroCardsVector;
 
 };
 

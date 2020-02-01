@@ -3,6 +3,7 @@
 
 AlphaManCard::AlphaManCard()
 {
+    //alphaman_card = new AlphaManCard();
     tex.loadFromFile("AlphaMan Card.png");
     spr.setTexture(tex);
     spr.setPosition(20,15);
@@ -14,8 +15,12 @@ void AlphaManCard::DrawCard(sf::RenderWindow *window)
     window->draw(spr);
 }
 
-sf::Sprite& AlphaManCard::getspr()
+/*sf::Sprite& AlphaManCard::getspr()
 {
     return spr;
-}
+}*/
 
+AlphaManCard* AlphaManCard::getpointer_card()
+{
+    return alphaman_card;
+}

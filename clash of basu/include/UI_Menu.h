@@ -37,7 +37,10 @@ protected:
     sf::Texture tex;
     sf::Sprite spr;
     sf::Font font;
+    //sf::Sprite sprc; //sprite for draw cards in the battlefield
     sf::RenderWindow* _window;
     menus menuName;
+    sf::Texture texc1;
+    sf::Sprite sprc;
 };
 #endif // UI_MENU_H

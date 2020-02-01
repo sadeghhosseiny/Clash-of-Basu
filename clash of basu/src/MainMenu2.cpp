@@ -57,16 +57,16 @@ void MainMenu2::display(sf::RenderWindow* window, menus &CurrentMenu)
     textButton1();
     textButton2();
     fieldobj2.DrawField2(window);
-    AMCobj.DrawCard(window);
-    GCobj.DrawCard(window);
-    CCobj.DrawCard(window);
-    DRMCobj.DrawCard(window);
-    KCobj.DrawCard(window);
-    LCobj.DrawCard(window);
-    MRSGCobj.DrawCard(window);
-    PCobj.DrawCard(window);
-    RCobj.DrawCard(window);
-    SCobj.DrawCard(window);
+    p2.AMCobj.DrawCard(window);
+    p2.GCobj.DrawCard(window);
+    p2.CCobj.DrawCard(window);
+    p2.DRMCobj.DrawCard(window);
+    p2.KCobj.DrawCard(window);
+    p2.LCobj.DrawCard(window);
+    p2.MRSGCobj.DrawCard(window);
+    p2.PCobj.DrawCard(window);
+    p2.RCobj.DrawCard(window);
+    p2.SCobj.DrawCard(window);
 }
 
 void MainMenu2::OptionText1()
@@ -128,54 +128,54 @@ int s2 = 0;
 
 void MainMenu2::ChooseCards(sf::Vector2f, heroC hc)
 {
-    if (AMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    if (p2.AMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
             sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::A;
         //cout << static_cast<int>(hero_Cards) << endl;
     }
-    else if (CCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    else if (p2.CCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::C;
         //cout << static_cast<int>(hero_Cards) << endl;
     }
-    else if (DRMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    else if (p2.DRMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::Dr;
     }
-    else if (GCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    else if (p2.GCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::G;
     }
-    else if (KCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    else if (p2.KCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::K;
     }
-    else if (LCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    else if (p2.LCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::L;
     }
-    else if (MRSGCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    else if (p2.MRSGCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::Mrs;
     }
-    else if (PCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    else if (p2.PCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::P;
     }
-    else if (RCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    else if (p2.RCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::R;
     }
-    else if (SCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
+    else if (p2.SCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         hero_Cards = heroC::S;
