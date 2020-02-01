@@ -29,6 +29,7 @@ public:
     Field2 fieldobj2;
     BattleField battlefieldobj;
     BattleField2 battlefieldobj2;
+    //heroC hero_Cards;
 
 protected:
     sf::Text optionText1;
@@ -37,10 +38,9 @@ protected:
     sf::Texture tex;
     sf::Sprite spr;
     sf::Font font;
+
     //sf::Sprite sprc; //sprite for draw cards in the battlefield
     sf::RenderWindow* _window;
     menus menuName;
-    sf::Texture texc1;
-    sf::Sprite sprc;
 };
 #endif // UI_MENU_H

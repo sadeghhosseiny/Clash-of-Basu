@@ -20,6 +20,15 @@ BattleMenu::BattleMenu() : UI_Menu()
     tex9.loadFromFile("robi icon.png");
     tex10.loadFromFile("sniper icon.png");
     texc1.loadFromFile("AlphaMan Card.png");
+    texc2.loadFromFile("Commander Card.png");
+    texc3.loadFromFile("DrMarry Card.png");
+    texc4.loadFromFile("Giant Card.png");
+    texc5.loadFromFile("Kratos Card.png");
+    texc6.loadFromFile("Leon Card.png");
+    texc7.loadFromFile("MrsGhost Card.png");
+    texc8.loadFromFile("Professor Card.png");
+    texc9.loadFromFile("Robi Card.png");
+    texc10.loadFromFile("Sniper Card.png");
     //_p1 = &p1;
 }
 
@@ -39,7 +48,8 @@ void BattleMenu::display(sf::RenderWindow* window, menus& CurrentMenu)
     window->draw(spr);
     battlefieldobj.DrawField3(window);
     battlefieldobj2.DrawField4(window);
-    //player1_cards(window);
+    player1_cards(window);
+    player2_cards(window);
     //situation();
 }
 
@@ -357,14 +367,167 @@ void BattleMenu::player1_cards(sf::RenderWindow* window)
 {
     for (int c = 0; c < p1ptr->getveccard().size(); c++)
     {
-        //cout << "fsdfasdfasdf" << p1ptr->getveccard().size() << endl;
-        //cout << "adfsdfsa" << endl;
-        if (p1ptr->AMCobj.getpointer_card())
+        switch(p1ptr->getveccard().at(c))
         {
-            cout << "asg" << endl;
+        case heroC::A :
+        {
+            //cout << "fuck" << endl;
             sprc.setTexture(texc1);
-            sprc.setPosition(1000, 1000);
-            window->draw(sprc);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+
+            break;
         }
+        case heroC::C :
+        {
+            sprc.setTexture(texc2);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+            break;
+        }
+        case heroC::Dr :
+        {
+            sprc.setTexture(texc3);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+            break;
+        }
+        case heroC::G :
+        {
+            sprc.setTexture(texc4);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+            break;
+        }
+        case heroC::K :
+        {
+            sprc.setTexture(texc5);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+            break;
+        }
+        case heroC::L :
+        {
+            sprc.setTexture(texc6);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+            break;
+        }
+        case heroC::Mrs :
+        {
+            sprc.setTexture(texc7);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+            break;
+        }
+        case heroC::P :
+        {
+            sprc.setTexture(texc8);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+            break;
+        }
+        case heroC::R :
+        {
+            sprc.setTexture(texc9);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+            break;
+        }
+        case heroC::S :
+        {
+            sprc.setTexture(texc10);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+            break;
+        }
+        }
+        window->draw(sprc);
     }
+
 }
+
+void BattleMenu::player2_cards(sf::RenderWindow* window)
+{
+    for (int c = 0; c < p2ptr->getveccard().size(); c++)
+    {
+        switch(p2ptr->getveccard().at(c))
+        {
+        case heroC::A :
+        {
+            //cout << "fuck" << endl;
+            sprc.setTexture(texc1);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+
+            break;
+        }
+        case heroC::C :
+        {
+            sprc.setTexture(texc2);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+            break;
+        }
+        case heroC::Dr :
+        {
+            sprc.setTexture(texc3);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+            break;
+        }
+        case heroC::G :
+        {
+            sprc.setTexture(texc4);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+            break;
+        }
+        case heroC::K :
+        {
+            sprc.setTexture(texc5);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+            break;
+        }
+        case heroC::L :
+        {
+            sprc.setTexture(texc6);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+            break;
+        }
+        case heroC::Mrs :
+        {
+            sprc.setTexture(texc7);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+            break;
+        }
+        case heroC::P :
+        {
+            sprc.setTexture(texc8);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+            break;
+        }
+        case heroC::R :
+        {
+            sprc.setTexture(texc9);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+            break;
+        }
+        case heroC::S :
+        {
+            sprc.setTexture(texc10);
+            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setScale(sf::Vector2f(0.75, 0.75));
+            break;
+        }
+        }
+        window->draw(sprc);
+    }
+
+}
+

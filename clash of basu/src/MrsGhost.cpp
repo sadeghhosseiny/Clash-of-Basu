@@ -4,7 +4,7 @@ MrsGhost::MrsGhost()
 {
     //mrsghost = new MrsGhost();
     Health = 15;
-    Damage = 3;
+    Power = 3;
 }
 
 MrsGhost::~MrsGhost()

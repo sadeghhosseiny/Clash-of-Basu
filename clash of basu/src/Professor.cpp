@@ -4,7 +4,7 @@ Professor::Professor()
 {
     //professor = new Professor();
     Health = 11;
-    Damage = 3;
+    Power = 3;
 }
 
 Professor::~Professor()

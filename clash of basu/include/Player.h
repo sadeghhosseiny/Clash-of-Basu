@@ -3,8 +3,8 @@
 
 #include "Hero.h"
 #include <vector>
-/*#include "SFML/Graphics.hpp"
-#include "GeneralDefines.h"*/
+//#include "SFML/Graphics.hpp"
+#include "GeneralDefines.h"
 #include "AlphaManCard.h"
 #include "GiantCrad.h"
 #include "CommanderCard.h"
@@ -33,7 +33,7 @@ public:
     Player();
     virtual ~Player();
     std::vector<Hero*>& getvec();
-    std::vector<HeroCards*>& getveccard();
+    std::vector<heroC>& getveccard();
     //void setvec(Hero*);
     AlphaManCard AMCobj;
     GiantCrad GCobj;
@@ -55,11 +55,11 @@ public:
     Professor pobj;
     Robi robj;
     Sniper sobj;
+    heroC hero_Cards;
 
 private:
     std::vector<Hero*>HeroVector;
-    std::vector<HeroCards*>HeroCardsVector;
-
+    std::vector<heroC>HeroCardsVector;
 };
 
 #endif // PLAYER_H

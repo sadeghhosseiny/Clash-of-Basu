@@ -10,10 +10,8 @@ public:
     virtual void DrawCard(sf::RenderWindow *);
     AlphaManCard();
     sf::Sprite& getspr();
-    AlphaManCard* getpointer_card();
 
 private:
-    AlphaManCard* alphaman_card;
 };
 
 #endif // ALPHAMANCARD_H

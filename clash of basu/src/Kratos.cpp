@@ -4,7 +4,7 @@ Kratos::Kratos()
 {
     //kratos = new Kratos();
     Health = 15;
-    Damage = 3;
+    Power = 3;
 }
 
 Kratos::~Kratos()

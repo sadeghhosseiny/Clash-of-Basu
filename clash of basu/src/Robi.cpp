@@ -4,7 +4,7 @@ Robi::Robi()
 {
     //robi = new Robi();
     Health = 12;
-    Damage = 2;
+    Power = 2;
 }
 
 Robi::~Robi()

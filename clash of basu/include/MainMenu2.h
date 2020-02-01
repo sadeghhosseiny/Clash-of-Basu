@@ -42,7 +42,7 @@ public:
     virtual void textButton3()override;
     void OptionText1();
     void OptionText2();
-    void ChooseCards(sf::Vector2f, heroC);
+    void ChooseCards(sf::Vector2f, heroC&);
     //void setp_on_field2(sf::Vector2i);
     //void HiddenCards(sf::Vector2f, sf::Vector2i);
 
@@ -81,7 +81,7 @@ private:
     ProfessorCard PCobj;
     RobiCard RCobj;
     SniperCard SCobj;*/
-    heroC hero_Cards;
+    //heroC hero_Cards;
 };
 
 #endif // MAINMENU2_H

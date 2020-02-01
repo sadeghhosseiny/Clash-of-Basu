@@ -38,7 +38,7 @@ public:
     virtual void textButton3()override;
     void OptionText1();
     void OptionText2();
-    void ChooseCards(sf::Vector2f, heroC);
+    void ChooseCards(sf::Vector2f, heroC&);
     //void setp_on_field(sf::Vector2i);
     //void HiddenCards(sf::Vector2i);
     //sf::Vector2i& getp_on_field();
@@ -80,7 +80,7 @@ private:
     ProfessorCard PCobj;
     RobiCard RCobj;
     SniperCard SCobj;*/
-    heroC hero_Cards; //object from enum for drawing pictures in Field
+    //heroC hero_Cards; //object from enum for drawing pictures in Field
 };
 
 #endif // MAINMENU_H

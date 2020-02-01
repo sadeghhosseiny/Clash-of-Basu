@@ -4,7 +4,7 @@ DrMarry::DrMarry()
 {
     //drmarry = new DrMarry();
     Health = 8;
-    Damage = 2;
+    Power = 2;
 }
 
 DrMarry::~DrMarry()

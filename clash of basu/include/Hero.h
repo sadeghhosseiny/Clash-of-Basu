@@ -12,7 +12,7 @@ public:
 
 protected:
     unsigned short int Health;
-    unsigned short int Damage;
+    unsigned short int Power;
 };
 
 #endif // Hero

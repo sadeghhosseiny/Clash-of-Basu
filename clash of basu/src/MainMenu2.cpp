@@ -17,7 +17,7 @@ MainMenu2::MainMenu2() : UI_Menu()
     tex8.loadFromFile("professor icon.png");
     tex9.loadFromFile("robi icon.png");
     tex10.loadFromFile("sniper icon.png");
-    hero_Cards = heroC::_None;
+    p2.hero_Cards = heroC::_None;
     spr.setTexture(tex);
     OptionText1();
     OptionText2();
@@ -35,7 +35,7 @@ void MainMenu2::MouseClicked2(sf::Vector2f pos, menus& CurrentMenu)
         CurrentMenu = menus::MM;
     }
 
-    ChooseCards(pos, hero_Cards);
+    ChooseCards(pos, p2.hero_Cards);
 
     if (optionText2.getGlobalBounds().contains(pos))
     {
@@ -126,59 +126,59 @@ int pp = 0; //i have p2 object from Player class so i should declare this as pp
 int r2 = 0;
 int s2 = 0;
 
-void MainMenu2::ChooseCards(sf::Vector2f, heroC hc)
+void MainMenu2::ChooseCards(sf::Vector2f, heroC& hc)
 {
     if (p2.AMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
             sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
-        hero_Cards = heroC::A;
+        p2.hero_Cards = heroC::A;
         //cout << static_cast<int>(hero_Cards) << endl;
     }
     else if (p2.CCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
-        hero_Cards = heroC::C;
+        p2.hero_Cards = heroC::C;
         //cout << static_cast<int>(hero_Cards) << endl;
     }
     else if (p2.DRMCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
-        hero_Cards = heroC::Dr;
+        p2.hero_Cards = heroC::Dr;
     }
     else if (p2.GCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
-        hero_Cards = heroC::G;
+        p2.hero_Cards = heroC::G;
     }
     else if (p2.KCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
-        hero_Cards = heroC::K;
+        p2.hero_Cards = heroC::K;
     }
     else if (p2.LCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
-        hero_Cards = heroC::L;
+        p2.hero_Cards = heroC::L;
     }
     else if (p2.MRSGCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
-        hero_Cards = heroC::Mrs;
+        p2.hero_Cards = heroC::Mrs;
     }
     else if (p2.PCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
-        hero_Cards = heroC::P;
+        p2.hero_Cards = heroC::P;
     }
     else if (p2.RCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
-        hero_Cards = heroC::R;
+        p2.hero_Cards = heroC::R;
     }
     else if (p2.SCobj.getspr().getGlobalBounds().contains(static_cast<sf::Vector2f>(sf::Mouse::getPosition())) &&
              sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
-        hero_Cards = heroC::S;
+        p2.hero_Cards = heroC::S;
     }
 
     for (int i = 0; i < fieldobj2.getrow(); i++)

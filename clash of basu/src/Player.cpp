@@ -17,7 +17,7 @@ vector<Hero*>& Player::getvec()
     return HeroVector;
 }
 
-vector<HeroCards*>& Player::getveccard()
+vector<heroC>& Player::getveccard()
 {
     return HeroCardsVector;
 }

@@ -4,7 +4,7 @@ Commander::Commander()
 {
     //commander = new Commander();
     Health = 7;
-    Damage = 3;
+    Power = 3;
     //heroname = "commander";
 }
 

@@ -4,7 +4,7 @@ Giant::Giant()
 {
     //giant = new Giant();
     Health = 20;
-    Damage = 4;
+    Power = 4;
 }
 
 Giant::~Giant()

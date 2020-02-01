@@ -15,12 +15,8 @@ void AlphaManCard::DrawCard(sf::RenderWindow *window)
     window->draw(spr);
 }
 
-/*sf::Sprite& AlphaManCard::getspr()
+sf::Sprite& AlphaManCard::getspr()
 {
     return spr;
-}*/
-
-AlphaManCard* AlphaManCard::getpointer_card()
-{
-    return alphaman_card;
 }
+

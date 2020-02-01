@@ -4,7 +4,7 @@ Leon::Leon()
 {
     //leon = new Leon();
     Health = 10;
-    Damage = 3;
+    Power = 3;
 }
 
 Leon::~Leon()
