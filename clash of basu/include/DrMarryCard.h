@@ -11,8 +11,6 @@ public:
     virtual void DrawCard(sf::RenderWindow*);
     sf::Sprite& getspr();
 
-protected:
-
 private:
 };
 

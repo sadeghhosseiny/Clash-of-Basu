@@ -24,7 +24,7 @@ public:
     Field();
     ~Field();
     void DrawField(sf::RenderWindow*);
-    void SelectedSquare(sf::RenderWindow*);
+    //void SelectedSquare(sf::RenderWindow*);
     sf::RectangleShape** square;
     unsigned short int& getrow();
     unsigned short int& getcol();

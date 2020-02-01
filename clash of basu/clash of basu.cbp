@@ -36,6 +36,7 @@
 		</Compiler>
 		<Unit filename="include/AlphaMan.h" />
 		<Unit filename="include/AlphaManCard.h" />
+		<Unit filename="include/BattleField.h" />
 		<Unit filename="include/BattleMenu.h" />
 		<Unit filename="include/Commander.h" />
 		<Unit filename="include/CommanderCard.h" />
@@ -69,6 +70,7 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="src/AlphaMan.cpp" />
 		<Unit filename="src/AlphaManCard.cpp" />
+		<Unit filename="src/BattleField.cpp" />
 		<Unit filename="src/BattleMenu.cpp" />
 		<Unit filename="src/Commander.cpp" />
 		<Unit filename="src/CommanderCard.cpp" />

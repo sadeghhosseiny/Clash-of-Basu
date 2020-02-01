@@ -19,7 +19,7 @@ void MenuControl::MouseClicked(sf::Vector2f pos)
             break;
         }
     Bmenu.p1ptr = &Mmenu.p1;
-    Bmenu.p2ptr = &Mmenu.p2;
+    Bmenu.p2ptr = &Mmenu2.p2;
 }
 
 void MenuControl::display(sf::RenderWindow* window)

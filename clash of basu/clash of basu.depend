@@ -235,12 +235,12 @@
 1580032691 /home/sadegh/Desktop/Finall project/clash of basu/include/Sniper.h
 	"Hero.h"
 
-1580311396 source:d:\finall p\clash of basu\main.cpp
+1580507026 source:d:\finall p\clash of basu\main.cpp
 	<iostream>
 	<SFML/Graphics.hpp>
 	"include/MenuControl.h"
 
-1580409512 d:\finall p\clash of basu\include\menucontrol.h
+1580507026 d:\finall p\clash of basu\include\menucontrol.h
 	"UI_Menu.h"
 	"StartMenu.h"
 	"MainMenu.h"
@@ -248,12 +248,14 @@
 	"BattleMenu.h"
 	<vector>
 
-1580480179 d:\finall p\clash of basu\include\ui_menu.h
+1580545145 d:\finall p\clash of basu\include\ui_menu.h
 	"SFML/Graphics.hpp"
 	"Field.h"
 	"Field2.h"
 	"GeneralDefines.h"
 	"Player.h"
+	"BattleField.h"
+	"BattleField2.h"
 
 1580393334 d:\finall p\clash of basu\include\generaldefines.h
 	"Hero.h"
@@ -270,13 +272,13 @@
 	"RobiCard.h"
 	"SniperCard.h"
 
-1580457684 d:\finall p\clash of basu\include\hero.h
+1580505018 d:\finall p\clash of basu\include\hero.h
 	"SFML/Graphics.hpp"
 
-1580156685 d:\finall p\clash of basu\include\herocards.h
+1580504439 d:\finall p\clash of basu\include\herocards.h
 	"SFML/Graphics.hpp"
 
-1580293056 d:\finall p\clash of basu\include\field.h
+1580497091 d:\finall p\clash of basu\include\field.h
 	"SFML/Graphics.hpp"
 	"GeneralDefines.h"
 	"Field.h"
@@ -295,13 +297,13 @@
 	"SFML/Graphics.hpp"
 	"HeroCards.h"
 
-1580156685 d:\finall p\clash of basu\include\giantcrad.h
+1580504411 d:\finall p\clash of basu\include\giantcrad.h
 	"HeroCards.h"
 
 1580156685 d:\finall p\clash of basu\include\commandercard.h
 	"HeroCards.h"
 
-1580156685 d:\finall p\clash of basu\include\drmarrycard.h
+1580504299 d:\finall p\clash of basu\include\drmarrycard.h
 	"HeroCards.h"
 
 1580156685 d:\finall p\clash of basu\include\kratoscard.h
@@ -310,7 +312,7 @@
 1580156685 d:\finall p\clash of basu\include\leoncard.h
 	"HeroCards.h"
 
-1580156685 d:\finall p\clash of basu\include\mrsghostcard.h
+1580504461 d:\finall p\clash of basu\include\mrsghostcard.h
 	"HeroCards.h"
 
 1580156685 d:\finall p\clash of basu\include\professorcard.h
@@ -322,10 +324,10 @@
 1580156685 d:\finall p\clash of basu\include\snipercard.h
 	"HeroCards.h"
 
-1580156685 d:\finall p\clash of basu\include\startmenu.h
+1580507026 d:\finall p\clash of basu\include\startmenu.h
 	"UI_Menu.h"
 
-1580407253 d:\finall p\clash of basu\include\mainmenu.h
+1580507026 d:\finall p\clash of basu\include\mainmenu.h
 	"UI_Menu.h"
 	"GeneralDefines.h"
 	"AlphaManCard.h"
@@ -359,7 +361,7 @@
 1580195023 source:d:\finall p\clash of basu\src\drmarrycard.cpp
 	"../include/DrMarryCard.h"
 
-1580477444 source:d:\finall p\clash of basu\src\field.cpp
+1580497092 source:d:\finall p\clash of basu\src\field.cpp
 	"../include/Field.h"
 	<iostream>
 
@@ -379,12 +381,12 @@
 1580195223 source:d:\finall p\clash of basu\src\leoncard.cpp
 	"../include/LeonCard.h"
 
-1580460594 source:d:\finall p\clash of basu\src\mainmenu.cpp
+1580542688 source:d:\finall p\clash of basu\src\mainmenu.cpp
 	"MainMenu.h"
 	<iostream>
 	<typeinfo>
 
-1580476564 source:d:\finall p\clash of basu\src\menucontrol.cpp
+1580550054 source:d:\finall p\clash of basu\src\menucontrol.cpp
 	"../include/MenuControl.h"
 
 1580195265 source:d:\finall p\clash of basu\src\mrsghostcard.cpp
@@ -399,7 +401,7 @@
 1580208887 source:d:\finall p\clash of basu\src\snipercard.cpp
 	"../include/SniperCard.h"
 
-1580329439 source:d:\finall p\clash of basu\src\startmenu.cpp
+1580507026 source:d:\finall p\clash of basu\src\startmenu.cpp
 	"../include/StartMenu.h"
 	<iostream>
 	"../include/MenuControl.h"
@@ -438,11 +440,11 @@
 	"Player.h"
 	<iostream>
 
-1580474449 source:d:\finall p\clash of basu\src\mainmenu2.cpp
+1580549879 source:d:\finall p\clash of basu\src\mainmenu2.cpp
 	"MainMenu2.h"
 	<iostream>
 
-1580407269 d:\finall p\clash of basu\include\mainmenu2.h
+1580507026 d:\finall p\clash of basu\include\mainmenu2.h
 	"UI_Menu.h"
 	"GeneralDefines.h"
 	"AlphaManCard.h"
@@ -466,7 +468,7 @@
 	"Robi.h"
 	"Sniper.h"
 
-1580375765 d:\finall p\clash of basu\include\field2.h
+1580504338 d:\finall p\clash of basu\include\field2.h
 	"SFML/Graphics.hpp"
 
 1580375765 source:d:\finall p\clash of basu\src\field2.cpp
@@ -475,25 +477,25 @@
 1580455602 d:\finall p\clash of basu\include\alphaman.h
 	"Hero.h"
 
-1580398905 d:\finall p\clash of basu\include\commander.h
+1580504277 d:\finall p\clash of basu\include\commander.h
 	"Hero.h"
 
-1580481463 source:d:\finall p\clash of basu\src\alphaman.cpp
+1580542688 source:d:\finall p\clash of basu\src\alphaman.cpp
 	"../include/AlphaMan.h"
 
-1580474337 source:d:\finall p\clash of basu\src\commander.cpp
+1580505018 source:d:\finall p\clash of basu\src\commander.cpp
 	"../include/Commander.h"
 
 1580474337 source:d:\finall p\clash of basu\src\drmarry.cpp
 	"../include/DrMarry.h"
 
-1580398905 d:\finall p\clash of basu\include\drmarry.h
+1580504286 d:\finall p\clash of basu\include\drmarry.h
 	"Hero.h"
 
 1580474337 source:d:\finall p\clash of basu\src\giant.cpp
 	"Giant.h"
 
-1580398905 d:\finall p\clash of basu\include\giant.h
+1580504113 d:\finall p\clash of basu\include\giant.h
 	"Hero.h"
 
 1580474372 source:d:\finall p\clash of basu\src\kratos.cpp
@@ -517,7 +519,7 @@
 1580474337 source:d:\finall p\clash of basu\src\professor.cpp
 	"../include/Professor.h"
 
-1580398905 d:\finall p\clash of basu\include\professor.h
+1580542688 d:\finall p\clash of basu\include\professor.h
 	"Hero.h"
 
 1580474337 source:d:\finall p\clash of basu\src\robi.cpp
@@ -529,21 +531,27 @@
 1580474337 source:d:\finall p\clash of basu\src\sniper.cpp
 	"../include/Sniper.h"
 
-1580398905 d:\finall p\clash of basu\include\sniper.h
+1580504190 d:\finall p\clash of basu\include\sniper.h
 	"Hero.h"
 
-1580477444 d:\finall p\clash of basu\include\battlemenu.h
+1580546071 d:\finall p\clash of basu\include\battlemenu.h
 	"UI_Menu.h"
 	"Hero.h"
 
-1580480624 source:d:\finall p\clash of basu\src\battlemenu.cpp
+1580547332 source:d:\finall p\clash of basu\src\battlemenu.cpp
 	"BattleMenu.h"
 	<iostream>
 	<typeinfo>
 
-1580477489 d:\finall p\clash of basu\include\battlefield.h
+1580507699 d:\finall p\clash of basu\include\battlefield.h
 	"SFML/Graphics.hpp"
 
-1580477536 source:d:\finall p\clash of basu\src\battlefield.cpp
+1580507699 source:d:\finall p\clash of basu\src\battlefield.cpp
 	"BattleField.h"
+
+1580544902 d:\finall p\clash of basu\include\battlefield2.h
+	"SFML/Graphics.hpp"
+
+1580545657 source:d:\finall p\clash of basu\src\battlefield2.cpp
+	"BattleField2.h"
 

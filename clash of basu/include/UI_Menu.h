@@ -5,6 +5,8 @@
 #include "Field2.h"
 #include "GeneralDefines.h"
 #include "Player.h"
+#include "BattleField.h"
+#include "BattleField2.h"
 
 //enum class menus{SM = 0, MM};
 
@@ -25,7 +27,9 @@ public:
     Player p2;
     Field fieldobj;
     Field2 fieldobj2;
-    //BattleField bf;
+    BattleField battlefieldobj;
+    BattleField2 battlefieldobj2;
+
 protected:
     sf::Text optionText1;
     sf::Text optionText2;

@@ -6,7 +6,7 @@ AlphaMan::AlphaMan()
     //heroName = heroC::A;
     Health = 13;
     Damage = 2;
-    heroname = "alphaman";
+    //heroname = "alphaman";
 }
 
 AlphaMan::~AlphaMan()
@@ -24,6 +24,7 @@ AlphaMan* AlphaMan::getpointer()
     return alphaman;
 }
 
+//save position for battle
 void AlphaMan::setp_on_field(sf::Vector2i position)
 {
     position_on_field = position;

@@ -10,6 +10,7 @@ public:
     virtual void DrawCard(sf::RenderWindow*);
     virtual ~GiantCrad();
     sf::Sprite& getspr();
+
 private:
 };
 

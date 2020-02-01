@@ -8,10 +8,10 @@ public:
     Hero();
     virtual void Strike() = 0;
     //std::string hn;
-    std::string heroname;
-    unsigned short int Health;
+    //std::string heroname;
 
 protected:
+    unsigned short int Health;
     unsigned short int Damage;
 };
 

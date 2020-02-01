@@ -13,8 +13,6 @@ public:
     unsigned short int& getcol();
     sf::RectangleShape **square2;
 
-protected:
-
 private:
     unsigned short int row;
     unsigned short int col;
