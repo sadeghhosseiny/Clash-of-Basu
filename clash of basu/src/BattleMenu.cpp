@@ -457,7 +457,7 @@ void BattleMenu::player2_cards(sf::RenderWindow* window)
         {
             //cout << "fuck" << endl;
             sprc.setTexture(texc1);
-            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setPosition(100 + c * 120, 800);
             sprc.setScale(sf::Vector2f(0.75, 0.75));
 
             break;
@@ -465,63 +465,63 @@ void BattleMenu::player2_cards(sf::RenderWindow* window)
         case heroC::C :
         {
             sprc.setTexture(texc2);
-            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setPosition(100 + c * 120, 800);
             sprc.setScale(sf::Vector2f(0.75, 0.75));
             break;
         }
         case heroC::Dr :
         {
             sprc.setTexture(texc3);
-            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setPosition(100 + c * 120, 800);
             sprc.setScale(sf::Vector2f(0.75, 0.75));
             break;
         }
         case heroC::G :
         {
             sprc.setTexture(texc4);
-            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setPosition(100 + c * 120, 800);
             sprc.setScale(sf::Vector2f(0.75, 0.75));
             break;
         }
         case heroC::K :
         {
             sprc.setTexture(texc5);
-            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setPosition(100 + c * 120, 800);
             sprc.setScale(sf::Vector2f(0.75, 0.75));
             break;
         }
         case heroC::L :
         {
             sprc.setTexture(texc6);
-            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setPosition(100 + c * 120, 800);
             sprc.setScale(sf::Vector2f(0.75, 0.75));
             break;
         }
         case heroC::Mrs :
         {
             sprc.setTexture(texc7);
-            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setPosition(100 + c * 120, 800);
             sprc.setScale(sf::Vector2f(0.75, 0.75));
             break;
         }
         case heroC::P :
         {
             sprc.setTexture(texc8);
-            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setPosition(100 + c * 120, 800);
             sprc.setScale(sf::Vector2f(0.75, 0.75));
             break;
         }
         case heroC::R :
         {
             sprc.setTexture(texc9);
-            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setPosition(100 + c * 120, 800);
             sprc.setScale(sf::Vector2f(0.75, 0.75));
             break;
         }
         case heroC::S :
         {
             sprc.setTexture(texc10);
-            sprc.setPosition(1200 + c * 120, 800);
+            sprc.setPosition(100 + c * 120, 800);
             sprc.setScale(sf::Vector2f(0.75, 0.75));
             break;
         }

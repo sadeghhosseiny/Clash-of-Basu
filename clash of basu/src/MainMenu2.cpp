@@ -207,6 +207,7 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC& hc)
                     fieldobj2.square2[i][j].setFillColor(sf::Color::White);
                     p2.aobj.setp_on_field(sf::Vector2i(i, j));
                     p2.getvec().push_back(p2.aobj.getpointer());
+                    p2.getveccard().push_back(heroC::A);
                     cout << p2.getvec().size() << endl;
                     cout << p2.aobj.position_on_field.x << endl;
                     counter2++;
@@ -223,6 +224,7 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC& hc)
                     fieldobj2.square2[i][j].setFillColor(sf::Color::White);
                     p2.cobj.setp_on_field(sf::Vector2i(i, j));
                     p2.getvec().push_back(p2.cobj.getpointer());
+                    p2.getveccard().push_back(heroC::C);
                     cout << p2.getvec().size() << endl;
                     counter2++;
                     c2++;
@@ -238,6 +240,7 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC& hc)
                     fieldobj2.square2[i][j].setFillColor(sf::Color::White);
                     p2.drmobj.setp_on_field(sf::Vector2i(i, j));
                     p2.getvec().push_back(p2.drmobj.getpointer());
+                    p2.getveccard().push_back(heroC::Dr);
                     cout << p2.getvec().size() << endl;
                     counter2++;
                     dr2++;
@@ -253,6 +256,7 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC& hc)
                     fieldobj2.square2[i][j].setFillColor(sf::Color::White);
                     p2.gobj.setp_on_field(sf::Vector2i(i, j));
                     p2.getvec().push_back(p2.gobj.getpointer());
+                    p2.getveccard().push_back(heroC::G);
                     cout << p2.getvec().size() << endl;
                     counter2++;
                     g2++;
@@ -268,6 +272,7 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC& hc)
                     fieldobj2.square2[i][j].setFillColor(sf::Color::White);
                     p2.kobj.setp_on_field(sf::Vector2i(i, j));
                     p2.getvec().push_back(p2.kobj.getpointer());
+                    p2.getveccard().push_back(heroC::K);
                     counter2++;
                     k2++;
                     }
@@ -282,6 +287,7 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC& hc)
                     fieldobj2.square2[i][j].setFillColor(sf::Color::White);
                     p2.lobj.setp_on_field(sf::Vector2i(i, j));
                     p2.getvec().push_back(p2.lobj.getpointer());
+                    p2.getveccard().push_back(heroC::L);
                     counter2++;
                     l2++;
                     }
@@ -296,6 +302,7 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC& hc)
                     fieldobj2.square2[i][j].setFillColor(sf::Color::White);
                     p2.mrsgobj.setp_on_field(sf::Vector2i(i, j));
                     p2.getvec().push_back(p2.mrsgobj.getpointer());
+                    p2.getveccard().push_back(heroC::Mrs);
                     counter2++;
                     mrs2++;
                     }
@@ -314,6 +321,7 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC& hc)
                     fieldobj2.square2[i][j].setFillColor(sf::Color::White);
                     p2.pobj.setp_on_field(sf::Vector2i(i, j));
                     p2.getvec().push_back(p2.pobj.getpointer());
+                    p2.getveccard().push_back(heroC::P);
                     counter2++;
                     pp++;
                     }
@@ -328,6 +336,7 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC& hc)
                     fieldobj2.square2[i][j].setFillColor(sf::Color::White);
                     p2.robj.setp_on_field(sf::Vector2i(i, j));
                     p2.getvec().push_back(p2.robj.getpointer());
+                    p2.getveccard().push_back(heroC::R);
                     counter2++;
                     r2++;
                     }
@@ -342,6 +351,7 @@ void MainMenu2::ChooseCards(sf::Vector2f, heroC& hc)
                     fieldobj2.square2[i][j].setFillColor(sf::Color::White);
                     p2.sobj.setp_on_field(sf::Vector2i(i, j));
                     p2.getvec().push_back(p2.sobj.getpointer());
+                    p2.getveccard().push_back(heroC::S);
                     counter2++;
                     s2++;
                     }

@@ -437,7 +437,7 @@
 	"Player.h"
 	<iostream>
 
-1580579667 source:d:\finall p\clash of basu\src\mainmenu2.cpp
+1580582767 source:d:\finall p\clash of basu\src\mainmenu2.cpp
 	"MainMenu2.h"
 	<iostream>
 
@@ -534,7 +534,7 @@
 	"UI_Menu.h"
 	"Hero.h"
 
-1580582085 source:d:\finall p\clash of basu\src\battlemenu.cpp
+1580583015 source:d:\finall p\clash of basu\src\battlemenu.cpp
 	"BattleMenu.h"
 	<iostream>
 	<typeinfo>
