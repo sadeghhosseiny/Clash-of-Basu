@@ -22,6 +22,7 @@ public:
     void situation2(sf::Vector2f);
     void player1_cards(sf::RenderWindow*);
     void player2_cards(sf::RenderWindow*);
+    void Attack(sf::RenderWindow*);
 
 private:
     sf::Texture tex1;
